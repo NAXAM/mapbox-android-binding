@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">MapboxQs</string>
+	<string name="access_token">pk.eyJ1IjoidHV5ZW52ZCIsImEiOiJjaXl5N24zMDIwMGwyMnFvcTBybTM0cXQyIn0.CMBt5G-hGFIzX7i7LmcRGQ</string>
+</resources>
