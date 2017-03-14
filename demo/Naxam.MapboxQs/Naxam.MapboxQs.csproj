@@ -128,7 +128,7 @@
     </ProjectReference>
     <ProjectReference Include="..\..\Naxam.Retrofit2.ConvertJson.Droid\Naxam.Retrofit2.ConvertJson.Droid.csproj">
       <Project>{AF3758FD-DE4A-4A0A-B2B5-8385EE708A73}</Project>
-      <Name>Naxam.Retrofit2.ConvertJson.Droid</Name>
+      <Name>Naxam.Retrofit2.ConvertGson.Droid</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Naxam.Retrofit2.Droid\Naxam.Retrofit2.Droid.csproj">
       <Project>{D93281D3-4085-4298-B77C-F4192EA3B3A4}</Project>

@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.Retrofit2.Droid", "Naxam.Retrofit2.Droid\Naxam.Retrofit2.Droid.csproj", "{D93281D3-4085-4298-B77C-F4192EA3B3A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.Retrofit2.ConvertJson.Droid", "Naxam.Retrofit2.ConvertJson.Droid\Naxam.Retrofit2.ConvertJson.Droid.csproj", "{AF3758FD-DE4A-4A0A-B2B5-8385EE708A73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.Retrofit2.ConvertGson.Droid", "Naxam.Retrofit2.ConvertJson.Droid\Naxam.Retrofit2.ConvertGson.Droid.csproj", "{AF3758FD-DE4A-4A0A-B2B5-8385EE708A73}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.Mapzen.Droid", "Naxam.Mapzen.Droid\Naxam.Mapzen.Droid.csproj", "{9A3D66FD-C105-4019-A9C7-D2774640416F}"
 EndProject

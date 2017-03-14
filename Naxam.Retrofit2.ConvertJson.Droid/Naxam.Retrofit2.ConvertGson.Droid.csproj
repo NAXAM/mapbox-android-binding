@@ -6,8 +6,8 @@
     <ProjectGuid>{AF3758FD-DE4A-4A0A-B2B5-8385EE708A73}</ProjectGuid>
     <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Naxam.Retrofit2.ConvertJson.Droid</RootNamespace>
-    <AssemblyName>Naxam.Retrofit2.ConvertJson.Droid</AssemblyName>
+    <RootNamespace>Naxam.Retrofit2.ConvertGson.Droid</RootNamespace>
+    <AssemblyName>Naxam.Retrofit2.ConvertGson.Droid</AssemblyName>
     <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>

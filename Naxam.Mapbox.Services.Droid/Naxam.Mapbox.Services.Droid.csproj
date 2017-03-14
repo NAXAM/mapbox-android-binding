@@ -82,7 +82,7 @@
     </ProjectReference>
     <ProjectReference Include="..\Naxam.Retrofit2.ConvertJson.Droid\Naxam.Retrofit2.ConvertJson.Droid.csproj">
       <Project>{AF3758FD-DE4A-4A0A-B2B5-8385EE708A73}</Project>
-      <Name>Naxam.Retrofit2.ConvertJson.Droid</Name>
+      <Name>Naxam.Retrofit2.ConvertGson.Droid</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
