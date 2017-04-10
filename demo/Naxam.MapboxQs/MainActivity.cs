@@ -67,7 +67,7 @@ namespace Naxam.MapboxQs
 		protected override void OnDestroy()
 		{
 			mapView.OnDestroy();
-			base.OnStop();
+			base.OnDestroy();
 		}
 
 		public override void OnLowMemory()
@@ -75,6 +75,6 @@ namespace Naxam.MapboxQs
 			base.OnLowMemory();
 			mapView.OnLowMemory();
 		}
-	}
+	} 
 }
 
