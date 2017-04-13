@@ -3,7 +3,7 @@
     <metadata>
         <!-- Required elements-->
         <id>Naxam.Mapbox.Droid</id>
-       <version>4.2.2</version>
+        <version>4.2.2.1-beta</version>
         <description>Xamarin Binding Library - Mapbox Android SDK</description>
         <authors>Vu Duc Tuyen</authors>
         <owners>NAXAM CO.,LTD</owners>
@@ -25,19 +25,14 @@
             <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="23.3.0" />
             <dependency id="Xamarin.Android.Support.Vector.Drawable" version="23.3.0" />
             <dependency id="GoogleGson" version="2.6.2.0" />
+            <dependency id="Naxam.Mapbox.Services.Droid" version="1.3.1" />
+            <dependency id="Naxam.Mapzen.Droid" version="1.2.1" />
+            <dependency id="Naxam.Mapzen.Lost.Droid" version="1.1.1" />
+            <dependency id="Naxam.Retrofit2.ConvertGson.Droid" version="2.1.0" />
+            <dependency id="Naxam.Retrofit2.Droid" version="2.1.0" />
         </dependencies>
     </metadata>
-    <!-- Optional 'files' node -->
     <files>
         <file src="Naxam.Mapbox.Droid/bin/Release/Naxam.Mapbox.Droid.dll" target="lib/MonoAndroid10/Naxam.Mapbox.Droid.dll" />
-        <!--<file src="Naxam.I18n/bin/Release/Naxam.I18n.xml" target="lib/MonoAndroid10/Naxam.I18n.xml" />-->
-        <file src="Naxam.Mapbox.Services.Droid/bin/Release/Naxam.Mapbox.Services.Droid.dll" target="lib/MonoAndroid10/Naxam.Mapbox.Services.Droid.dll" />
-        <!--<file src="Naxam.I18n.Forms/bin/Release/Naxam.I18n.Forms.xml" target="lib/MonoAndroid10/Naxam.I18n.Forms.xml" />-->
-        <file src="Naxam.Mapzen.Droid/bin/Release/Naxam.Mapzen.Droid.dll" target="lib/MonoAndroid10/Naxam.Mapzen.Droid.dll" />
-        <!--<file src="Naxam.I18n.Platform.Droid/bin/Release/Naxam.I18n.Platform.Droid.xml" target="lib/MonoAndroid10/Naxam.I18n.Platform.Droid.xml" />-->
-
-        <file src="Naxam.Mapzen.Lost.Droid/bin/Release/Naxam.Mapzen.Lost.Droid.dll" target="lib/MonoAndroid10/Naxam.Mapzen.Lost.Droid.dll" />
-        <file src="Naxam.Retrofit2.ConvertJson.Droid/bin/Release/Naxam.Retrofit2.ConvertGson.Droid.dll" target="lib/MonoAndroid10/Naxam.Retrofit2.ConvertGson.Droid.dll" />
-        <file src="Naxam.Retrofit2.Droid/bin/Release/Naxam.Retrofit2.Droid.dll" target="lib/MonoAndroid10/Naxam.Retrofit2.Droid.dll" />
     </files>
 </package>

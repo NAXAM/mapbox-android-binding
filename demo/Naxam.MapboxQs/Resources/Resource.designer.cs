@@ -1317,8 +1317,8 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f0b0017
 			public const int background_material_light = 2131427351;
 			
-			// aapt resource value: 0x7f0b004b
-			public const int black = 2131427403;
+			// aapt resource value: 0x7f0b0048
+			public const int black = 2131427400;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int bright_foreground_disabled_material_dark = 2131427352;
@@ -1404,11 +1404,11 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f0b0025
 			public const int foreground_material_light = 2131427365;
 			
-			// aapt resource value: 0x7f0b004c
-			public const int gray = 2131427404;
+			// aapt resource value: 0x7f0b0049
+			public const int gray = 2131427401;
 			
-			// aapt resource value: 0x7f0b004d
-			public const int gray_light = 2131427405;
+			// aapt resource value: 0x7f0b004a
+			public const int gray_light = 2131427402;
 			
 			// aapt resource value: 0x7f0b0026
 			public const int highlighted_text_material_dark = 2131427366;
@@ -1422,8 +1422,8 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f0b0029
 			public const int hint_foreground_material_light = 2131427369;
 			
-			// aapt resource value: 0x7f0b004e
-			public const int mapbox_blue = 2131427406;
+			// aapt resource value: 0x7f0b004b
+			public const int mapbox_blue = 2131427403;
 			
 			// aapt resource value: 0x7f0b005b
 			public const int material_bg_selector = 2131427419;
@@ -1464,17 +1464,17 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f0b0035
 			public const int material_grey_900 = 2131427381;
 			
+			// aapt resource value: 0x7f0b004c
+			public const int my_location_ring = 2131427404;
+			
+			// aapt resource value: 0x7f0b004e
+			public const int mz_border_gray = 2131427406;
+			
 			// aapt resource value: 0x7f0b004f
-			public const int my_location_ring = 2131427407;
+			public const int mz_gray = 2131427407;
 			
-			// aapt resource value: 0x7f0b0048
-			public const int mz_border_gray = 2131427400;
-			
-			// aapt resource value: 0x7f0b0049
-			public const int mz_gray = 2131427401;
-			
-			// aapt resource value: 0x7f0b004a
-			public const int mz_white = 2131427402;
+			// aapt resource value: 0x7f0b0050
+			public const int mz_white = 2131427408;
 			
 			// aapt resource value: 0x7f0b0036
 			public const int primary_dark_material_dark = 2131427382;
@@ -1536,8 +1536,8 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f0b0047
 			public const int switch_thumb_normal_material_light = 2131427399;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int white = 2131427408;
+			// aapt resource value: 0x7f0b004d
+			public const int white = 2131427405;
 			
 			static Color()
 			{
@@ -1855,8 +1855,8 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f08006a
 			public const int disabled_alpha_material_light = 2131230826;
 			
-			// aapt resource value: 0x7f08007b
-			public const int eight_dp = 2131230843;
+			// aapt resource value: 0x7f080074
+			public const int eight_dp = 2131230836;
 			
 			// aapt resource value: 0x7f08006b
 			public const int highlight_alpha_material_colored = 2131230827;
@@ -1867,17 +1867,17 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f08006d
 			public const int highlight_alpha_material_light = 2131230829;
 			
-			// aapt resource value: 0x7f08007c
-			public const int infowindow_line_width = 2131230844;
+			// aapt resource value: 0x7f080075
+			public const int infowindow_line_width = 2131230837;
 			
-			// aapt resource value: 0x7f08007d
-			public const int infowindow_margin = 2131230845;
+			// aapt resource value: 0x7f080076
+			public const int infowindow_margin = 2131230838;
 			
-			// aapt resource value: 0x7f08007e
-			public const int infowindow_offset = 2131230846;
+			// aapt resource value: 0x7f080077
+			public const int infowindow_offset = 2131230839;
 			
-			// aapt resource value: 0x7f08007f
-			public const int infowindow_tipview_width = 2131230847;
+			// aapt resource value: 0x7f080078
+			public const int infowindow_tipview_width = 2131230840;
 			
 			// aapt resource value: 0x7f080071
 			public const int item_touch_helper_max_drag_scroll_per_frame = 2131230833;
@@ -1906,29 +1906,29 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f080004
 			public const int mr_dialog_fixed_width_minor = 2131230724;
 			
-			// aapt resource value: 0x7f080080
-			public const int my_locationview_outer_circle = 2131230848;
-			
-			// aapt resource value: 0x7f080074
-			public const int mz_attribution_font_size = 2131230836;
-			
-			// aapt resource value: 0x7f080075
-			public const int mz_attribution_margin_bottom = 2131230837;
-			
-			// aapt resource value: 0x7f080076
-			public const int mz_attribution_margin_left = 2131230838;
-			
-			// aapt resource value: 0x7f080077
-			public const int mz_find_me_button_height = 2131230839;
-			
-			// aapt resource value: 0x7f080078
-			public const int mz_find_me_button_margin_bottom = 2131230840;
-			
 			// aapt resource value: 0x7f080079
-			public const int mz_find_me_button_margin_right = 2131230841;
+			public const int my_locationview_outer_circle = 2131230841;
 			
-			// aapt resource value: 0x7f08007a
-			public const int mz_find_me_button_width = 2131230842;
+			// aapt resource value: 0x7f08007e
+			public const int mz_attribution_font_size = 2131230846;
+			
+			// aapt resource value: 0x7f08007f
+			public const int mz_attribution_margin_bottom = 2131230847;
+			
+			// aapt resource value: 0x7f080080
+			public const int mz_attribution_margin_left = 2131230848;
+			
+			// aapt resource value: 0x7f080081
+			public const int mz_find_me_button_height = 2131230849;
+			
+			// aapt resource value: 0x7f080082
+			public const int mz_find_me_button_margin_bottom = 2131230850;
+			
+			// aapt resource value: 0x7f080083
+			public const int mz_find_me_button_margin_right = 2131230851;
+			
+			// aapt resource value: 0x7f080084
+			public const int mz_find_me_button_width = 2131230852;
 			
 			// aapt resource value: 0x7f08006e
 			public const int notification_large_icon_height = 2131230830;
@@ -1939,17 +1939,17 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f080070
 			public const int notification_subtext_size = 2131230832;
 			
-			// aapt resource value: 0x7f080081
-			public const int seven_dp = 2131230849;
+			// aapt resource value: 0x7f08007a
+			public const int seven_dp = 2131230842;
 			
-			// aapt resource value: 0x7f080082
-			public const int seventy_six_dp = 2131230850;
+			// aapt resource value: 0x7f08007b
+			public const int seventy_six_dp = 2131230843;
 			
-			// aapt resource value: 0x7f080083
-			public const int sixteen_dp = 2131230851;
+			// aapt resource value: 0x7f08007c
+			public const int sixteen_dp = 2131230844;
 			
-			// aapt resource value: 0x7f080084
-			public const int ten_dp = 2131230852;
+			// aapt resource value: 0x7f08007d
+			public const int ten_dp = 2131230845;
 			
 			static Dimension()
 			{
@@ -3401,32 +3401,32 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f070041
 			public const int access_token = 2131165249;
 			
-			// aapt resource value: 0x7f070029
-			public const int app_name = 2131165225;
+			// aapt resource value: 0x7f070039
+			public const int app_name = 2131165241;
 			
 			// aapt resource value: 0x7f07000f
 			public const int appbar_scrolling_view_behavior = 2131165199;
 			
-			// aapt resource value: 0x7f07002d
-			public const int attributionTelemetryMessage = 2131165229;
+			// aapt resource value: 0x7f070026
+			public const int attributionTelemetryMessage = 2131165222;
 			
-			// aapt resource value: 0x7f07002e
-			public const int attributionTelemetryNegative = 2131165230;
+			// aapt resource value: 0x7f070027
+			public const int attributionTelemetryNegative = 2131165223;
 			
-			// aapt resource value: 0x7f07002f
-			public const int attributionTelemetryNeutral = 2131165231;
+			// aapt resource value: 0x7f070028
+			public const int attributionTelemetryNeutral = 2131165224;
 			
-			// aapt resource value: 0x7f070030
-			public const int attributionTelemetryPositive = 2131165232;
+			// aapt resource value: 0x7f070029
+			public const int attributionTelemetryPositive = 2131165225;
 			
-			// aapt resource value: 0x7f070031
-			public const int attributionTelemetryTitle = 2131165233;
+			// aapt resource value: 0x7f07002a
+			public const int attributionTelemetryTitle = 2131165226;
 			
-			// aapt resource value: 0x7f070032
-			public const int attributionsDialogTitle = 2131165234;
+			// aapt resource value: 0x7f07002b
+			public const int attributionsDialogTitle = 2131165227;
 			
-			// aapt resource value: 0x7f070033
-			public const int attributionsIconContentDescription = 2131165235;
+			// aapt resource value: 0x7f07002c
+			public const int attributionsIconContentDescription = 2131165228;
 			
 			// aapt resource value: 0x7f070010
 			public const int bottom_sheet_behavior = 2131165200;
@@ -3434,23 +3434,23 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f070011
 			public const int character_counter_pattern = 2131165201;
 			
-			// aapt resource value: 0x7f070034
-			public const int compassContentDescription = 2131165236;
+			// aapt resource value: 0x7f07002d
+			public const int compassContentDescription = 2131165229;
 			
 			// aapt resource value: 0x7f070040
 			public const int hello = 2131165248;
 			
-			// aapt resource value: 0x7f070035
-			public const int infoWindowAddress = 2131165237;
+			// aapt resource value: 0x7f07002e
+			public const int infoWindowAddress = 2131165230;
 			
-			// aapt resource value: 0x7f070036
-			public const int infoWindowDescription = 2131165238;
+			// aapt resource value: 0x7f07002f
+			public const int infoWindowDescription = 2131165231;
 			
-			// aapt resource value: 0x7f070037
-			public const int infoWindowTitle = 2131165239;
+			// aapt resource value: 0x7f070030
+			public const int infoWindowTitle = 2131165232;
 			
-			// aapt resource value: 0x7f070038
-			public const int mapboxIconContentDescription = 2131165240;
+			// aapt resource value: 0x7f070031
+			public const int mapboxIconContentDescription = 2131165233;
 			
 			// aapt resource value: 0x7f070000
 			public const int mr_button_content_description = 2131165184;
@@ -3497,47 +3497,47 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f07000e
 			public const int mr_user_route_category_name = 2131165198;
 			
-			// aapt resource value: 0x7f070026
-			public const int mz_attribution = 2131165222;
+			// aapt resource value: 0x7f07003d
+			public const int mz_attribution = 2131165245;
 			
-			// aapt resource value: 0x7f070027
-			public const int mz_find_me = 2131165223;
+			// aapt resource value: 0x7f07003e
+			public const int mz_find_me = 2131165246;
 			
 			// aapt resource value: 0x7f070025
 			public const int status_bar_notification_info_overflow = 2131165221;
 			
-			// aapt resource value: 0x7f070039
-			public const int style_dark = 2131165241;
+			// aapt resource value: 0x7f070032
+			public const int style_dark = 2131165234;
+			
+			// aapt resource value: 0x7f070033
+			public const int style_emerald = 2131165235;
+			
+			// aapt resource value: 0x7f070034
+			public const int style_light = 2131165236;
+			
+			// aapt resource value: 0x7f070035
+			public const int style_mapbox_streets = 2131165237;
+			
+			// aapt resource value: 0x7f070036
+			public const int style_outdoors = 2131165238;
+			
+			// aapt resource value: 0x7f070037
+			public const int style_satellite = 2131165239;
+			
+			// aapt resource value: 0x7f070038
+			public const int style_satellite_streets = 2131165240;
 			
 			// aapt resource value: 0x7f07003a
-			public const int style_emerald = 2131165242;
+			public const int tab_cycling = 2131165242;
 			
 			// aapt resource value: 0x7f07003b
-			public const int style_light = 2131165243;
+			public const int tab_driving = 2131165243;
 			
 			// aapt resource value: 0x7f07003c
-			public const int style_mapbox_streets = 2131165244;
-			
-			// aapt resource value: 0x7f07003d
-			public const int style_outdoors = 2131165245;
-			
-			// aapt resource value: 0x7f07003e
-			public const int style_satellite = 2131165246;
+			public const int tab_walking = 2131165244;
 			
 			// aapt resource value: 0x7f07003f
-			public const int style_satellite_streets = 2131165247;
-			
-			// aapt resource value: 0x7f07002a
-			public const int tab_cycling = 2131165226;
-			
-			// aapt resource value: 0x7f07002b
-			public const int tab_driving = 2131165227;
-			
-			// aapt resource value: 0x7f07002c
-			public const int tab_walking = 2131165228;
-			
-			// aapt resource value: 0x7f070028
-			public const int tangram_version = 2131165224;
+			public const int tangram_version = 2131165247;
 			
 			static String()
 			{
