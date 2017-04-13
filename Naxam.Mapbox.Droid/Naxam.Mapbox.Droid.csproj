@@ -65,6 +65,15 @@
     <Reference Include="Xamarin.Android.Support.Design">
       <HintPath>..\packages\Xamarin.Android.Support.Design.23.3.0\lib\MonoAndroid43\Xamarin.Android.Support.Design.dll</HintPath>
     </Reference>
+    <Reference Include="Naxam.Retrofit2.Droid">
+      <HintPath>..\packages\Naxam.Retrofit2.Droid.2.1.0\lib\MonoAndroid10\Naxam.Retrofit2.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleGson">
+      <HintPath>..\packages\GoogleGson.2.6.2.0\lib\MonoAndroid\GoogleGson.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.Retrofit2.ConvertGson.Droid">
+      <HintPath>..\packages\Naxam.Retrofit2.ConvertGson.Droid.2.1.0\lib\MonoAndroid10\Naxam.Retrofit2.ConvertGson.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

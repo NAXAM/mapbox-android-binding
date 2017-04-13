@@ -84,6 +84,21 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.3.180\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Square.OkIO">
+      <HintPath>..\..\packages\Square.OkIO.1.11.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
+    </Reference>
+    <Reference Include="Square.OkHttp3">
+      <HintPath>..\..\packages\Square.OkHttp3.3.5.0\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.Retrofit2.Droid">
+      <HintPath>..\..\packages\Naxam.Retrofit2.Droid.2.1.0\lib\MonoAndroid10\Naxam.Retrofit2.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleGson">
+      <HintPath>..\..\packages\GoogleGson.2.6.2.0\lib\MonoAndroid\GoogleGson.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.Retrofit2.ConvertGson.Droid">
+      <HintPath>..\..\packages\Naxam.Retrofit2.ConvertGson.Droid.2.1.0\lib\MonoAndroid10\Naxam.Retrofit2.ConvertGson.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -125,14 +140,6 @@
     <ProjectReference Include="..\..\Naxam.Mapzen.Lost.Droid\Naxam.Mapzen.Lost.Droid.csproj">
       <Project>{02690F24-3F64-4ED2-9C83-DA07BAEC25C9}</Project>
       <Name>Naxam.Mapzen.Lost.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Naxam.Retrofit2.ConvertJson.Droid\Naxam.Retrofit2.ConvertJson.Droid.csproj">
-      <Project>{AF3758FD-DE4A-4A0A-B2B5-8385EE708A73}</Project>
-      <Name>Naxam.Retrofit2.ConvertGson.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Naxam.Retrofit2.Droid\Naxam.Retrofit2.Droid.csproj">
-      <Project>{D93281D3-4085-4298-B77C-F4192EA3B3A4}</Project>
-      <Name>Naxam.Retrofit2.Droid</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

@@ -50,6 +50,12 @@
     <Reference Include="Square.OkHttp3">
       <HintPath>..\packages\Square.OkHttp3.3.5.0\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
     </Reference>
+    <Reference Include="Naxam.Retrofit2.Droid">
+      <HintPath>..\packages\Naxam.Retrofit2.Droid.2.1.0\lib\MonoAndroid10\Naxam.Retrofit2.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.Retrofit2.ConvertGson.Droid">
+      <HintPath>..\packages\Naxam.Retrofit2.ConvertGson.Droid.2.1.0\lib\MonoAndroid10\Naxam.Retrofit2.ConvertGson.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,16 +80,6 @@
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\mapbox.services.android-1.3.1.aar" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Naxam.Retrofit2.Droid\Naxam.Retrofit2.Droid.csproj">
-      <Project>{D93281D3-4085-4298-B77C-F4192EA3B3A4}</Project>
-      <Name>Naxam.Retrofit2.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Naxam.Retrofit2.ConvertJson.Droid\Naxam.Retrofit2.ConvertJson.Droid.csproj">
-      <Project>{AF3758FD-DE4A-4A0A-B2B5-8385EE708A73}</Project>
-      <Name>Naxam.Retrofit2.ConvertGson.Droid</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
 </Project>
