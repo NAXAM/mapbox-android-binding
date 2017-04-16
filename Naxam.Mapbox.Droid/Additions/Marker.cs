@@ -7,8 +7,6 @@ namespace Mapbox.MapboxSdk.Annotations
 		{
 			return CompareTo((Marker)obj);
 		}
-
-		public interface IMarkerListener { }
 	}
 
 	public partial class Polygon

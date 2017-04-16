@@ -11,11 +11,7 @@ using Mapbox.MapboxSdk.Annotations;
 
 namespace Naxam.MapboxQs
 {
-	public class X : Marker.IMarkerListener { 
-	
-	}
-
-	[Activity(Label = "MapboxQs", MainLauncher = true, Icon = "@mipmap/icon", Theme="@style/MyTheme")]
+	[Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/icon", Theme="@style/MyTheme")]
 	public class MainActivity : AppCompatActivity, IOnMapReadyCallback
 	{
 		MapView mapView;
@@ -39,6 +35,12 @@ namespace Naxam.MapboxQs
 			//global::Xamarin.Forms.Forms.Init(this, bundle);
 
 			//LoadApplication(new App());
+		}
+
+		protected override void OnStart()
+		{
+			base.OnStart();
+			mapView.OnStart();
 		}
 
 		public void OnMapReady(MapboxMap map)
@@ -67,6 +69,12 @@ namespace Naxam.MapboxQs
 		{
 			base.OnSaveInstanceState(outState);
 			mapView.OnSaveInstanceState(outState);
+		}
+
+		protected override void OnStop()
+		{
+			base.OnStop();
+			mapView.OnStop();
 		}
 
 		protected override void OnDestroy()
