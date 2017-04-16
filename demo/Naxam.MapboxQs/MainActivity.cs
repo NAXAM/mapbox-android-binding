@@ -1,15 +1,20 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-using Mapbox.Sdk;
-using Mapbox.Sdk.Geometry;
-using Mapbox.Sdk.Camera;
-using Mapbox.Sdk.Maps;
-using Mapbox.Sdk.Style;
+using MapboxAccountManager = Mapbox.MapboxSdk.Mapbox;
+using Mapbox.MapboxSdk.Geometry;
+using Mapbox.MapboxSdk.Camera;
+using Mapbox.MapboxSdk.Maps;
+using Mapbox.MapboxSdk.Style;
 using Android.Support.V7.App;
+using Mapbox.MapboxSdk.Annotations;
 
 namespace Naxam.MapboxQs
 {
+	public class X : Marker.IMarkerListener { 
+	
+	}
+
 	[Activity(Label = "MapboxQs", MainLauncher = true, Icon = "@mipmap/icon", Theme="@style/MyTheme")]
 	public class MainActivity : AppCompatActivity, IOnMapReadyCallback
 	{
@@ -21,7 +26,7 @@ namespace Naxam.MapboxQs
 			//ToolbarResource = Resource.Layout.Toolbar;
 
 			base.OnCreate(bundle);
-			MapboxAccountManager.Start(this, Resources.GetString(Resource.String.access_token));
+			MapboxAccountManager.GetInstance(this, Resources.GetString(Resource.String.access_token));
 
 			SetContentView(Resource.Layout.Main);
 
