@@ -1,13 +1,11 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-using MapboxAccountManager = Mapbox.MapboxSdk.Mapbox;
-using Mapbox.MapboxSdk.Geometry;
-using Mapbox.MapboxSdk.Camera;
-using Mapbox.MapboxSdk.Maps;
-using Mapbox.MapboxSdk.Style;
+using MapboxAccountManager = Com.Mapbox.Mapboxsdk.Mapbox;
+using Com.Mapbox.Mapboxsdk.Maps;
 using Android.Support.V7.App;
-using Mapbox.MapboxSdk.Annotations;
+using Com.Mapbox.Mapboxsdk.Camera;
+using Com.Mapbox.Mapboxsdk.Geometry;
 
 namespace Naxam.MapboxQs
 {
@@ -51,6 +49,7 @@ namespace Naxam.MapboxQs
 						   .Build(); // Creates a CameraPosition from the builder
 
 			map.AnimateCamera(CameraUpdateFactory.NewCameraPosition(position));
+
 		}
 
 		protected override void OnResume()

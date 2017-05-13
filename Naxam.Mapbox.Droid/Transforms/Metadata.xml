@@ -7,31 +7,10 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
-	<attr path="/api/package[@name='com.almeros.android.multitouch.gesturedetectors']" name="managedName">Almeros.Multitouch.Gesturedetectors</attr>
-	
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk']" name="managedName">Mapbox.MapboxSdk</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.annotations']" name="managedName">Mapbox.MapboxSdk.Annotations</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.camera']" name="managedName">Mapbox.MapboxSdk.Camera</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.constants']" name="managedName">Mapbox.MapboxSdk.Constants</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.exceptions']" name="managedName">Mapbox.MapboxSdk.Exceptions</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.geometry']" name="managedName">Mapbox.MapboxSdk.Geometry</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.http']" name="managedName">Mapbox.MapboxSdk.Http</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.location']" name="managedName">Mapbox.MapboxSdk.Location</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.maps']" name="managedName">Mapbox.MapboxSdk.Maps</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.maps.widgets']" name="managedName">Mapbox.MapboxSdk.Maps.Widgets</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.net']" name="managedName">Mapbox.MapboxSdk.Net</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.offline']" name="managedName">Mapbox.MapboxSdk.Offline</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.storage']" name="managedName">Mapbox.MapboxSdk.Style.Storage</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.style.functions']" name="managedName">Mapbox.MapboxSdk.Style.Functions</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.style.layers']" name="managedName">Mapbox.MapboxSdk.Style.Layers</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.style.sources']" name="managedName">Mapbox.MapboxSdk.Style.Sources</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.style.functions.stops']" name="managedName">Mapbox.Mapboxsdk.Style.Functions.Stops</attr>
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.utils']" name="managedName">Mapbox.MapboxSdk.Utils</attr>
-
 	<attr path="/api/package[@name='com.mapbox.mapboxsdk.style.functions.stops']/class[@name='Stops']/method[@name='getTypeName']" name="visibility">public</attr>
 	<attr path="/api/package[@name='com.mapbox.mapboxsdk.style.functions.stops']/class[@name='IdentityStops']/method[@name='getTypeName']" name="visibility">public</attr>
 
-	<attr path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='queryRenderedFeatures']" name="managedReturn">System.Collections.Generic.IList&lt;Mapbox.Services.Commons.Geojson.Feature&gt;</attr>
+	<attr path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='queryRenderedFeatures']" name="managedReturn">System.Collections.Generic.IList&lt;Com.Mapbox.Services.Commons.Geojson.Feature&gt;</attr>
 	<attr path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='Transform']" name="visibility">public</attr>
 	<attr path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='MarkerViewManager.ImageMarkerViewAdapter']/method[@name='getView']/parameter[@name='p0']" name="type">Java.Lang.Object</attr>
 

@@ -3298,8 +3298,8 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f0c003e
 			public const int access_token = 2131492926;
 			
-			// aapt resource value: 0x7f0c003c
-			public const int app_name = 2131492924;
+			// aapt resource value: 0x7f0c0029
+			public const int app_name = 2131492905;
 			
 			// aapt resource value: 0x7f0c0000
 			public const int appbar_scrolling_view_behavior = 2131492864;
@@ -3313,62 +3313,62 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f0c003d
 			public const int hello = 2131492925;
 			
-			// aapt resource value: 0x7f0c0029
-			public const int mapbox_attributionTelemetryMessage = 2131492905;
-			
 			// aapt resource value: 0x7f0c002a
-			public const int mapbox_attributionTelemetryNegative = 2131492906;
+			public const int mapbox_attributionTelemetryMessage = 2131492906;
 			
 			// aapt resource value: 0x7f0c002b
-			public const int mapbox_attributionTelemetryNeutral = 2131492907;
+			public const int mapbox_attributionTelemetryNegative = 2131492907;
 			
 			// aapt resource value: 0x7f0c002c
-			public const int mapbox_attributionTelemetryPositive = 2131492908;
+			public const int mapbox_attributionTelemetryNeutral = 2131492908;
 			
 			// aapt resource value: 0x7f0c002d
-			public const int mapbox_attributionTelemetryTitle = 2131492909;
+			public const int mapbox_attributionTelemetryPositive = 2131492909;
 			
 			// aapt resource value: 0x7f0c002e
-			public const int mapbox_attributionsDialogTitle = 2131492910;
+			public const int mapbox_attributionTelemetryTitle = 2131492910;
 			
 			// aapt resource value: 0x7f0c002f
-			public const int mapbox_attributionsIconContentDescription = 2131492911;
+			public const int mapbox_attributionsDialogTitle = 2131492911;
 			
 			// aapt resource value: 0x7f0c0030
-			public const int mapbox_compassContentDescription = 2131492912;
+			public const int mapbox_attributionsIconContentDescription = 2131492912;
 			
 			// aapt resource value: 0x7f0c0031
-			public const int mapbox_infoWindowAddress = 2131492913;
+			public const int mapbox_compassContentDescription = 2131492913;
 			
 			// aapt resource value: 0x7f0c0032
-			public const int mapbox_infoWindowDescription = 2131492914;
+			public const int mapbox_infoWindowAddress = 2131492914;
 			
 			// aapt resource value: 0x7f0c0033
-			public const int mapbox_infoWindowTitle = 2131492915;
+			public const int mapbox_infoWindowDescription = 2131492915;
 			
 			// aapt resource value: 0x7f0c0034
-			public const int mapbox_mapActionDescription = 2131492916;
+			public const int mapbox_infoWindowTitle = 2131492916;
 			
 			// aapt resource value: 0x7f0c0035
-			public const int mapbox_myLocationViewContentDescription = 2131492917;
+			public const int mapbox_mapActionDescription = 2131492917;
 			
 			// aapt resource value: 0x7f0c0036
-			public const int mapbox_style_dark = 2131492918;
+			public const int mapbox_myLocationViewContentDescription = 2131492918;
 			
 			// aapt resource value: 0x7f0c0037
-			public const int mapbox_style_light = 2131492919;
+			public const int mapbox_style_dark = 2131492919;
 			
 			// aapt resource value: 0x7f0c0038
-			public const int mapbox_style_mapbox_streets = 2131492920;
+			public const int mapbox_style_light = 2131492920;
 			
 			// aapt resource value: 0x7f0c0039
-			public const int mapbox_style_outdoors = 2131492921;
+			public const int mapbox_style_mapbox_streets = 2131492921;
 			
 			// aapt resource value: 0x7f0c003a
-			public const int mapbox_style_satellite = 2131492922;
+			public const int mapbox_style_outdoors = 2131492922;
 			
 			// aapt resource value: 0x7f0c003b
-			public const int mapbox_style_satellite_streets = 2131492923;
+			public const int mapbox_style_satellite = 2131492923;
+			
+			// aapt resource value: 0x7f0c003c
+			public const int mapbox_style_satellite_streets = 2131492924;
 			
 			// aapt resource value: 0x7f0c0003
 			public const int password_toggle_content_description = 2131492867;

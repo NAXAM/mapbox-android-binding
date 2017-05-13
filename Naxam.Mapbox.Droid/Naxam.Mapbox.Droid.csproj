@@ -87,9 +87,6 @@
     <Reference Include="Naxam.SquareUp.OkHttp3">
       <HintPath>..\packages\Naxam.SquareUp.OkHttp3.3.6.0\lib\MonoAndroid10\Naxam.SquareUp.OkHttp3.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.Mapbox.Services.Android.Telemetry">
-      <HintPath>..\packages\Naxam.Mapbox.Services.Android.Telemetry.2.0.0.1\lib\MonoAndroid10\Naxam.Mapbox.Services.Android.Telemetry.dll</HintPath>
-    </Reference>
     <Reference Include="Naxam.Jakewharton.Timber">
       <HintPath>..\packages\Naxam.Jakewharton.Timber.4.5.1\lib\MonoAndroid10\Naxam.Jakewharton.Timber.dll</HintPath>
     </Reference>
@@ -97,10 +94,13 @@
       <HintPath>..\packages\Naxam.Google.Gson.2.8.0\lib\MonoAndroid10\Naxam.Google.Gson.dll</HintPath>
     </Reference>
     <Reference Include="Naxam.Mapbox.MapboxJavaCore">
-      <HintPath>..\packages\Naxam.Mapbox.MapboxJavaCore.2.0.0.1\lib\MonoAndroid10\Naxam.Mapbox.MapboxJavaCore.dll</HintPath>
+      <HintPath>..\packages\Naxam.Mapbox.MapboxJavaCore.2.0.0.2\lib\MonoAndroid10\Naxam.Mapbox.MapboxJavaCore.dll</HintPath>
     </Reference>
     <Reference Include="Naxam.Mapbox.MapboxJavaGeojson">
-      <HintPath>..\packages\Naxam.Mapbox.MapboxJavaGeojson.2.0.0\lib\MonoAndroid10\Naxam.Mapbox.MapboxJavaGeojson.dll</HintPath>
+      <HintPath>..\packages\Naxam.Mapbox.MapboxJavaGeojson.2.0.0.1\lib\MonoAndroid10\Naxam.Mapbox.MapboxJavaGeojson.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.Mapbox.Services.Android.Telemetry">
+      <HintPath>..\packages\Naxam.Mapbox.Services.Android.Telemetry.2.0.0.2\lib\MonoAndroid10\Naxam.Mapbox.Services.Android.Telemetry.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

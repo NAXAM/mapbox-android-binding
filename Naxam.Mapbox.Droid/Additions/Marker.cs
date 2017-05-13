@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Mapbox.MapboxSdk.Annotations
+namespace Com.Mapbox.Mapboxsdk.Annotations
 {
 	public partial class Marker
 	{
