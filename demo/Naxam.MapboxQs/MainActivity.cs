@@ -1,16 +1,15 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-using Mapbox.Sdk;
-using Mapbox.Sdk.Geometry;
-using Mapbox.Sdk.Camera;
-using Mapbox.Sdk.Maps;
-using Mapbox.Sdk.Style;
+using MapboxAccountManager = Com.Mapbox.Mapboxsdk.Mapbox;
+using Com.Mapbox.Mapboxsdk.Maps;
 using Android.Support.V7.App;
+using Com.Mapbox.Mapboxsdk.Camera;
+using Com.Mapbox.Mapboxsdk.Geometry;
 
 namespace Naxam.MapboxQs
 {
-	[Activity(Label = "MapboxQs", MainLauncher = true, Icon = "@mipmap/icon", Theme="@style/MyTheme")]
+	[Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/icon", Theme="@style/MyTheme")]
 	public class MainActivity : AppCompatActivity, IOnMapReadyCallback
 	{
 		MapView mapView;
@@ -21,7 +20,7 @@ namespace Naxam.MapboxQs
 			//ToolbarResource = Resource.Layout.Toolbar;
 
 			base.OnCreate(bundle);
-			MapboxAccountManager.Start(this, Resources.GetString(Resource.String.access_token));
+			MapboxAccountManager.GetInstance(this, Resources.GetString(Resource.String.access_token));
 
 			SetContentView(Resource.Layout.Main);
 
@@ -36,6 +35,12 @@ namespace Naxam.MapboxQs
 			//LoadApplication(new App());
 		}
 
+		protected override void OnStart()
+		{
+			base.OnStart();
+			mapView.OnStart();
+		}
+
 		public void OnMapReady(MapboxMap map)
 		{
 			var position = new CameraPosition.Builder()
@@ -44,6 +49,7 @@ namespace Naxam.MapboxQs
 						   .Build(); // Creates a CameraPosition from the builder
 
 			map.AnimateCamera(CameraUpdateFactory.NewCameraPosition(position));
+
 		}
 
 		protected override void OnResume()
@@ -62,6 +68,12 @@ namespace Naxam.MapboxQs
 		{
 			base.OnSaveInstanceState(outState);
 			mapView.OnSaveInstanceState(outState);
+		}
+
+		protected override void OnStop()
+		{
+			base.OnStop();
+			mapView.OnStop();
 		}
 
 		protected override void OnDestroy()

@@ -1,11 +1,11 @@
 ﻿using System;
-namespace Mapbox.Sdk.Annotations
+namespace Com.Mapbox.Mapboxsdk.Annotations
 {
 	public partial class Marker
 	{
 		public override int CompareTo(Java.Lang.Object obj)
 		{
-			return 0;
+			return CompareTo((Marker)obj);
 		}
 	}
 
@@ -13,7 +13,7 @@ namespace Mapbox.Sdk.Annotations
 	{
 		public override int CompareTo(Java.Lang.Object obj)
 		{
-			return 0;
+			return CompareTo((Polygon)obj);
 		}
 	}
 
@@ -21,7 +21,7 @@ namespace Mapbox.Sdk.Annotations
 	{
 		public override int CompareTo(Java.Lang.Object obj)
 		{
-			return 0;
+			return CompareTo((Polyline)obj);
 		}
 	}
 

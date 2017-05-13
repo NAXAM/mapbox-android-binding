@@ -3,7 +3,7 @@
     <metadata>
         <!-- Required elements-->
         <id>Naxam.Mapbox.Droid</id>
-       <version>4.2.2</version>
+        <version>5.0.2</version>
         <description>Xamarin Binding Library - Mapbox Android SDK</description>
         <authors>Vu Duc Tuyen</authors>
         <owners>NAXAM CO.,LTD</owners>
@@ -16,28 +16,16 @@
         <copyright>(c) 2017 NAXAM</copyright>
         <tags>Xamarin.Android, Mapbox</tags>
         <dependencies>
-            <dependency id="Square.OkHttp3" version="3.5.0" />
-            <dependency id="Square.OkIO" version="1.11.0" />
-            <dependency id="Xamarin.Android.Support.Animated.Vector.Drawable" version="23.3.0" />
-            <dependency id="Xamarin.Android.Support.Design" version="23.3.0" />
-            <dependency id="Xamarin.Android.Support.v4" version="23.3.0" />
-            <dependency id="Xamarin.Android.Support.v7.AppCompat" version="23.3.0" />
-            <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="23.3.0" />
-            <dependency id="Xamarin.Android.Support.Vector.Drawable" version="23.3.0" />
-            <dependency id="GoogleGson" version="2.6.2.0" />
+            <dependency id="Naxam.SquareUp.OkHttp3" version="3.6.0" />
+            <dependency id="Xamarin.Android.Support.Design" version="25.1.1" />
+            <dependency id="Xamarin.Android.Support.v4" version="25.1.1" />
+            <dependency id="Naxam.Mapbox.MapboxJavaGeojson" version="2.0.0.2" />
+            <dependency id="Naxam.Mapbox.Services.Android.Telemetry" version="2.0.0.2" />
+            <dependency id="Naxam.Mapzen.Lost.Droid" version="[2.1.2.1]" />
+            <dependency id="Naxam.Jakewharton.Timber" version="4.5.1" />
         </dependencies>
     </metadata>
-    <!-- Optional 'files' node -->
     <files>
         <file src="Naxam.Mapbox.Droid/bin/Release/Naxam.Mapbox.Droid.dll" target="lib/MonoAndroid10/Naxam.Mapbox.Droid.dll" />
-        <!--<file src="Naxam.I18n/bin/Release/Naxam.I18n.xml" target="lib/MonoAndroid10/Naxam.I18n.xml" />-->
-        <file src="Naxam.Mapbox.Services.Droid/bin/Release/Naxam.Mapbox.Services.Droid.dll" target="lib/MonoAndroid10/Naxam.Mapbox.Services.Droid.dll" />
-        <!--<file src="Naxam.I18n.Forms/bin/Release/Naxam.I18n.Forms.xml" target="lib/MonoAndroid10/Naxam.I18n.Forms.xml" />-->
-        <file src="Naxam.Mapzen.Droid/bin/Release/Naxam.Mapzen.Droid.dll" target="lib/MonoAndroid10/Naxam.Mapzen.Droid.dll" />
-        <!--<file src="Naxam.I18n.Platform.Droid/bin/Release/Naxam.I18n.Platform.Droid.xml" target="lib/MonoAndroid10/Naxam.I18n.Platform.Droid.xml" />-->
-
-        <file src="Naxam.Mapzen.Lost.Droid/bin/Release/Naxam.Mapzen.Lost.Droid.dll" target="lib/MonoAndroid10/Naxam.Mapzen.Lost.Droid.dll" />
-        <file src="Naxam.Retrofit2.ConvertJson.Droid/bin/Release/Naxam.Retrofit2.ConvertGson.Droid.dll" target="lib/MonoAndroid10/Naxam.Retrofit2.ConvertGson.Droid.dll" />
-        <file src="Naxam.Retrofit2.Droid/bin/Release/Naxam.Retrofit2.Droid.dll" target="lib/MonoAndroid10/Naxam.Retrofit2.Droid.dll" />
     </files>
 </package>
