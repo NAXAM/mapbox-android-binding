@@ -9,7 +9,7 @@ using Com.Mapbox.Mapboxsdk.Geometry;
 
 namespace Naxam.MapboxQs
 {
-	[Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/icon", Theme="@style/MyTheme")]
+	[Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/ic_launcher", Theme="@style/MyTheme")]
 	public class MainActivity : AppCompatActivity, IOnMapReadyCallback
 	{
 		MapView mapView;

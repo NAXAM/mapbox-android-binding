@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-	<!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
 	<attr path="/api/package[@name='com.mapbox.mapboxsdk.style.functions.stops']/class[@name='Stops']/method[@name='getTypeName']" name="visibility">public</attr>
 	<attr path="/api/package[@name='com.mapbox.mapboxsdk.style.functions.stops']/class[@name='IdentityStops']/method[@name='getTypeName']" name="visibility">public</attr>
 
@@ -14,7 +7,10 @@
 	<attr path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='Transform']" name="visibility">public</attr>
 	<attr path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='MarkerViewManager.ImageMarkerViewAdapter']/method[@name='getView']/parameter[@name='p0']" name="type">Java.Lang.Object</attr>
 
-	<remove-node path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnRegisterTouchListener']" />
+	<remove-node path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnRegisterTouchListener']" />   
+    <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapView.RegisterTouchListener']" />
 	<remove-node path="/api/package[@name='com.almeros.android.multitouch.gesturedetectors']/class[@name='TwoFingerGestureDetector']/method[@name='handleInProgressEvent']" />
 	<remove-node path="/api/package[@name='com.almeros.android.multitouch.gesturedetectors']/class[@name='TwoFingerGestureDetector']/method[@name='handleStartProgressEvent']" />
+
+	<remove-node path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='PolygonOptions']/method[@name='addHole' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.mapbox.mapboxsdk.geometry.LatLng&gt;...']]" />
 </metadata>
