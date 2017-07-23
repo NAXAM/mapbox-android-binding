@@ -38,10 +38,29 @@ namespace Com.Mapbox.Mapboxsdk.Annotations
 		{
 			get { return This; }
 		}
-	}
 
+        public MarkerOptions SetIcon(Icon p0)
+        {
+            return (base.SetIcon(p0) as MarkerOptions);
+        }
 
-	public partial class MarkerViewOptions
+        public MarkerOptions SetPosition(Geometry.LatLng p0)
+        {
+            return (base.SetPosition(p0) as MarkerOptions);
+        }
+
+        public MarkerOptions SetSnippet(string p0)
+        {
+            return (base.SetSnippet(p0) as MarkerOptions);
+        }
+
+        public MarkerOptions SetTitle(string p0)
+        {
+            return (base.SetTitle(p0) as MarkerOptions);
+        }
+    }
+    
+    public partial class MarkerViewOptions
 	{
 		protected override Java.Lang.Object RawMarker
 		{
@@ -52,7 +71,77 @@ namespace Com.Mapbox.Mapboxsdk.Annotations
 		{
 			get { return This; }
 		}
-	}
+	
+        public MarkerViewOptions InvokeAlpha(float p0)
+        {
+            return (base.InvokeAlpha(p0) as MarkerViewOptions);
+        }
+
+        public MarkerViewOptions Anchor(float p0, float p1)
+        {
+            return (base.Anchor(p0, p1) as MarkerViewOptions);
+        }
+
+        public MarkerViewOptions InvokeAnchor(float p0, float p1)
+        {
+            return (base.Anchor(p0, p1) as MarkerViewOptions);
+        }
+
+        public MarkerViewOptions Flat(bool p0)
+        {
+            return (base.Flat(p0) as MarkerViewOptions);
+        }
+
+        public MarkerViewOptions InvokeFlat(bool p0)
+        {
+            return (base.Flat(p0) as MarkerViewOptions);
+        }
+
+        public MarkerViewOptions InvokeIcon(Icon p0)
+        {
+            return (base.InvokeIcon(p0) as MarkerViewOptions);
+        }
+
+        public MarkerViewOptions InfoWindowAnchor(float p0, float p1)
+        {
+            return (base.InfoWindowAnchor(p0, p1) as MarkerViewOptions);
+        }
+
+        public MarkerViewOptions InvokeInfoWindowAnchor(float p0, float p1)
+        {
+            return (base.InfoWindowAnchor(p0, p1) as MarkerViewOptions);
+        }
+
+        public MarkerViewOptions InvokePosition(Geometry.LatLng p0)
+        {
+            return (base.InvokePosition(p0) as MarkerViewOptions);
+        }
+
+        public MarkerViewOptions InvokeRotation(float p0)
+        {
+            return (base.InvokeRotation(p0) as MarkerViewOptions);
+        }
+
+        public MarkerViewOptions InvokeSnippet(string p0)
+        {
+            return (base.InvokeSnippet(p0) as MarkerViewOptions);
+        }
+
+        public MarkerViewOptions InvokeTitle(string p0)
+        {
+            return (base.InvokeTitle(p0) as MarkerViewOptions);
+        }
+
+        public MarkerViewOptions Visible(bool p0)
+        {
+            return (base.Visible(p0) as MarkerViewOptions);
+        }
+
+        public MarkerViewOptions InvokeVisible(bool p0)
+        {
+            return (base.Visible(p0) as MarkerViewOptions);
+        }
+    }
 
     partial class PolygonOptions {
 
