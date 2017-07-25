@@ -6,6 +6,7 @@ using Com.Mapbox.Mapboxsdk.Maps;
 using Android.Support.V7.App;
 using Com.Mapbox.Mapboxsdk.Camera;
 using Com.Mapbox.Mapboxsdk.Geometry;
+using Com.Mapbox.Mapboxsdk.Annotations;
 
 namespace Naxam.MapboxQs
 {
@@ -30,9 +31,17 @@ namespace Naxam.MapboxQs
 
 			mapView.GetMapAsync(this);
 
-			//global::Xamarin.Forms.Forms.Init(this, bundle);
+            //global::Xamarin.Forms.Forms.Init(this, bundle);
 
-			//LoadApplication(new App());
+            //LoadApplication(new App());
+
+            MarkerOptions options = new MarkerOptions()
+                .SetTitle("Hello")
+				.This<MarkerOptions>();
+            
+			MarkerViewOptions viewOptions = new MarkerViewOptions()
+                .InvokeTitle("Hello")
+				.This<MarkerViewOptions>();
 		}
 
 		protected override void OnStart()
