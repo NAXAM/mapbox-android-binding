@@ -3,25 +3,24 @@
     <metadata>
         <!-- Required elements-->
         <id>Naxam.Mapbox.Droid</id>
-        <version>5.1.1.2</version>
+        <version>5.2.0</version>
         <authors>NAXAM</authors>
         <owners>NAXAM COMPANY LIMITED</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <title>Naxam - Mapbox Android SDK</title>
-        <summary>Xamarin Binding Library - Mapbox Android SDK</summary>
+        <summary>Mapbox Android SDK 5.2.0</summary>
         <description>Xamarin Binding Library - Mapbox Android SDK</description>
         <iconUrl>https://avatars0.githubusercontent.com/u/600935</iconUrl>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
-        <projectUrl>https://github.com/NAXAM/xam-mapbox-android</projectUrl>
+        <projectUrl>https://github.com/NAXAM/mapbox-android-binding</projectUrl>
         <copyright>Copyright (c) 2017 NAXAM</copyright>
-        <tags>Xamarin.Android, Mapbox</tags>
+        <tags>xamarin, Xamarin.Android, Mapbox</tags>
         <dependencies>
-            <dependency id="Naxam.SquareUp.OkHttp3" version="3.7.0" />
-            <dependency id="Xamarin.Android.Support.Design" version="25.3.1" />
-            <dependency id="Xamarin.Android.Support.v4" version="25.3.1" />
-            <dependency id="Naxam.Mapbox.MapboxJavaGeojson" version="2.1.3" />
-            <dependency id="Naxam.Mapbox.Services.Android.Telemetry" version="2.1.3" />
-            <dependency id="Naxam.Mapzen.Lost.Droid" version="[1.1.1]" />
+            <dependency id="Square.OkHttp3" version="3.8.1" />
+            <dependency id="Xamarin.Android.Support.Design" version="26.1.0.1" />
+            <dependency id="Xamarin.Android.Support.v4" version="26.1.0.1" />
+            <dependency id="Naxam.Mapbox.MapboxJavaGeojson" version="2.2.9" />
+            <dependency id="Naxam.Mapbox.Services.Android.Telemetry" version="2.2.9.2" />
             <dependency id="Naxam.Jakewharton.Timber" version="4.5.1" />
         </dependencies>
     </metadata>
