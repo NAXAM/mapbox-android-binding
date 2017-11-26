@@ -20,7 +20,7 @@
             <dependency id="Xamarin.Android.Support.Design" version="26.1.0.1" />
             <dependency id="Xamarin.Android.Support.v4" version="26.1.0.1" />
             <dependency id="Naxam.Mapbox.MapboxJavaGeojson" version="2.2.9" />
-            <dependency id="Naxam.Mapbox.Services.Android.Telemetry" version="2.2.9.2" />
+            <dependency id="Naxam.Mapbox.Services.Android.Telemetry" version="2.2.9.3" />
             <dependency id="Naxam.Jakewharton.Timber" version="4.5.1" />
         </dependencies>
     </metadata>
