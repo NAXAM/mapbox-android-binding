@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="com.mapbox.services.android">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="com.mapbox.services.android.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.mapbox.services.android&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="2100" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;2.1.0-SNAPSHOT&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Constants" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Constants" static="false" type="com.mapbox.services.android.Constants" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_ARRIVE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;arrive&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_CONTINUE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;continue&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_DEPART" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;depart&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_END_OF_ROAD" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;end of road&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_EXIT_ROTARY" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;exit rotary&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_EXIT_ROUNDABOUT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;exit roundabout&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_FORK" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;fork&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_MERGE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;merge&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_NEW_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;new name&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_NOTIFICATION" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;notification&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_OFF_RAMP" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;off ramp&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_ON_RAMP" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;on ramp&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_ROTARY" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;rotary&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_ROUNDABOUT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;roundabout&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_ROUNDABOUT_TURN" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;roundabout turn&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_TURN" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;turn&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STEP_MANEUVER_TYPE_USE_LANE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;use lane&quot;" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+<package name="com.mapbox.services.android.geocoder">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AndroidGeocoder" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AndroidGeocoder" static="false" type="com.mapbox.services.android.geocoder.AndroidGeocoder" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.util.Locale">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AndroidGeocoder" static="false" type="com.mapbox.services.android.geocoder.AndroidGeocoder" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFromLocation" native="false" return="java.util.List&lt;android.location.Address&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+<parameter name="p1" type="double">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="ServicesException" type="com.mapbox.services.api.ServicesException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFromLocationName" native="false" return="java.util.List&lt;android.location.Address&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="ServicesException" type="com.mapbox.services.api.ServicesException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFromLocationName" native="false" return="java.util.List&lt;android.location.Address&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="double">
+</parameter>
+<parameter name="p3" type="double">
+</parameter>
+<parameter name="p4" type="double">
+</parameter>
+<parameter name="p5" type="double">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="ServicesException" type="com.mapbox.services.api.ServicesException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPresent" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAccessToken" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="GeocoderUtils" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GeocoderUtils" static="false" type="com.mapbox.services.android.geocoder.GeocoderUtils" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="featureToAddress" native="false" return="android.location.Address" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="com.mapbox.services.api.geocoding.v5.models.CarmenFeature">
+</parameter>
+<parameter name="p1" type="java.util.Locale">
+</parameter>
+</method>
+</class>
+</package>
+<package name="com.mapbox.services.android.location">
+<class abstract="false" deprecated="not deprecated" extends="com.mapbox.services.android.telemetry.location.LocationEngine" extends-generic-aware="com.mapbox.services.android.telemetry.location.LocationEngine" final="false" name="LostLocationEngine" static="false" visibility="public">
+<implements name="com.mapzen.android.lost.api.LocationListener" name-generic-aware="com.mapzen.android.lost.api.LocationListener">
+</implements>
+<implements name="com.mapzen.android.lost.api.LostApiClient.ConnectionCallbacks" name-generic-aware="com.mapzen.android.lost.api.LostApiClient.ConnectionCallbacks">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="LostLocationEngine" static="false" type="com.mapbox.services.android.location.LostLocationEngine" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="activate" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="deactivate" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLastLocation" native="false" return="android.location.Location" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocationEngine" native="false" return="com.mapbox.services.android.telemetry.location.LocationEngine" static="true" synchronized="true" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtainType" native="false" return="com.mapbox.services.android.telemetry.location.LocationEngine.Type" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onConnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onConnectionSuspended" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onLocationChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.location.Location">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeLocationUpdates" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestLocationUpdates" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.mapbox.services.android.telemetry.location.LocationEngine" extends-generic-aware="com.mapbox.services.android.telemetry.location.LocationEngine" final="false" name="MockLocationEngine" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MockLocationEngine" static="false" type="com.mapbox.services.android.location.MockLocationEngine" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="MockLocationEngine" static="false" type="com.mapbox.services.android.location.MockLocationEngine" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="activate" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="deactivate" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDelay" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLastLocation" native="false" return="android.location.Location" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpeed" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isNoisyGps" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="moveToLocation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.mapbox.services.commons.models.Position">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtainType" native="false" return="com.mapbox.services.android.telemetry.location.LocationEngine.Type" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeLocationUpdates" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestLocationUpdates" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLastLocation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.mapbox.services.commons.models.Position">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRoute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.mapbox.services.api.directions.v5.models.DirectionsRoute">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MockLocationEngine.1" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MockLocationEngine.LocationUpdateRunnable" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package>
+</api>

@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.MapboxService.Java", "Naxam.MapboxService.Java\Naxam.MapboxService.Java.csproj", "{F49A6B44-EDBA-4CB8-9287-2B5226257A7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapboxServiceJavaQs", "MapboxServiceJavaQs\MapboxServiceJavaQs.csproj", "{0F92E41C-A139-4D10-ACC1-5C640EC38E7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapboxServiceAndroidQs", "MapboxServiceAndroidQs\MapboxServiceAndroidQs.csproj", "{0C563CA5-62EF-4106-BCD2-4B7E677F02E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.MapboxSerivce.Android", "Naxam.MapboxSerivce.Android\Naxam.MapboxSerivce.Android.csproj", "{0DCA035B-EE64-40F6-9162-0F1B95FF7C1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F49A6B44-EDBA-4CB8-9287-2B5226257A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F49A6B44-EDBA-4CB8-9287-2B5226257A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F49A6B44-EDBA-4CB8-9287-2B5226257A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F49A6B44-EDBA-4CB8-9287-2B5226257A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F92E41C-A139-4D10-ACC1-5C640EC38E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F92E41C-A139-4D10-ACC1-5C640EC38E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F92E41C-A139-4D10-ACC1-5C640EC38E7F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0F92E41C-A139-4D10-ACC1-5C640EC38E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F92E41C-A139-4D10-ACC1-5C640EC38E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F92E41C-A139-4D10-ACC1-5C640EC38E7F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0C563CA5-62EF-4106-BCD2-4B7E677F02E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C563CA5-62EF-4106-BCD2-4B7E677F02E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C563CA5-62EF-4106-BCD2-4B7E677F02E9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0C563CA5-62EF-4106-BCD2-4B7E677F02E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C563CA5-62EF-4106-BCD2-4B7E677F02E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C563CA5-62EF-4106-BCD2-4B7E677F02E9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0DCA035B-EE64-40F6-9162-0F1B95FF7C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DCA035B-EE64-40F6-9162-0F1B95FF7C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DCA035B-EE64-40F6-9162-0F1B95FF7C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DCA035B-EE64-40F6-9162-0F1B95FF7C1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3E41E4D-C8E4-4DE8-A5D4-BF993AE9D485}
+	EndGlobalSection
+EndGlobal

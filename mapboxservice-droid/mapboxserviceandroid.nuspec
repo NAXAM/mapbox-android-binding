@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Naxam.MapboxServiceAndroid</id>
+        <version>2.2.9</version>
+        <description>Xamarin Binding Library - Naxam Mapbox Service Android</description>
+        <authors>NAXAM</authors>
+        <owners>NAXAM CO.,LTD</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>Naxam - Naxam Mapbox Service Android</title>
+        <releaseNotes>Naxam Mapbox Service Android v2.2.9</releaseNotes>
+        <summary>Xamarin Binding Library - Naxam Mapbox Service Android</summary>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/NAXAM/MapboxService-Droid</projectUrl>
+        <copyright>Copyright (c) 2017 NAXAM</copyright>
+        <tags>Xamarin.Android, MapboxServiceAndroid, Mapbox Service Android</tags>
+        <dependencies>
+            <dependency id="Xamarin.Android.Support.v7.AppCompat" version="26.1.0.1"  />
+            <dependency id="Naxam.Jakewharton.Timber" version="4.5.1"  />
+            <dependency id="Naxam.Mapbox.Services.Android.Telemetry" version="2.2.9.3"  />
+            <dependency id="Naxam.Mapzen.Lost.Droid" version="3.0.4"  />
+            <dependency id="Naxam.MapboxServiceJava" version="2.2.9"  />
+        </dependencies>
+    </metadata>
+    <!-- Optional 'files' node -->
+    <files>
+        <file src="Naxam.MapboxSerivce.Android/bin/Release/Naxam.MapboxSerivce.Android.dll" target="lib/MonoAndroid10/Naxam.MapboxSerivce.Android.dll" />
+    </files>
+</package>
