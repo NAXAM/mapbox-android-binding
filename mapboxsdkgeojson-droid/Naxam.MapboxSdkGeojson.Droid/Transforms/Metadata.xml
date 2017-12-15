@@ -1,0 +1,32 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr
+    path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='BoundingBoxDeserializer']/method[@name='deserialize' and count(parameter)=3 and parameter[1][@type='com.google.gson.JsonElement'] and parameter[2][@type='java.lang.reflect.Type'] and parameter[3][@type='com.google.gson.JsonDeserializationContext']]"
+    name="managedName">GeojsonDeserialize</attr>
+
+  <attr
+    path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='GeometryDeserializer']/method[@name='deserialize' and count(parameter)=3 and parameter[1][@type='com.google.gson.JsonElement'] and parameter[2][@type='java.lang.reflect.Type'] and parameter[3][@type='com.google.gson.JsonDeserializationContext']]"
+    name="managedName">GeometryDeserialize</attr>
+
+  <attr
+    path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='PointDeserializer']/method[@name='deserialize' and count(parameter)=3 and parameter[1][@type='com.google.gson.JsonElement'] and parameter[2][@type='java.lang.reflect.Type'] and parameter[3][@type='com.google.gson.JsonDeserializationContext']]"
+    name="managedName">PointDeserialize</attr>
+  <remove-node
+    path="/api/package[@name='com.mapbox.geojson']/class[@name='LineString']/implements[@name='com.mapbox.geojson.Geometry']" />
+  <remove-node
+    path="/api/package[@name='com.mapbox.geojson']/class[@name='MultiPoint']/implements[@name='com.mapbox.geojson.Geometry']" />
+  <remove-node
+    path="/api/package[@name='com.mapbox.geojson']/class[@name='MultiLineString']/implements[@name='com.mapbox.geojson.Geometry']" />
+  <remove-node
+    path="/api/package[@name='com.mapbox.geojson']/class[@name='MultiPolygon']/implements[@name='com.mapbox.geojson.Geometry']" />
+  <remove-node
+    path="/api/package[@name='com.mapbox.geojson']/class[@name='Point']/implements[@name='com.mapbox.geojson.Geometry']" />
+  <remove-node
+    path="/api/package[@name='com.mapbox.geojson']/class[@name='Polygon']/implements[@name='com.mapbox.geojson.Geometry']" />
+</metadata>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Naxam.MapboxNavigationSDK</id>
+        <version>0.7.1</version>
+        <description>Xamarin Binding Library - Naxam Mapbox Navigation SDK</description>
+        <authors>NAXAM</authors>
+        <owners>NAXAM CO.,LTD</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>Naxam - Naxam Mapbox Navigation SDK</title>
+        <releaseNotes>Naxam Mapbox Navigation SDK v0.7.1</releaseNotes>
+        <summary>Xamarin Binding Library - Naxam Mapbox Navigation SDK</summary>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/NAXAM/MapboxSdkGeojson-Droid</projectUrl>
+        <copyright>Copyright (c) 2017 NAXAM</copyright>
+        <tags>Xamarin.Android, MapboxNavigationSDK, Mapbox Navigation SDK, Navigation</tags>
+        <dependencies>
+            <dependency id="Naxam.Jakewharton.Timber" version="4.5.1"  />
+            <dependency id="Naxam.MapboxServiceAndroid" version="2.2.9"  />
+            <dependency id="Naxam.MapboxSdkService" version="3.0.0"  />
+            <dependency id="Naxam.MapboxSdkTurf" version="3.0.0"  />
+             <dependency id="Xamarin.Android.Support.v7.AppCompat" version="26.1.0.1"  />
+        </dependencies>
+    </metadata>
+    <!-- Optional 'files' node -->
+    <files>
+        <file src="UpdatedLibrary/bin/Release/UpdatedLibrary.dll" target="lib/MonoAndroid10/UpdatedLibrary.dll" />
+    </files>
+</package>

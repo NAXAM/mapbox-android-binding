@@ -1,0 +1,34 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr
+    path="/api/package[@name='com.mapbox.services.android.navigation.v5.milestone']/class[@name='RouteMilestone.Builder']/method[@name='build' and count(parameter)=0]"
+    name="managedName">RouteBuild</attr>
+  <attr
+    path="/api/package[@name='com.mapbox.services.android.navigation.v5.milestone']/class[@name='RouteMilestone.Builder']/method[@name='setTrigger' and count(parameter)=1 and parameter[1][@type='com.mapbox.services.android.navigation.v5.milestone.Trigger.Statement']]"
+    name="managedName">RouteSetTrigger</attr>
+
+  <!--StepMilestone-->
+  <attr
+    path="/api/package[@name='com.mapbox.services.android.navigation.v5.milestone']/class[@name='StepMilestone.Builder']/method[@name='build' and count(parameter)=0]"
+    name="managedName">StepMilestoneBuild</attr>
+
+  <attr
+    path="/api/package[@name='com.mapbox.services.android.navigation.v5.milestone']/class[@name='StepMilestone.Builder']/method[@name='setTrigger' and count(parameter)=1 and parameter[1][@type='com.mapbox.services.android.navigation.v5.milestone.Trigger.Statement']]"
+    name="managedName">StepMilestonSetTrigger</attr>
+
+  <!--VoiceInstructionMilestone-->
+
+  <attr
+    path="/api/package[@name='com.mapbox.services.android.navigation.v5.milestone']/class[@name='VoiceInstructionMilestone.Builder']/method[@name='build' and count(parameter)=0]"
+    name="managedName">VoiceBuild</attr>
+
+  <attr
+    path="/api/package[@name='com.mapbox.services.android.navigation.v5.milestone']/class[@name='VoiceInstructionMilestone.Builder']/method[@name='setTrigger' and count(parameter)=1 and parameter[1][@type='com.mapbox.services.android.navigation.v5.milestone.Trigger.Statement']]"
+    name="managedName">VoiceSetTrigger</attr>
+</metadata>

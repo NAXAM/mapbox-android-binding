@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Naxam.MapboxSdkTurf</id>
+        <version>3.0.0</version>
+        <description>Xamarin Binding Library - Naxam Mapbox Sdk Turf</description>
+        <authors>NAXAM</authors>
+        <owners>NAXAM CO.,LTD</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>Naxam - Naxam Mapbox Sdk Turf</title>
+        <releaseNotes>Naxam Mapbox Sdk Turf v3.0.0</releaseNotes>
+        <summary>Xamarin Binding Library - Naxam Mapbox Sdk Turf</summary>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/NAXAM/MapboxSdkTurf-Droid</projectUrl>
+        <copyright>Copyright (c) 2017 NAXAM</copyright>
+        <tags>Xamarin.Android, MapboxSdkTurf, Mapbox Sdk Turf, Turf</tags>
+        <dependencies>
+             <dependency id="Naxam.MapboxSdkCore.Droid" version="3.0.0"  />
+             <dependency id="Naxam.MapboxSdkGeojson" version="3.0.0"  />
+        </dependencies>
+    </metadata>
+    <!-- Optional 'files' node -->
+    <files>
+        <file src="Naxam.MapboxSdkTurf.Droid/bin/Release/Naxam.MapboxSdkTurf.Droid.dll" target="lib/MonoAndroid10/Naxam.MapboxSdkTurf.Droid.dll" />
+    </files>
+</package>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Naxam.MapboxSdkGeojson</id>
+        <version>3.0.0</version>
+        <description>Xamarin Binding Library - Naxam Mapbox Sdk Geojson</description>
+        <authors>NAXAM</authors>
+        <owners>NAXAM CO.,LTD</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>Naxam - Naxam Mapbox Sdk Geojson</title>
+        <releaseNotes>Naxam Mapbox Sdk Geojson v3.0.0</releaseNotes>
+        <summary>Xamarin Binding Library - Naxam Mapbox Sdk Geojson</summary>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/NAXAM/MapboxSdkGeojson-Droid</projectUrl>
+        <copyright>Copyright (c) 2017 NAXAM</copyright>
+        <tags>Xamarin.Android, MapboxSdkGeojson, Mapbox Sdk Geojson, Geojson</tags>
+        <dependencies>
+            <dependency id="GoogleGson" version="2.8.1" />
+            <dependency id="Naxam.MapboxSdkCore.Droid" version="3.0.0"  />  
+        </dependencies>
+    </metadata>
+    <!-- Optional 'files' node -->
+    <files>
+        <file src="Naxam.MapboxSdkGeojson.Droid/bin/Release/Naxam.MapboxSdkGeojson.Droid.dll" target="lib/MonoAndroid10/Naxam.MapboxSdkGeojson.Droid.dll" />
+    </files>
+</package>

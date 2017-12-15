@@ -1,6 +1,63 @@
+<<<<<<< HEAD
 bin
 obj
 packages
 #*.nupkg
 *.userprefs
 .vs/
+=======
+# Autosave files
+*~
+
+# build
+[Oo]bj/
+[Bb]in/
+packages/
+TestResults/
+
+# globs
+Makefile.in
+*.DS_Store
+*.sln.cache
+*.suo
+*.cache
+*.pidb
+*.userprefs
+*.usertasks
+config.log
+config.make
+config.status
+aclocal.m4
+install-sh
+autom4te.cache/
+*.user
+*.tar.gz
+tarballs/
+test-results/
+Thumbs.db
+
+# Mac bundle stuff
+*.dmg
+*.app
+
+# resharper
+*_Resharper.*
+*.Resharper
+
+# dotCover
+*.dotCover
+*.ide
+.vs/
+UpgradeLog.htm
+*.bak
+Resource.designer.cs
+Btq.Login/ViewModels/LoginViewModel_BACKUP_10380.cs
+Btq.Login/ViewModels/LoginViewModel_BACKUP_10573.cs
+Btq.Login/ViewModels/LoginViewModel_BASE_10380.cs
+Btq.Login/ViewModels/LoginViewModel_BASE_10573.cs
+Btq.Login/ViewModels/LoginViewModel_LOCAL_10380.cs
+Btq.Login/ViewModels/LoginViewModel_LOCAL_10573.cs
+Btq.Login/ViewModels/LoginViewModel_REMOTE_10380.cs
+Btq.Login/ViewModels/LoginViewModel_REMOTE_10573.cs
+*.orig
+>>>>>>> init commit
