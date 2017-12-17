@@ -51,9 +51,6 @@
     <Reference Include="GoogleGson, Version=2.8.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\GoogleGson.2.8.1\lib\MonoAndroid\GoogleGson.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.MapboxSdkCore.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Naxam.MapboxSdkCore.Droid.3.0.0\lib\MonoAndroid10\Naxam.MapboxSdkCore.Droid.dll</HintPath>
-    </Reference>
     <Reference Include="Naxam.Retrofit2.ConvertGson.Droid, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Naxam.Retrofit2.ConvertGson.Droid.2.3.0.1\lib\MonoAndroid10\Naxam.Retrofit2.ConvertGson.Droid.dll</HintPath>
     </Reference>
@@ -99,6 +96,12 @@
     <Folder Include="Resources\mipmap-xhdpi\" />
     <Folder Include="Resources\mipmap-xxhdpi\" />
     <Folder Include="Resources\mipmap-xxxhdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Naxam.MapboxSdkCore.Droid\Naxam.MapboxSdkCore.Droid.csproj">
+      <Project>{24780DA1-E7C6-49F1-A936-45516FD2B53C}</Project>
+      <Name>Naxam.MapboxSdkCore.Droid</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
