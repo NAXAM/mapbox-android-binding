@@ -12,7 +12,7 @@
         <description>Xamarin.Android binding Library - Mapbox SdkGeojson</description>
         <iconUrl>https://avatars0.githubusercontent.com/u/600935</iconUrl>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
-        <projectUrl>https://github.com/NAXAM/mapboxsdkcore-android-binding</projectUrl>
+        <projectUrl>https://github.com/NAXAM/mapboxsdkgeojson-android-binding</projectUrl>
         <copyright>Copyright (c) 2017 NAXAM</copyright>
         <tags>xamarin, Xamarin.Android, Mapbox, mapbox-sdk-core, mapboxsdkcore</tags>
         <dependencies>
