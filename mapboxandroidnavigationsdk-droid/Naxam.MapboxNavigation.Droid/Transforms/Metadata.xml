@@ -18,4 +18,8 @@
 	<attr
 		path="/api/package[@name='com.mapbox.services.android.navigation.v5.milestone']/class[@name='VoiceInstructionMilestone.Builder']/method[@name='build' and count(parameter)=0]"
 		name="managedName">Build1</attr>
+
+    <attr
+        path="/api/package[@name='com.mapbox.services.android.navigation.v5.navigation']/class[@name='NavigationRoute']/method[@name='builder']"
+        name="managedName">GetBuilder</attr>
 </metadata>
