@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.MapboxSdkService.Droid", "Naxam.MapboxSdkService.Droid\Naxam.MapboxSdkService.Droid.csproj", "{074E03B9-BB68-4FB3-9463-39A4E1ED5E47}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapboxSdkServiceQs", "MapboxSdkServiceQs\MapboxSdkServiceQs.csproj", "{B5F0361B-8332-4B87-A6AE-1BCED0655D8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.MapboxSdkServices.Droid", "Naxam.MapboxSdkServices.Droid\Naxam.MapboxSdkServices.Droid.csproj", "{074E03B9-BB68-4FB3-9463-39A4E1ED5E47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +15,6 @@ Global
 		{074E03B9-BB68-4FB3-9463-39A4E1ED5E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{074E03B9-BB68-4FB3-9463-39A4E1ED5E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{074E03B9-BB68-4FB3-9463-39A4E1ED5E47}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5F0361B-8332-4B87-A6AE-1BCED0655D8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5F0361B-8332-4B87-A6AE-1BCED0655D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5F0361B-8332-4B87-A6AE-1BCED0655D8F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{B5F0361B-8332-4B87-A6AE-1BCED0655D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5F0361B-8332-4B87-A6AE-1BCED0655D8F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5F0361B-8332-4B87-A6AE-1BCED0655D8F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

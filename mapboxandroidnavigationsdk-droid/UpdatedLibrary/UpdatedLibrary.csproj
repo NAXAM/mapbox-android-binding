@@ -61,8 +61,8 @@
     <Reference Include="Naxam.MapboxSdkGeojson.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Naxam.MapboxSdkGeojson.3.0.0\lib\MonoAndroid10\Naxam.MapboxSdkGeojson.Droid.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.MapboxSdkService.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Naxam.MapboxSdkService.3.0.0\lib\MonoAndroid10\Naxam.MapboxSdkService.Droid.dll</HintPath>
+    <Reference Include="Naxam.MapboxSdkServices.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Naxam.MapboxSdkService.3.0.0\lib\MonoAndroid10\Naxam.MapboxSdkServices.Droid.dll</HintPath>
     </Reference>
     <Reference Include="Naxam.MapboxSdkTurf.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Naxam.MapboxSdkTurf.3.0.0\lib\MonoAndroid10\Naxam.MapboxSdkTurf.Droid.dll</HintPath>

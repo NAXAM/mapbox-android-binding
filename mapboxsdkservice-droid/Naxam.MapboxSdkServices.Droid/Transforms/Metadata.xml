@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<attr
+		path="/api/package[@name='com.mapbox.api.matching.v5']/class[@name='MapboxMapMatching']/field[@name='builder']"
+		name="managedName">_builder</attr>
+	<attr
+		path="/api/package[@name='com.mapbox.api.optimization.v1']/class[@name='MapboxOptimization']/field[@name='builder']"
+		name="managedName">_builder</attr>
+</metadata>
