@@ -6,13 +6,13 @@ using Android.App;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Naxam.MapboxSerivce.Android")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Naxam.MapboxServices.Java")]
+[assembly: AssemblyDescription("Xamarin.Android binding library - Mapbox Java Services")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Naxam.MapboxSerivce.Android")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("NAXAM CO.,LTD")]
+[assembly: AssemblyProduct("XBindings")]
+[assembly: AssemblyCopyright("Copyright © NAXMA 2017")]
+[assembly: AssemblyTrademark("NAXAM")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 
@@ -26,5 +26,4 @@ using Android.App;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("2.2.9")]

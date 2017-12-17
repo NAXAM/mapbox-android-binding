@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.MapboxService.Java", "Naxam.MapboxService.Java\Naxam.MapboxService.Java.csproj", "{F49A6B44-EDBA-4CB8-9287-2B5226257A7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.MapboxServices.Java", "Naxam.MapboxServices.Java\Naxam.MapboxServices.Java.csproj", "{F49A6B44-EDBA-4CB8-9287-2B5226257A7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.MapboxSerivce.Android", "Naxam.MapboxSerivce.Android\Naxam.MapboxSerivce.Android.csproj", "{0DCA035B-EE64-40F6-9162-0F1B95FF7C1D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.MapboxServices.Droid", "Naxam.MapboxServices.Droid\Naxam.MapboxServices.Droid.csproj", "{0DCA035B-EE64-40F6-9162-0F1B95FF7C1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

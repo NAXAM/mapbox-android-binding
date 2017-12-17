@@ -25,6 +25,6 @@
     </metadata>
     <!-- Optional 'files' node -->
     <files>
-        <file src="Naxam.MapboxSerivce.Android/bin/Release/Naxam.MapboxSerivce.Android.dll" target="lib/MonoAndroid10/Naxam.MapboxSerivce.Android.dll" />
+        <file src="Naxam.MapboxServices.Droid/bin/Release/Naxam.MapboxServices.Droid.dll" target="lib/MonoAndroid10/Naxam.MapboxServices.Droid.dll" />
     </files>
 </package>

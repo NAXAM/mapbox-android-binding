@@ -81,8 +81,8 @@
     <Reference Include="Naxam.MapboxSdkTurf.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Naxam.MapboxSdkTurf.3.0.0\lib\MonoAndroid10\Naxam.MapboxSdkTurf.Droid.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.MapboxSerivce.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Naxam.MapboxServiceAndroid.2.2.9\lib\MonoAndroid10\Naxam.MapboxSerivce.Android.dll</HintPath>
+    <Reference Include="Naxam.MapboxServices.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Naxam.MapboxServiceAndroid.2.2.9\lib\MonoAndroid10\Naxam.MapboxServices.Droid.dll</HintPath>
     </Reference>
     <Reference Include="Naxam.Mapzen.Lost.Droid, Version=3.0.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Naxam.Mapzen.Lost.Droid.3.0.4\lib\MonoAndroid10\Naxam.Mapzen.Lost.Droid.dll</HintPath>
