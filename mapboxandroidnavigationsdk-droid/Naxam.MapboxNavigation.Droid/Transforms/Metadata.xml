@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<attr
+		path="/api/package[@name='com.mapbox.services.android.navigation.v5.milestone']/class[@name='RouteMilestone.Builder']/method[@name='setTrigger' and count(parameter)=1 and parameter[1][@type='com.mapbox.services.android.navigation.v5.milestone.Trigger.Statement']]"
+		name="managedName">SetTrigger1</attr>
+	<attr
+		path="/api/package[@name='com.mapbox.services.android.navigation.v5.milestone']/class[@name='RouteMilestone.Builder']/method[@name='build' and count(parameter)=0]"
+		name="managedName">Build1</attr>
+	<attr
+		path="/api/package[@name='com.mapbox.services.android.navigation.v5.milestone']/class[@name='StepMilestone.Builder']/method[@name='setTrigger' and count(parameter)=1 and parameter[1][@type='com.mapbox.services.android.navigation.v5.milestone.Trigger.Statement']]"
+		name="managedName">SetTrigger1</attr>
+	<attr
+		path="/api/package[@name='com.mapbox.services.android.navigation.v5.milestone']/class[@name='StepMilestone.Builder']/method[@name='build' and count(parameter)=0]"
+		name="managedName">Build1</attr>
+	<attr
+		path="/api/package[@name='com.mapbox.services.android.navigation.v5.milestone']/class[@name='VoiceInstructionMilestone.Builder']/method[@name='setTrigger' and count(parameter)=1 and parameter[1][@type='com.mapbox.services.android.navigation.v5.milestone.Trigger.Statement']]"
+		name="managedName">SetTrigger1</attr>
+	<attr
+		path="/api/package[@name='com.mapbox.services.android.navigation.v5.milestone']/class[@name='VoiceInstructionMilestone.Builder']/method[@name='build' and count(parameter)=0]"
+		name="managedName">Build1</attr>
+</metadata>

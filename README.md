@@ -1,7 +1,7 @@
-<img src="./art/repo_header.png" alt="Mapbox for Xamarin.Android" width="728" />
+<img src="./art/repo_header.png" alt="Mapbox Navigation for Xamarin.Android" width="728" />
 
-# Mapbox GeoJSON for Xamarin.Android
-A Xamarin.Android binding library for [Mapbox](https://www.mapbox.com/android-docs/map-sdk/overview/) library.
+# Mapbox Navigation for Xamarin.Android
+A Xamarin.Android binding library for [Mapbox](https://www.mapbox.com/navigation-sdk/) library.
 
 ## About
 This project is maintained by Naxam Co.,Ltd.<br>
@@ -15,16 +15,16 @@ We specialize in developing mobile applications using Xamarin and native technol
 ## Installation
 
 ```
-Install-Package Naxam.Mapbox.Droid
+Install-Package Naxam.MapboxNavigation.Droid
 ```
 
 ## Usage
 
-Plz follow the official guide [here](https://www.mapbox.com/help/first-steps-android-sdk/).
+Plz follow the official guide [here](https://www.mapbox.com/navigation-sdk/).
 
 ## License
 
-Mapbox binding library for Android is released under the MIT license.
+Mapbox Navigation binding library for Android is released under the MIT license.
 See [LICENSE](./LICENSE) for details.
 
 # Get our showcases on AppStore/PlayStore
@@ -42,5 +42,5 @@ Contact us if interested.
 <img src="https://github.com/NAXAM/naxam.github.io/blob/master/assets/img/hire_button.png" height="34"></a> <br>
 <br>
 
-Follow us for the latest updates<br>[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=https://github.com/NAXAM/mapbox-android-binding)
+Follow us for the latest updates<br>[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=https://github.com/NAXAM/mapboxnavigation-android-binding)
 [![Twitter Follow](https://img.shields.io/twitter/follow/naxamco.svg?style=social)](https://twitter.com/naxamco)
