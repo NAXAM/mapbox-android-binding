@@ -187,7 +187,7 @@
 	<remove-node
 		path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setOnCameraMoveStartedListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnCameraMoveStartedListener']]" />
 	<add-node
-		path="/api/package[@name='com.mapbox.services.android.telemetry']">
+		path="/api/package[@name='com.mapbox.mapboxsdk']">
 		<class
 			abstract="false"
 			deprecated="not deprecated"
@@ -199,17 +199,4 @@
 			visibility="public">
 		</class>
 	</add-node>
-	<add-node
-        path="/api/package[@name='com.mapbox.mapboxsdk']">
-        <class
-            abstract="false"
-            deprecated="not deprecated"
-            extends="java.lang.Object"
-            extends-generic-aware="java.lang.Object"
-            final="true"
-            name="R"
-            static="true"
-            visibility="public">
-        </class>
-    </add-node>
 </metadata>

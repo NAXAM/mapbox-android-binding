@@ -1,6 +1,6 @@
 <img src="./art/repo_header.png" alt="Mapbox for Xamarin.Android" width="728" />
 
-# Mapbox GeoJSON for Xamarin.Android
+# Mapbox for Xamarin.Android
 A Xamarin.Android binding library for [Mapbox](https://www.mapbox.com/android-docs/map-sdk/overview/) library.
 
 ## About
