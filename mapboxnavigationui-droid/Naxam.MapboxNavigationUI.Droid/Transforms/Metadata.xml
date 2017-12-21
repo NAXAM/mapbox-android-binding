@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<add-node
+		path="/api/package[@name='com.mapbox.services.android.navigation.ui.v5.summary.list']/class[@name='InstructionListAdapter']">
+		<method
+			abstract="false"
+			deprecated="not deprecated"
+			final="false"
+			name="onBindViewHolder"
+			native="false"
+			return="void"
+			static="false"
+			synchronized="false"
+			visibility="public">
+			<parameter
+				name="viewHolder"
+				type="android.support.v7.widget.RecyclerView.ViewHolder">
+			</parameter>
+			<parameter
+				name="position"
+				type="int">
+			</parameter>
+		</method>
+	</add-node>
+    <add-node
+        path="/api/package[@name='com.mapbox.services.android.navigation.ui.v5.feedback']/class[@name='FeedbackAdapter']">
+        <method
+            abstract="false"
+            deprecated="not deprecated"
+            final="false"
+            name="onBindViewHolder"
+            native="false"
+            return="void"
+            static="false"
+            synchronized="false"
+            visibility="public">
+            <parameter
+                name="viewHolder"
+                type="android.support.v7.widget.RecyclerView.ViewHolder">
+            </parameter>
+            <parameter
+                name="position"
+                type="int">
+            </parameter>
+        </method>
+    </add-node>
+    <add-node
+        path="/api/package[@name='com.mapbox.services.android.navigation.ui.v5.instruction.turnlane']/class[@name='TurnLaneAdapter']">
+        <method
+            abstract="false"
+            deprecated="not deprecated"
+            final="false"
+            name="onBindViewHolder"
+            native="false"
+            return="void"
+            static="false"
+            synchronized="false"
+            visibility="public">
+            <parameter
+                name="viewHolder"
+                type="android.support.v7.widget.RecyclerView.ViewHolder">
+            </parameter>
+            <parameter
+                name="position"
+                type="int">
+            </parameter>
+        </method>
+    </add-node>
+</metadata>

@@ -1,0 +1,28 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.MapboxNavigationUI.Droid", "Naxam.MapboxNavigationUI.Droid\Naxam.MapboxNavigationUI.Droid.csproj", "{97E50DEA-5672-4F9F-8306-0FF63E8DB896}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{EAA69382-BA72-4B3B-8B51-A347CBEC50BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationQs", "demo\NavigationQs\NavigationQs.csproj", "{793FEDEF-4DAE-4B3D-BBF1-0B24C3604691}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97E50DEA-5672-4F9F-8306-0FF63E8DB896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E50DEA-5672-4F9F-8306-0FF63E8DB896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E50DEA-5672-4F9F-8306-0FF63E8DB896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E50DEA-5672-4F9F-8306-0FF63E8DB896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{793FEDEF-4DAE-4B3D-BBF1-0B24C3604691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{793FEDEF-4DAE-4B3D-BBF1-0B24C3604691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{793FEDEF-4DAE-4B3D-BBF1-0B24C3604691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{793FEDEF-4DAE-4B3D-BBF1-0B24C3604691}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{793FEDEF-4DAE-4B3D-BBF1-0B24C3604691} = {EAA69382-BA72-4B3B-8B51-A347CBEC50BF}
+	EndGlobalSection
+EndGlobal
