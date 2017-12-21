@@ -28,6 +28,7 @@
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
     <AndroidSupportedAbis>arm64-v8a;armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,9 +47,6 @@
     <Reference Include="Mono.Android" />
     <Reference Include="GoogleGson">
       <HintPath>..\..\packages\GoogleGson.2.8.1\lib\MonoAndroid\GoogleGson.dll</HintPath>
-    </Reference>
-    <Reference Include="Naxam.Google.Gson">
-      <HintPath>..\..\packages\Naxam.Google.Gson.2.8.0\lib\MonoAndroid10\Naxam.Google.Gson.dll</HintPath>
     </Reference>
     <Reference Include="Naxam.Jakewharton.Timber">
       <HintPath>..\..\packages\Naxam.Jakewharton.Timber.4.5.1\lib\MonoAndroid10\Naxam.Jakewharton.Timber.dll</HintPath>
@@ -119,12 +117,6 @@
     <Reference Include="Naxam.Mapzen.Lost.Droid">
       <HintPath>..\..\packages\Naxam.Mapzen.Lost.Droid.3.0.4\lib\MonoAndroid10\Naxam.Mapzen.Lost.Droid.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.MapboxServices.Droid">
-      <HintPath>..\..\packages\Naxam.Mapbox.Services.Droid.2.2.9\lib\MonoAndroid10\Naxam.MapboxServices.Droid.dll</HintPath>
-    </Reference>
-    <Reference Include="Naxam.MapboxServices.Java">
-      <HintPath>..\..\packages\Naxam.Mapbox.Services.Droid.2.2.9\lib\MonoAndroid10\Naxam.MapboxServices.Java.dll</HintPath>
-    </Reference>
     <Reference Include="Naxam.MapboxNavigation.Droid">
       <HintPath>..\..\packages\Naxam.MapboxNavigation.Droid.0.7.1\lib\MonoAndroid10\Naxam.MapboxNavigation.Droid.dll</HintPath>
     </Reference>
@@ -175,6 +167,15 @@
     </Reference>
     <Reference Include="Xamarin.Android.Support.Constraint.Layout">
       <HintPath>..\..\packages\Xamarin.Android.Support.Constraint.Layout.1.0.2.2\lib\MonoAndroid70\Xamarin.Android.Support.Constraint.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.CardView.26.1.0.1\lib\MonoAndroid80\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.MapboxServices.Droid">
+      <HintPath>..\..\packages\Naxam.Mapbox.Services.Droid.2.2.9.1\lib\MonoAndroid10\Naxam.MapboxServices.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.MapboxServices.Java">
+      <HintPath>..\..\packages\Naxam.Mapbox.Services.Droid.2.2.9.1\lib\MonoAndroid10\Naxam.MapboxServices.Java.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -228,4 +229,5 @@
   <Import Project="..\..\packages\Xamarin.GooglePlayServices.Base.42.1021.1\build\MonoAndroid70\Xamarin.GooglePlayServices.Base.targets" Condition="Exists('..\..\packages\Xamarin.GooglePlayServices.Base.42.1021.1\build\MonoAndroid70\Xamarin.GooglePlayServices.Base.targets')" />
   <Import Project="..\..\packages\Xamarin.GooglePlayServices.Location.42.1021.1\build\MonoAndroid70\Xamarin.GooglePlayServices.Location.targets" Condition="Exists('..\..\packages\Xamarin.GooglePlayServices.Location.42.1021.1\build\MonoAndroid70\Xamarin.GooglePlayServices.Location.targets')" />
   <Import Project="..\..\packages\Xamarin.Build.Download.0.4.7\build\Xamarin.Build.Download.targets" Condition="Exists('..\..\packages\Xamarin.Build.Download.0.4.7\build\Xamarin.Build.Download.targets')" />
+  <Import Project="..\..\packages\Xamarin.Android.Support.v7.CardView.26.1.0.1\build\MonoAndroid80\Xamarin.Android.Support.v7.CardView.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.v7.CardView.26.1.0.1\build\MonoAndroid80\Xamarin.Android.Support.v7.CardView.targets')" />
 </Project>
