@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Naxam.MapboxNavigationUI.Droid</id>
+        <version>0.7.1</version>
+        <authors>NAXAM</authors>
+        <owners>NAXAM COMPANY LIMITED</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>Naxam - Mapbox NavigationUI for Android</title>
+        <summary>Mapbox NavigationUI 0.7.1</summary>
+        <description>Xamarin.Android binding Library - Mapbox NavigationUI</description>
+        <iconUrl>https://avatars0.githubusercontent.com/u/600935</iconUrl>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/NAXAM/mapboxnavigationui-android-binding</projectUrl>
+        <copyright>Copyright (c) 2017 NAXAM</copyright>
+        <tags>xamarin, Xamarin.Android, Mapbox, mapbox-navigation, mapbox-navigation-ui, mapboxnavigationui</tags>
+        <dependencies>
+            <dependency id="Naxam.Mapbox.Droid" version="5.2.1" />
+            <dependency id="Naxam.MapboxNavigation.Droid" version="0.7.1" />
+            <dependency id="Xamarin.Android.Support.v7.CardView" version="26.1.0.1" />
+            <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="26.1.0.1" />
+            <dependency id="Xamarin.Android.Support.Constraint.Layout" version="1.0.2.2" />
+            <dependency id="Xbindings.AWSSdkPolly.Droid" version="2.3.8" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="Naxam.MapboxNavigationUI.Droid/bin/Release/Naxam.MapboxNavigationUI.Droid.dll" target="lib/MonoAndroid10/Naxam.MapboxNavigationUI.Droid.dll" />
+    </files>
+</package>

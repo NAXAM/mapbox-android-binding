@@ -3,18 +3,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
-        android:id="@+id/myButton"
+  
+  <com.mapbox.services.android.navigation.ui.v5.instruction.InstructionView
+        android:id="@+id/instructionView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
-  <com.mapbox.mapboxsdk.maps.widgets.MyLocationView
-        android:id="@+id/map"
-        android:accessibilityLiveRegion="polite"
-        android:background="@color/accent_material_dark"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-    
-    />
-
+        android:layout_height="wrap_content"/>
+  <com.mapbox.services.android.navigation.ui.v5.NavigationView
+         android:id="@+id/navigationView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        />
 </LinearLayout>
