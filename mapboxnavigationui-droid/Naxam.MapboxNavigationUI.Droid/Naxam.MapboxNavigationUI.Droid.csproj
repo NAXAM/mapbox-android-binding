@@ -161,6 +161,18 @@
     <Reference Include="Xamarin.Android.Support.v7.CardView">
       <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.26.1.0.1\lib\MonoAndroid80\Xamarin.Android.Support.v7.CardView.dll</HintPath>
     </Reference>
+    <Reference Include="Naxam.MapboxSdkTurf.Droid">
+      <HintPath>..\packages\Naxam.MapboxSdkTurf.Droid.3.0.0-beta1\lib\MonoAndroid10\Naxam.MapboxSdkTurf.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.MapboxServices.Droid">
+      <HintPath>..\packages\Naxam.Mapbox.Services.Droid.2.2.9\lib\MonoAndroid10\Naxam.MapboxServices.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.MapboxServices.Java">
+      <HintPath>..\packages\Naxam.Mapbox.Services.Droid.2.2.9\lib\MonoAndroid10\Naxam.MapboxServices.Java.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.MapboxNavigation.Droid">
+      <HintPath>..\packages\Naxam.MapboxNavigation.Droid.0.7.1\lib\MonoAndroid10\Naxam.MapboxNavigation.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
