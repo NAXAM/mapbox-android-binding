@@ -18,7 +18,7 @@
         <dependencies>
             <dependency id="Naxam.MapboxSdkServices.Droid" version="3.0.0-beta1" />
             <dependency id="Naxam.MapboxSdkTurf.Droid" version="3.0.0-beta1" />
-            <dependency id="Naxam.Mapbox.Services.Droid" version="2.2.9" />
+            <dependency id="Naxam.Mapbox.Services.Droid" version="2.2.9.1" />
         </dependencies>
     </metadata>
     <files>
