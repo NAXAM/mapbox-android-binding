@@ -17,100 +17,153 @@ using Com.Mapbox.Mapboxsdk.Maps.Widgets;
 using Com.Mapbox.Services.Android.Navigation.UI.V5;
 using Com.Mapbox.Services.Android.Navigation.UI.V5.Instruction;
 using Com.Mapbox.Services.Android.Navigation.UI.V5.Route;
+using Android.Support.V7.App;
+using Com.Mapbox.Services.Android.Telemetry.Permissions;
+using Android.Support.V7.Widget;
+using System.Linq;
+using System.Collections.Generic;
+using Android.Views;
+using Android.Content;
 
 namespace NavigationQs
 {
-    [Activity(Label = "NavigationQs", MainLauncher = true, Icon = "@mipmap/icon")]
-    public class MainActivity : Activity, INavigationEventListener, IMilestoneEventListener, IProgressChangeListener, IOffRouteListener, INavigationViewListener
+    [Activity(Label = "NavigationQs", MainLauncher = true, Icon = "@mipmap/ic_launcher", RoundIcon = "@mipmap/ic_launcher_round", Theme = "@style/AppTheme")]
+    public class MainActivity : AppCompatActivity, IPermissionsListener
     {
-        string key = "pk.eyJ1IjoicXV5bmhuZ2ExMjMiLCJhIjoiY2piZzVkanJ3MzJ1ODJ3bnVyYjk1NnQ0eCJ9.FzaAQLO8NJiE7XygUPRCjQ";
-        NavigationViewOptions navigationViewOptions;
-        InstructionView instructionView;
-        NavigationView navigationView;
-        int count = 1;
-        string awsPoolId = null;
-        bool simulateRoute = true;
-        Point origin, destination;
-        MapboxNavigation mapboxNavigation;
+
+        RecyclerView recyclerView;
+        PermissionsManager permissionsManager;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.activity_main);
 
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
-            navigationView = FindViewById<NavigationView>(Resource.Id.navigationView);
-            instructionView = FindViewById<InstructionView>(Resource.Id.instructionView);
-            MapboxNavigationOptions options = MapboxNavigationOptions.InvokeBuilder().ManeuverZoneRadius(70).Build();
-            mapboxNavigation = new MapboxNavigation(this,key , options);
-            origin = Point.FromLngLat(-77.03613, 38.90992);
-            destination = Point.FromLngLat(-77.0365, 38.8977);
-            NavigationRoute.Builder builder = NavigationRoute.GetBuilder();
-            builder.AccessToken(key).Origin(origin).Destination(destination).Build();
-            LocationEngine locationEngine = LostLocationEngine.GetLocationEngine(this);
-            mapboxNavigation.LocationEngine = locationEngine;
-            mapboxNavigation.AddMilestone(new RouteMilestone.Builder().SetIdentifier(12).SetTrigger(Trigger.All(Trigger.Lt(TriggerProperty.StepIndex, 3), Trigger.Gt(TriggerProperty.StepIndex, 3))).Build());
-            MapboxNavigationOptions mapboxNavigationOptions = MapboxNavigationOptions.InvokeBuilder().UnitType(NavigationUnitType.TypeMetric).Build();
-            //NavigationViewOptions x =NavigationViewOptions.InvokeBuilder().Origin(origin).Destination(destination).AwsPoolId(null).ShouldSimulateRoute(true).Build();
-            //NavigationLauncher.StartNavigation(this, x); 
-            navigationViewOptions = NavigationViewOptions.InvokeBuilder().Origin(origin).Destination(destination).AwsPoolId(null).ShouldSimulateRoute(true).Build();
-            navigationView.OnCreate(savedInstanceState);
-            navigationView.GetNavigationAsync(this);
-        }
-        protected override void OnRestoreInstanceState(Bundle savedInstanceState)
-        {
-            base.OnRestoreInstanceState(savedInstanceState);
-            navigationView.OnRestoreInstanceState(savedInstanceState);
-        }
-        protected override void OnSaveInstanceState(Bundle outState)
-        {
-            navigationView.OnSaveInstanceState(outState);
-            base.OnSaveInstanceState(outState);
+            var samples = new[]{
+                new SampleItem {
+            Name = GetString(Resource.String.title_navigation_view_ui),
+            Description = GetString(Resource.String.description_navigation_view_ui),
+            ActivityType = typeof(NavigationViewActivity)
+                },
+                    new SampleItem
+                    {
+                        Name = GetString(Resource.String.title_mock_navigation),
+                        Description = GetString(Resource.String.description_mock_navigation),
+                        ActivityType = typeof(MockNavigationActivity)
+                    },
+                    new SampleItem{
+                        Name = GetString(Resource.String.title_reroute),
+                        Description = GetString(Resource.String.description_reroute),
+                            ActivityType = typeof(RerouteActivity)
+                    },
+                    new SampleItem{
+                        Name = GetString(Resource.String.title_navigation_route_ui),
+                        Description = GetString(Resource.String.description_navigation_route_ui),
+                                ActivityType = typeof(NavigationMapRouteActivity)
+                    }};
 
-        }
-        public override void OnBackPressed()
-        {
-            if (!navigationView.OnBackPressed())
-                base.OnBackPressed();
-        }
-        public override void OnLowMemory()
-        {
-            base.OnLowMemory();
-            navigationView.OnLowMemory();
-        }
-        protected override void OnDestroy()
-        {
-            base.OnDestroy();
-            mapboxNavigation.EndNavigation();
-            mapboxNavigation.OnDestroy();
+            // RecyclerView
+            recyclerView = FindViewById<RecyclerView>(Resource.Id.recycler_view);
+            recyclerView.HasFixedSize = true;
 
-        }
-        public void OnMilestoneEvent(RouteProgress routeProgress, string instruction, int milestone)
-        {
+            // Use a linear layout manager
+            RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+            recyclerView.SetLayoutManager(layoutManager);
+
+            // Specify an adapter
+            RecyclerView.Adapter adapter = new MainAdapter(samples, recyclerView);
+            recyclerView.SetAdapter(adapter);
+
+            // Check for location permission
+            permissionsManager = new PermissionsManager(this);
+            if (!PermissionsManager.AreLocationPermissionsGranted(this))
+            {
+                recyclerView.Enabled = (false);
+                permissionsManager.RequestLocationPermissions(this);
+            }
         }
 
-        public void OnProgressChange(Location location, RouteProgress routeProgress)
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
         {
-            instructionView.Update(routeProgress, NavigationUnitType.TypeImperial);
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            permissionsManager.OnRequestPermissionsResult(requestCode, permissions, grantResults.Cast<int>().ToArray());
         }
 
-        public void OnRunning(bool p0)
+        public void OnExplanationNeeded(IList<string> p0)
         {
+            Toast.MakeText(this,
+                              "This app needs location permissions in order to show its functionality.",
+                              ToastLength.Long).Show();
         }
 
-        public void UserOffRoute(Location p0)
+        public void OnPermissionResult(bool granted)
         {
+            if (granted)
+            {
+                recyclerView.Enabled = (true);
+            }
+            else
+            {
+                Toast.MakeText(this,
+                               "You didn't grant location permissions.",
+                               ToastLength.Long).Show();
+            }
         }
 
-        public void OnNavigationFinished()
+        /*
+         * Recycler view
+         */
+        class MainAdapter : RecyclerView.Adapter
         {
-            Finish();
-        }
+            IList<SampleItem> samples;
+            private readonly RecyclerView recyclerView;
 
-        public void OnNavigationReady()
-        {
-            navigationView.StartNavigation(navigationViewOptions);
+            class ViewHolder : RecyclerView.ViewHolder
+            {
+                TextView nameView;
+                TextView descriptionView;
+
+                public ViewHolder(View view) : base(view)
+                {
+                    nameView = (TextView)view.FindViewById(Resource.Id.nameView);
+                    descriptionView = (TextView)view.FindViewById(Resource.Id.descriptionView);
+                }
+
+                public void SetData(SampleItem item)
+                {
+                    nameView.Text = item.Name;
+                    descriptionView.Text = item.Description;
+                }
+            }
+
+            public MainAdapter(IList<SampleItem> samples, RecyclerView recyclerView)
+            {
+                this.samples = samples;
+                this.recyclerView = recyclerView;
+            }
+
+            public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
+            {
+                View view = LayoutInflater.FromContext(parent.Context).Inflate(Resource.Layout.item_main_feature, parent, false);
+
+                view.Click += delegate
+            {
+                int position = recyclerView.GetChildLayoutPosition(view);
+                Intent intent = new Intent(view.Context, samples[position].ActivityType);
+
+                view.Context.StartActivity(intent);
+            };
+
+                return new ViewHolder(view);
+            }
+
+            public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
+            {
+                (holder as ViewHolder).SetData(samples[position]);
+            }
+
+            public override int ItemCount => samples.Count;
         }
     }
-
 }
 
