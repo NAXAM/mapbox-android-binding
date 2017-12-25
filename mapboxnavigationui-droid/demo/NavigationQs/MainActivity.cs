@@ -24,6 +24,7 @@ using System.Linq;
 using System.Collections.Generic;
 using Android.Views;
 using Android.Content;
+using System;
 
 namespace NavigationQs
 {
@@ -39,12 +40,20 @@ namespace NavigationQs
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
+            string mapboxAccessToken = Utils.GetMapboxAccessToken(ApplicationContext);
+            if (string.IsNullOrWhiteSpace(mapboxAccessToken) || string.Equals(mapboxAccessToken, "YOUR_MAPBOX_ACCESS_TOKEN"))
+            {
+                throw new InvalidOperationException("Please configure your Mapbox access token");
+            }
+
+            Mapbox.GetInstance(ApplicationContext, mapboxAccessToken);
+
             var samples = new[]{
-                new SampleItem {
-            Name = GetString(Resource.String.title_navigation_view_ui),
-            Description = GetString(Resource.String.description_navigation_view_ui),
-            ActivityType = typeof(NavigationViewActivity)
-                },
+                    new SampleItem {
+                        Name = GetString(Resource.String.title_navigation_view_ui),
+                        Description = GetString(Resource.String.description_navigation_view_ui),
+                        ActivityType = typeof(NavigationViewActivity)
+                    },
                     new SampleItem
                     {
                         Name = GetString(Resource.String.title_mock_navigation),
@@ -54,12 +63,12 @@ namespace NavigationQs
                     new SampleItem{
                         Name = GetString(Resource.String.title_reroute),
                         Description = GetString(Resource.String.description_reroute),
-                            ActivityType = typeof(RerouteActivity)
+                        ActivityType = typeof(RerouteActivity)
                     },
                     new SampleItem{
                         Name = GetString(Resource.String.title_navigation_route_ui),
                         Description = GetString(Resource.String.description_navigation_route_ui),
-                                ActivityType = typeof(NavigationMapRouteActivity)
+                        ActivityType = typeof(NavigationMapRouteActivity)
                     }};
 
             // RecyclerView

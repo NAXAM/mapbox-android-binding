@@ -176,6 +176,9 @@
     <Reference Include="Xamarin.Android.Arch.Lifecycle.Extensions">
       <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.Extensions.1.0.0\lib\MonoAndroid10\Xamarin.Android.Arch.Lifecycle.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Android.Arch.Core.Runtime">
+      <HintPath>..\packages\Xamarin.Android.Arch.Core.Runtime.1.0.0\lib\MonoAndroid10\Xamarin.Android.Arch.Core.Runtime.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

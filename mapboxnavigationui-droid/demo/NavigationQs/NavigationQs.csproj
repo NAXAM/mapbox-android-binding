@@ -184,6 +184,9 @@
     <Reference Include="Xbindings.MapboxLocationLayer.Droid">
       <HintPath>..\..\packages\Xbindings.MapboxLocationLayer.Droid.0.2.0\lib\MonoAndroid10\Xbindings.MapboxLocationLayer.Droid.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Android.Arch.Core.Runtime">
+      <HintPath>..\..\packages\Xamarin.Android.Arch.Core.Runtime.1.0.0\lib\MonoAndroid10\Xamarin.Android.Arch.Core.Runtime.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomNavigationNotification.cs" />
