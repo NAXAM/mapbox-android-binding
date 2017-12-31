@@ -199,4 +199,16 @@
 			visibility="public">
 		</class>
 	</add-node>
+	<attr
+		path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setOnFlingListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnFlingListener']]"
+		name="eventName">Fling2</attr>
+	<attr
+		path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setOnMapClickListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnMapClickListener']]"
+		name="eventName">MapClick2</attr>
+	<attr
+		path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setOnMapLongClickListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnMapLongClickListener']]"
+		name="eventName">MapLongClick2</attr>
+	<attr
+		path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setOnScrollListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnScrollListener']]"
+		name="eventName">Scroll2</attr>
 </metadata>
