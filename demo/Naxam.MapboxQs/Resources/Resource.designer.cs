@@ -759,158 +759,161 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f010165
 			public const int mapbox_bl_strokeWidth = 2130772325;
 			
-			// aapt resource value: 0x7f01016d
-			public const int mapbox_cameraBearing = 2130772333;
-			
-			// aapt resource value: 0x7f01016a
-			public const int mapbox_cameraTargetLat = 2130772330;
+			// aapt resource value: 0x7f01016e
+			public const int mapbox_cameraBearing = 2130772334;
 			
 			// aapt resource value: 0x7f01016b
-			public const int mapbox_cameraTargetLng = 2130772331;
-			
-			// aapt resource value: 0x7f01016e
-			public const int mapbox_cameraTilt = 2130772334;
+			public const int mapbox_cameraTargetLat = 2130772331;
 			
 			// aapt resource value: 0x7f01016c
-			public const int mapbox_cameraZoom = 2130772332;
+			public const int mapbox_cameraTargetLng = 2130772332;
 			
 			// aapt resource value: 0x7f01016f
-			public const int mapbox_cameraZoomMax = 2130772335;
+			public const int mapbox_cameraTilt = 2130772335;
+			
+			// aapt resource value: 0x7f01016d
+			public const int mapbox_cameraZoom = 2130772333;
 			
 			// aapt resource value: 0x7f010170
-			public const int mapbox_cameraZoomMin = 2130772336;
+			public const int mapbox_cameraZoomMax = 2130772336;
 			
-			// aapt resource value: 0x7f01019a
-			public const int mapbox_enableTilePrefetch = 2130772378;
+			// aapt resource value: 0x7f010171
+			public const int mapbox_cameraZoomMin = 2130772337;
 			
 			// aapt resource value: 0x7f01019b
-			public const int mapbox_enableZMediaOverlay = 2130772379;
+			public const int mapbox_enableTilePrefetch = 2130772379;
 			
-			// aapt resource value: 0x7f010177
-			public const int mapbox_myLocation = 2130772343;
+			// aapt resource value: 0x7f01019c
+			public const int mapbox_enableZMediaOverlay = 2130772380;
 			
-			// aapt resource value: 0x7f010182
-			public const int mapbox_myLocationAccuracyAlpha = 2130772354;
-			
-			// aapt resource value: 0x7f010183
-			public const int mapbox_myLocationAccuracyThreshold = 2130772355;
-			
-			// aapt resource value: 0x7f010181
-			public const int mapbox_myLocationAccuracyTintColor = 2130772353;
-			
-			// aapt resource value: 0x7f01017b
-			public const int mapbox_myLocationBackgroundDrawable = 2130772347;
-			
-			// aapt resource value: 0x7f010180
-			public const int mapbox_myLocationBackgroundMarginBottom = 2130772352;
-			
-			// aapt resource value: 0x7f01017d
-			public const int mapbox_myLocationBackgroundMarginLeft = 2130772349;
-			
-			// aapt resource value: 0x7f01017f
-			public const int mapbox_myLocationBackgroundMarginRight = 2130772351;
-			
-			// aapt resource value: 0x7f01017e
-			public const int mapbox_myLocationBackgroundMarginTop = 2130772350;
-			
-			// aapt resource value: 0x7f01017c
-			public const int mapbox_myLocationBackgroundTintColor = 2130772348;
-			
-			// aapt resource value: 0x7f01017a
-			public const int mapbox_myLocationBearingDrawable = 2130772346;
-			
-			// aapt resource value: 0x7f010179
-			public const int mapbox_myLocationDrawable = 2130772345;
+			// aapt resource value: 0x7f01016a
+			public const int mapbox_localIdeographFontFamily = 2130772330;
 			
 			// aapt resource value: 0x7f010178
-			public const int mapbox_myLocationTintColor = 2130772344;
+			public const int mapbox_myLocation = 2130772344;
 			
-			// aapt resource value: 0x7f010199
-			public const int mapbox_renderTextureMode = 2130772377;
+			// aapt resource value: 0x7f010183
+			public const int mapbox_myLocationAccuracyAlpha = 2130772355;
+			
+			// aapt resource value: 0x7f010184
+			public const int mapbox_myLocationAccuracyThreshold = 2130772356;
+			
+			// aapt resource value: 0x7f010182
+			public const int mapbox_myLocationAccuracyTintColor = 2130772354;
+			
+			// aapt resource value: 0x7f01017c
+			public const int mapbox_myLocationBackgroundDrawable = 2130772348;
+			
+			// aapt resource value: 0x7f010181
+			public const int mapbox_myLocationBackgroundMarginBottom = 2130772353;
+			
+			// aapt resource value: 0x7f01017e
+			public const int mapbox_myLocationBackgroundMarginLeft = 2130772350;
+			
+			// aapt resource value: 0x7f010180
+			public const int mapbox_myLocationBackgroundMarginRight = 2130772352;
+			
+			// aapt resource value: 0x7f01017f
+			public const int mapbox_myLocationBackgroundMarginTop = 2130772351;
+			
+			// aapt resource value: 0x7f01017d
+			public const int mapbox_myLocationBackgroundTintColor = 2130772349;
+			
+			// aapt resource value: 0x7f01017b
+			public const int mapbox_myLocationBearingDrawable = 2130772347;
+			
+			// aapt resource value: 0x7f01017a
+			public const int mapbox_myLocationDrawable = 2130772346;
+			
+			// aapt resource value: 0x7f010179
+			public const int mapbox_myLocationTintColor = 2130772345;
+			
+			// aapt resource value: 0x7f01019a
+			public const int mapbox_renderTextureMode = 2130772378;
 			
 			// aapt resource value: 0x7f010168
 			public const int mapbox_styleUrl = 2130772328;
 			
-			// aapt resource value: 0x7f010192
-			public const int mapbox_uiAttribution = 2130772370;
-			
 			// aapt resource value: 0x7f010193
-			public const int mapbox_uiAttributionGravity = 2130772371;
-			
-			// aapt resource value: 0x7f010197
-			public const int mapbox_uiAttributionMarginBottom = 2130772375;
+			public const int mapbox_uiAttribution = 2130772371;
 			
 			// aapt resource value: 0x7f010194
-			public const int mapbox_uiAttributionMarginLeft = 2130772372;
-			
-			// aapt resource value: 0x7f010196
-			public const int mapbox_uiAttributionMarginRight = 2130772374;
-			
-			// aapt resource value: 0x7f010195
-			public const int mapbox_uiAttributionMarginTop = 2130772373;
+			public const int mapbox_uiAttributionGravity = 2130772372;
 			
 			// aapt resource value: 0x7f010198
-			public const int mapbox_uiAttributionTintColor = 2130772376;
+			public const int mapbox_uiAttributionMarginBottom = 2130772376;
 			
-			// aapt resource value: 0x7f010184
-			public const int mapbox_uiCompass = 2130772356;
+			// aapt resource value: 0x7f010195
+			public const int mapbox_uiAttributionMarginLeft = 2130772373;
 			
-			// aapt resource value: 0x7f01018b
-			public const int mapbox_uiCompassDrawable = 2130772363;
+			// aapt resource value: 0x7f010197
+			public const int mapbox_uiAttributionMarginRight = 2130772375;
 			
-			// aapt resource value: 0x7f01018a
-			public const int mapbox_uiCompassFadeFacingNorth = 2130772362;
+			// aapt resource value: 0x7f010196
+			public const int mapbox_uiAttributionMarginTop = 2130772374;
+			
+			// aapt resource value: 0x7f010199
+			public const int mapbox_uiAttributionTintColor = 2130772377;
 			
 			// aapt resource value: 0x7f010185
-			public const int mapbox_uiCompassGravity = 2130772357;
-			
-			// aapt resource value: 0x7f010189
-			public const int mapbox_uiCompassMarginBottom = 2130772361;
-			
-			// aapt resource value: 0x7f010186
-			public const int mapbox_uiCompassMarginLeft = 2130772358;
-			
-			// aapt resource value: 0x7f010188
-			public const int mapbox_uiCompassMarginRight = 2130772360;
-			
-			// aapt resource value: 0x7f010187
-			public const int mapbox_uiCompassMarginTop = 2130772359;
-			
-			// aapt resource value: 0x7f010175
-			public const int mapbox_uiDoubleTapGestures = 2130772341;
+			public const int mapbox_uiCompass = 2130772357;
 			
 			// aapt resource value: 0x7f01018c
-			public const int mapbox_uiLogo = 2130772364;
+			public const int mapbox_uiCompassDrawable = 2130772364;
 			
-			// aapt resource value: 0x7f01018d
-			public const int mapbox_uiLogoGravity = 2130772365;
+			// aapt resource value: 0x7f01018b
+			public const int mapbox_uiCompassFadeFacingNorth = 2130772363;
 			
-			// aapt resource value: 0x7f010191
-			public const int mapbox_uiLogoMarginBottom = 2130772369;
+			// aapt resource value: 0x7f010186
+			public const int mapbox_uiCompassGravity = 2130772358;
 			
-			// aapt resource value: 0x7f01018e
-			public const int mapbox_uiLogoMarginLeft = 2130772366;
+			// aapt resource value: 0x7f01018a
+			public const int mapbox_uiCompassMarginBottom = 2130772362;
 			
-			// aapt resource value: 0x7f010190
-			public const int mapbox_uiLogoMarginRight = 2130772368;
+			// aapt resource value: 0x7f010187
+			public const int mapbox_uiCompassMarginLeft = 2130772359;
 			
-			// aapt resource value: 0x7f01018f
-			public const int mapbox_uiLogoMarginTop = 2130772367;
+			// aapt resource value: 0x7f010189
+			public const int mapbox_uiCompassMarginRight = 2130772361;
 			
-			// aapt resource value: 0x7f010173
-			public const int mapbox_uiRotateGestures = 2130772339;
-			
-			// aapt resource value: 0x7f010172
-			public const int mapbox_uiScrollGestures = 2130772338;
-			
-			// aapt resource value: 0x7f010174
-			public const int mapbox_uiTiltGestures = 2130772340;
+			// aapt resource value: 0x7f010188
+			public const int mapbox_uiCompassMarginTop = 2130772360;
 			
 			// aapt resource value: 0x7f010176
-			public const int mapbox_uiZoomControls = 2130772342;
+			public const int mapbox_uiDoubleTapGestures = 2130772342;
 			
-			// aapt resource value: 0x7f010171
-			public const int mapbox_uiZoomGestures = 2130772337;
+			// aapt resource value: 0x7f01018d
+			public const int mapbox_uiLogo = 2130772365;
+			
+			// aapt resource value: 0x7f01018e
+			public const int mapbox_uiLogoGravity = 2130772366;
+			
+			// aapt resource value: 0x7f010192
+			public const int mapbox_uiLogoMarginBottom = 2130772370;
+			
+			// aapt resource value: 0x7f01018f
+			public const int mapbox_uiLogoMarginLeft = 2130772367;
+			
+			// aapt resource value: 0x7f010191
+			public const int mapbox_uiLogoMarginRight = 2130772369;
+			
+			// aapt resource value: 0x7f010190
+			public const int mapbox_uiLogoMarginTop = 2130772368;
+			
+			// aapt resource value: 0x7f010174
+			public const int mapbox_uiRotateGestures = 2130772340;
+			
+			// aapt resource value: 0x7f010173
+			public const int mapbox_uiScrollGestures = 2130772339;
+			
+			// aapt resource value: 0x7f010175
+			public const int mapbox_uiTiltGestures = 2130772341;
+			
+			// aapt resource value: 0x7f010177
+			public const int mapbox_uiZoomControls = 2130772343;
+			
+			// aapt resource value: 0x7f010172
+			public const int mapbox_uiZoomGestures = 2130772338;
 			
 			// aapt resource value: 0x7f010138
 			public const int maxActionInlineWidth = 2130772280;
@@ -3747,35 +3750,35 @@ namespace Naxam.MapboxQs
 			// aapt resource value: 0x7f080048
 			public const int mapbox_offline_error_region_definition_invalid = 2131230792;
 			
-			// aapt resource value: 0x7f08004a
-			public const int mapbox_style_dark = 2131230794;
-			
 			// aapt resource value: 0x7f08004b
-			public const int mapbox_style_light = 2131230795;
+			public const int mapbox_style_dark = 2131230795;
 			
 			// aapt resource value: 0x7f08004c
-			public const int mapbox_style_mapbox_streets = 2131230796;
+			public const int mapbox_style_light = 2131230796;
 			
 			// aapt resource value: 0x7f08004d
-			public const int mapbox_style_outdoors = 2131230797;
+			public const int mapbox_style_mapbox_streets = 2131230797;
 			
 			// aapt resource value: 0x7f08004e
-			public const int mapbox_style_satellite = 2131230798;
+			public const int mapbox_style_outdoors = 2131230798;
 			
 			// aapt resource value: 0x7f08004f
-			public const int mapbox_style_satellite_streets = 2131230799;
+			public const int mapbox_style_satellite = 2131230799;
 			
 			// aapt resource value: 0x7f080050
-			public const int mapbox_style_traffic_day = 2131230800;
+			public const int mapbox_style_satellite_streets = 2131230800;
 			
 			// aapt resource value: 0x7f080051
-			public const int mapbox_style_traffic_night = 2131230801;
+			public const int mapbox_style_traffic_day = 2131230801;
 			
 			// aapt resource value: 0x7f080052
-			public const int mapbox_telemetryLink = 2131230802;
+			public const int mapbox_style_traffic_night = 2131230802;
 			
 			// aapt resource value: 0x7f080053
-			public const int mapbox_telemetrySettings = 2131230803;
+			public const int mapbox_telemetryLink = 2131230803;
+			
+			// aapt resource value: 0x7f08004a
+			public const int mapbox_telemetrySettings = 2131230794;
 			
 			// aapt resource value: 0x7f08003b
 			public const int ok = 2131230779;
@@ -7167,163 +7170,167 @@ namespace Naxam.MapboxQs
 					2130772376,
 					2130772377,
 					2130772378,
-					2130772379};
+					2130772379,
+					2130772380};
 			
 			// aapt resource value: 1
 			public const int mapbox_MapView_mapbox_apiBaseUrl = 1;
 			
-			// aapt resource value: 5
-			public const int mapbox_MapView_mapbox_cameraBearing = 5;
-			
-			// aapt resource value: 2
-			public const int mapbox_MapView_mapbox_cameraTargetLat = 2;
+			// aapt resource value: 6
+			public const int mapbox_MapView_mapbox_cameraBearing = 6;
 			
 			// aapt resource value: 3
-			public const int mapbox_MapView_mapbox_cameraTargetLng = 3;
-			
-			// aapt resource value: 6
-			public const int mapbox_MapView_mapbox_cameraTilt = 6;
+			public const int mapbox_MapView_mapbox_cameraTargetLat = 3;
 			
 			// aapt resource value: 4
-			public const int mapbox_MapView_mapbox_cameraZoom = 4;
+			public const int mapbox_MapView_mapbox_cameraTargetLng = 4;
 			
 			// aapt resource value: 7
-			public const int mapbox_MapView_mapbox_cameraZoomMax = 7;
+			public const int mapbox_MapView_mapbox_cameraTilt = 7;
+			
+			// aapt resource value: 5
+			public const int mapbox_MapView_mapbox_cameraZoom = 5;
 			
 			// aapt resource value: 8
-			public const int mapbox_MapView_mapbox_cameraZoomMin = 8;
+			public const int mapbox_MapView_mapbox_cameraZoomMax = 8;
 			
-			// aapt resource value: 50
-			public const int mapbox_MapView_mapbox_enableTilePrefetch = 50;
+			// aapt resource value: 9
+			public const int mapbox_MapView_mapbox_cameraZoomMin = 9;
 			
 			// aapt resource value: 51
-			public const int mapbox_MapView_mapbox_enableZMediaOverlay = 51;
+			public const int mapbox_MapView_mapbox_enableTilePrefetch = 51;
 			
-			// aapt resource value: 15
-			public const int mapbox_MapView_mapbox_myLocation = 15;
+			// aapt resource value: 52
+			public const int mapbox_MapView_mapbox_enableZMediaOverlay = 52;
 			
-			// aapt resource value: 26
-			public const int mapbox_MapView_mapbox_myLocationAccuracyAlpha = 26;
-			
-			// aapt resource value: 27
-			public const int mapbox_MapView_mapbox_myLocationAccuracyThreshold = 27;
-			
-			// aapt resource value: 25
-			public const int mapbox_MapView_mapbox_myLocationAccuracyTintColor = 25;
-			
-			// aapt resource value: 19
-			public const int mapbox_MapView_mapbox_myLocationBackgroundDrawable = 19;
-			
-			// aapt resource value: 24
-			public const int mapbox_MapView_mapbox_myLocationBackgroundMarginBottom = 24;
-			
-			// aapt resource value: 21
-			public const int mapbox_MapView_mapbox_myLocationBackgroundMarginLeft = 21;
-			
-			// aapt resource value: 23
-			public const int mapbox_MapView_mapbox_myLocationBackgroundMarginRight = 23;
-			
-			// aapt resource value: 22
-			public const int mapbox_MapView_mapbox_myLocationBackgroundMarginTop = 22;
-			
-			// aapt resource value: 20
-			public const int mapbox_MapView_mapbox_myLocationBackgroundTintColor = 20;
-			
-			// aapt resource value: 18
-			public const int mapbox_MapView_mapbox_myLocationBearingDrawable = 18;
-			
-			// aapt resource value: 17
-			public const int mapbox_MapView_mapbox_myLocationDrawable = 17;
+			// aapt resource value: 2
+			public const int mapbox_MapView_mapbox_localIdeographFontFamily = 2;
 			
 			// aapt resource value: 16
-			public const int mapbox_MapView_mapbox_myLocationTintColor = 16;
+			public const int mapbox_MapView_mapbox_myLocation = 16;
 			
-			// aapt resource value: 49
-			public const int mapbox_MapView_mapbox_renderTextureMode = 49;
+			// aapt resource value: 27
+			public const int mapbox_MapView_mapbox_myLocationAccuracyAlpha = 27;
+			
+			// aapt resource value: 28
+			public const int mapbox_MapView_mapbox_myLocationAccuracyThreshold = 28;
+			
+			// aapt resource value: 26
+			public const int mapbox_MapView_mapbox_myLocationAccuracyTintColor = 26;
+			
+			// aapt resource value: 20
+			public const int mapbox_MapView_mapbox_myLocationBackgroundDrawable = 20;
+			
+			// aapt resource value: 25
+			public const int mapbox_MapView_mapbox_myLocationBackgroundMarginBottom = 25;
+			
+			// aapt resource value: 22
+			public const int mapbox_MapView_mapbox_myLocationBackgroundMarginLeft = 22;
+			
+			// aapt resource value: 24
+			public const int mapbox_MapView_mapbox_myLocationBackgroundMarginRight = 24;
+			
+			// aapt resource value: 23
+			public const int mapbox_MapView_mapbox_myLocationBackgroundMarginTop = 23;
+			
+			// aapt resource value: 21
+			public const int mapbox_MapView_mapbox_myLocationBackgroundTintColor = 21;
+			
+			// aapt resource value: 19
+			public const int mapbox_MapView_mapbox_myLocationBearingDrawable = 19;
+			
+			// aapt resource value: 18
+			public const int mapbox_MapView_mapbox_myLocationDrawable = 18;
+			
+			// aapt resource value: 17
+			public const int mapbox_MapView_mapbox_myLocationTintColor = 17;
+			
+			// aapt resource value: 50
+			public const int mapbox_MapView_mapbox_renderTextureMode = 50;
 			
 			// aapt resource value: 0
 			public const int mapbox_MapView_mapbox_styleUrl = 0;
 			
-			// aapt resource value: 42
-			public const int mapbox_MapView_mapbox_uiAttribution = 42;
-			
 			// aapt resource value: 43
-			public const int mapbox_MapView_mapbox_uiAttributionGravity = 43;
-			
-			// aapt resource value: 47
-			public const int mapbox_MapView_mapbox_uiAttributionMarginBottom = 47;
+			public const int mapbox_MapView_mapbox_uiAttribution = 43;
 			
 			// aapt resource value: 44
-			public const int mapbox_MapView_mapbox_uiAttributionMarginLeft = 44;
-			
-			// aapt resource value: 46
-			public const int mapbox_MapView_mapbox_uiAttributionMarginRight = 46;
-			
-			// aapt resource value: 45
-			public const int mapbox_MapView_mapbox_uiAttributionMarginTop = 45;
+			public const int mapbox_MapView_mapbox_uiAttributionGravity = 44;
 			
 			// aapt resource value: 48
-			public const int mapbox_MapView_mapbox_uiAttributionTintColor = 48;
+			public const int mapbox_MapView_mapbox_uiAttributionMarginBottom = 48;
 			
-			// aapt resource value: 28
-			public const int mapbox_MapView_mapbox_uiCompass = 28;
+			// aapt resource value: 45
+			public const int mapbox_MapView_mapbox_uiAttributionMarginLeft = 45;
 			
-			// aapt resource value: 35
-			public const int mapbox_MapView_mapbox_uiCompassDrawable = 35;
+			// aapt resource value: 47
+			public const int mapbox_MapView_mapbox_uiAttributionMarginRight = 47;
 			
-			// aapt resource value: 34
-			public const int mapbox_MapView_mapbox_uiCompassFadeFacingNorth = 34;
+			// aapt resource value: 46
+			public const int mapbox_MapView_mapbox_uiAttributionMarginTop = 46;
+			
+			// aapt resource value: 49
+			public const int mapbox_MapView_mapbox_uiAttributionTintColor = 49;
 			
 			// aapt resource value: 29
-			public const int mapbox_MapView_mapbox_uiCompassGravity = 29;
-			
-			// aapt resource value: 33
-			public const int mapbox_MapView_mapbox_uiCompassMarginBottom = 33;
-			
-			// aapt resource value: 30
-			public const int mapbox_MapView_mapbox_uiCompassMarginLeft = 30;
-			
-			// aapt resource value: 32
-			public const int mapbox_MapView_mapbox_uiCompassMarginRight = 32;
-			
-			// aapt resource value: 31
-			public const int mapbox_MapView_mapbox_uiCompassMarginTop = 31;
-			
-			// aapt resource value: 13
-			public const int mapbox_MapView_mapbox_uiDoubleTapGestures = 13;
+			public const int mapbox_MapView_mapbox_uiCompass = 29;
 			
 			// aapt resource value: 36
-			public const int mapbox_MapView_mapbox_uiLogo = 36;
+			public const int mapbox_MapView_mapbox_uiCompassDrawable = 36;
 			
-			// aapt resource value: 37
-			public const int mapbox_MapView_mapbox_uiLogoGravity = 37;
+			// aapt resource value: 35
+			public const int mapbox_MapView_mapbox_uiCompassFadeFacingNorth = 35;
 			
-			// aapt resource value: 41
-			public const int mapbox_MapView_mapbox_uiLogoMarginBottom = 41;
+			// aapt resource value: 30
+			public const int mapbox_MapView_mapbox_uiCompassGravity = 30;
 			
-			// aapt resource value: 38
-			public const int mapbox_MapView_mapbox_uiLogoMarginLeft = 38;
+			// aapt resource value: 34
+			public const int mapbox_MapView_mapbox_uiCompassMarginBottom = 34;
 			
-			// aapt resource value: 40
-			public const int mapbox_MapView_mapbox_uiLogoMarginRight = 40;
+			// aapt resource value: 31
+			public const int mapbox_MapView_mapbox_uiCompassMarginLeft = 31;
 			
-			// aapt resource value: 39
-			public const int mapbox_MapView_mapbox_uiLogoMarginTop = 39;
+			// aapt resource value: 33
+			public const int mapbox_MapView_mapbox_uiCompassMarginRight = 33;
 			
-			// aapt resource value: 11
-			public const int mapbox_MapView_mapbox_uiRotateGestures = 11;
-			
-			// aapt resource value: 10
-			public const int mapbox_MapView_mapbox_uiScrollGestures = 10;
-			
-			// aapt resource value: 12
-			public const int mapbox_MapView_mapbox_uiTiltGestures = 12;
+			// aapt resource value: 32
+			public const int mapbox_MapView_mapbox_uiCompassMarginTop = 32;
 			
 			// aapt resource value: 14
-			public const int mapbox_MapView_mapbox_uiZoomControls = 14;
+			public const int mapbox_MapView_mapbox_uiDoubleTapGestures = 14;
 			
-			// aapt resource value: 9
-			public const int mapbox_MapView_mapbox_uiZoomGestures = 9;
+			// aapt resource value: 37
+			public const int mapbox_MapView_mapbox_uiLogo = 37;
+			
+			// aapt resource value: 38
+			public const int mapbox_MapView_mapbox_uiLogoGravity = 38;
+			
+			// aapt resource value: 42
+			public const int mapbox_MapView_mapbox_uiLogoMarginBottom = 42;
+			
+			// aapt resource value: 39
+			public const int mapbox_MapView_mapbox_uiLogoMarginLeft = 39;
+			
+			// aapt resource value: 41
+			public const int mapbox_MapView_mapbox_uiLogoMarginRight = 41;
+			
+			// aapt resource value: 40
+			public const int mapbox_MapView_mapbox_uiLogoMarginTop = 40;
+			
+			// aapt resource value: 12
+			public const int mapbox_MapView_mapbox_uiRotateGestures = 12;
+			
+			// aapt resource value: 11
+			public const int mapbox_MapView_mapbox_uiScrollGestures = 11;
+			
+			// aapt resource value: 13
+			public const int mapbox_MapView_mapbox_uiTiltGestures = 13;
+			
+			// aapt resource value: 15
+			public const int mapbox_MapView_mapbox_uiZoomControls = 15;
+			
+			// aapt resource value: 10
+			public const int mapbox_MapView_mapbox_uiZoomGestures = 10;
 			
 			static Styleable()
 			{
