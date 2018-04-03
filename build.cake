@@ -10,7 +10,7 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
-var VERSION = "5.5.0";
+var VERSION = "5.5.1";
 var NUGET_SUFIX = "";
 
 //////////////////////////////////////////////////////////////////////
@@ -23,7 +23,7 @@ var artifacts = new [] {
         AssemblyInfoPath = "./Naxam.Mapbox.Droid/Properties/AssemblyInfo.cs",
         NuspecPath = "./mapbox.nuspec",
         DownloadUrl = "http://central.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-sdk/{0}/mapbox-android-sdk-{0}.aar",
-        JarPath = "./Naxam.Mapbox.Droid/Jars/mapbox-java-geojson.jar"
+        JarPath = "./Naxam.Mapbox.Droid/Jars/mapbox-android-sdk.aar"
     }
 };
 

@@ -24,7 +24,7 @@ namespace Naxam.MapboxQs
 			MapboxAccountManager.GetInstance(this, Resources.GetString(Resource.String.access_token));
 
 			SetContentView(Resource.Layout.Main);
-
+            System.Diagnostics.Debug.WriteLine("===========" + Com.Mapbox.Mapboxsdk.BuildConfig.VersionName + "   " + Com.Mapbox.Mapboxsdk.BuildConfig.VersionCode);
 			mapView = FindViewById<MapView>(Resource.Id.mapView);
 			//mapView.StyleUrl = Style.MapboxStreets;
 			mapView.OnCreate(bundle);
