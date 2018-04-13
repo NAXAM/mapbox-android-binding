@@ -10,7 +10,7 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
-var VERSION = "5.5.1";
+var VERSION = "5.5.2";
 var NUGET_SUFIX = "";
 
 //////////////////////////////////////////////////////////////////////
@@ -113,7 +113,7 @@ Task("Pack")
                 }
             },
             ReleaseNotes = new [] {
-                $"Mapbox-Map-Sdk-For-Android - DataCollector v{VERSION}"
+                $"Mapbox SDK for Android v{VERSION}"
             }
         });
     }

@@ -3,12 +3,12 @@
     <metadata>
         <!-- Required elements-->
         <id>Naxam.Mapbox.Droid</id>
-        <version>5.5.1.1</version>
+        <version>5.5.2</version>
         <authors>NAXAM</authors>
         <owners>NAXAM COMPANY LIMITED</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <title>Naxam - Mapbox Android SDK</title>
-        <summary>Mapbox Android SDK 5.5.1.1</summary>
+        <summary>Mapbox Android SDK 5.5.2</summary>
         <description>Xamarin Binding Library - Mapbox Android SDK</description>
         <iconUrl>https://avatars0.githubusercontent.com/u/600935</iconUrl>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
@@ -22,7 +22,6 @@
             <dependency id="Naxam.Jakewharton.Timber" version="4.5.1" />
             <dependency id="Naxam.Mapbox.MapboxJavaGeojson" version="2.2.10" />
             <dependency id="Naxam.Mapbox.Services.Android.Telemetry" version="2.2.10" />
-            <dependency id="Naxam.Mapzen.Droid" version="1.2.1" />
         </dependencies>
     </metadata>
     <files>
