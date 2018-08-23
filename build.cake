@@ -10,64 +10,69 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
-var VERSION = "3.4.0";
+var VERSION = "6.4.0";
 var NUGET_SUFIX = "";
-var NAV_VERSION = "0.11.1";
+var GESTURES_VERSION = "0.2.0";
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
 //////////////////////////////////////////////////////////////////////
 
 var artifacts = new [] {
-    // new Artifact {
-    //     Version = VERSION + NUGET_SUFIX,
-    //     NativeVersion = VERSION,
-    //     ReleaseNotes = new string [] {
-    //         "Mapbox for Android - SdkCore v{0}"
-    //     },
-    //     SolutionPath = "./mapbox-android.sln",
-    //     AssemblyInfoPath = "./Naxam.Mapbox.Droid/Properties/AssemblyInfo.cs",
-    //     NuspecPath = "./mapbox.nuspec",
-    //     DownloadUrl = "http://central.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-sdk/{0}/mapbox-android-sdk-{0}.aar",
-    //     JarPath = "./Naxam.Mapbox.Droid/Jars/mapbox-android-sdk.aar",
-    //     Dependencies = new NuSpecDependency[] {
-    //              new NuSpecDependency {
-    //                 Id = "Xamarin.Android.Support.Annotations",
-    //                 Version = "25.4.0.2"
-    //             },
-    //             new NuSpecDependency {
-    //                 Id = "Xamarin.Android.Support.Fragment",
-    //                 Version = "25.4.0.2"
-    //             },
-    //             new NuSpecDependency {
-    //                 Id = "Naxam.Jakewharton.Timber",
-    //                 Version = "4.5.1"
-    //             },
-    //             new NuSpecDependency {
-    //                 Id = "Naxam.Mapbox.MapboxJavaGeojson",
-    //                 Version = "2.2.10"
-    //             },
-    //             new NuSpecDependency {
-    //                 Id = "Naxam.Mapbox.Services.Android.Telemetry",
-    //                 Version = "2.2.10"
-    //             },
-    //             new NuSpecDependency {
-    //                 Id = "Square.OkHttp3",
-    //                 Version = "3.8.1"
-    //             }
-    //     }
-    // },
     new Artifact {
-        Version ="0.2.1",
-        NativeVersion = "0.2.1",
-        ReleaseNotes = new string [] {
-            "Mapbox for Android Core -  v{0}"
+        Version =GESTURES_VERSION,
+        NativeVersion = GESTURES_VERSION,
+        ReleaseNotes = new string [] 
+        {
+            "Mapbox for Android Gestures - v{0}"
         },
-        SolutionPath = "./Naxam.Mapbox.MapboxAndroidCore/Naxam.Mapbox.MapboxAndroidCore.sln",
-        AssemblyInfoPath = "./Naxam.Mapbox.MapboxAndroidCore/Naxam.Mapbox.MapboxAndroidCore/Properties/AssemblyInfo.cs",
-        NuspecPath = "./Naxam.Mapbox.MapboxAndroidCore/mapboxandroidcore.nuspec",
-        DownloadUrl = "http://central.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-core/{0}/mapbox-android-core-{0}.aar",
-        JarPath = "./Naxam.Mapbox.MapboxAndroidCore/Naxam.Mapbox.MapboxAndroidCore/Jars/mapbox-android-core.aar"
+        SolutionPath = "./mapboxgestures-droid/Naxam.MapboxGestures.Droid.sln",
+        AssemblyInfoPath = "./mapboxgestures-droid/Naxam.MapboxGestures.Droid/Properties/AssemblyInfo.cs",
+        NuspecPath = "./mapboxgestures-droid/mapboxgestures.nuspec",
+        DownloadUrl = "http://central.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-gestures/{0}/mapbox-android-gestures-{0}.aar",
+        JarPath = "./mapboxgestures-droid/Naxam.MapboxGestures.Droid/Jars/mapbox-android-gestures.aar"
+     },
+    new Artifact {
+        Version = VERSION + NUGET_SUFIX,
+        NativeVersion = VERSION,
+        ReleaseNotes = new string [] {
+            "Mapbox for Android - SdkCore v{0}"
+        },
+        SolutionPath = "./mapbox-android.sln",
+        AssemblyInfoPath = "./Naxam.Mapbox.Droid/Properties/AssemblyInfo.cs",
+        NuspecPath = "./mapbox.nuspec",
+        DownloadUrl = "http://central.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-sdk/{0}/mapbox-android-sdk-{0}.aar",
+        JarPath = "./Naxam.Mapbox.Droid/Jars/mapbox-android-sdk.aar",
+        Dependencies = new NuSpecDependency[] {
+                 new NuSpecDependency {
+                    Id = "Xamarin.Android.Support.Annotations",
+                    Version = "27.0.2.1"
+                },
+                new NuSpecDependency {
+                    Id = "Xamarin.Android.Support.Fragment",
+                    Version = "27.0.2.1"
+                },
+                new NuSpecDependency {
+                    Id = "Naxam.Jakewharton.Timber",
+                    Version = "4.7.1"
+                },
+                new NuSpecDependency {
+                    Id = "Naxam.MapboxSdkGeojson.Droid",
+                    Version = "3.4.0"
+                },
+                new NuSpecDependency {
+                    Id = "Naxam.Mapbox.Services.Android.Telemetry",
+                    Version = "3.1.5.2"
+                },
+                new NuSpecDependency {
+                    Id = "Square.OkHttp3",
+                    Version = "3.8.1"
+                },
+                 new NuSpecDependency {
+                    Id = "Naxam.MapboxGestures.Droid",
+                    Version = "0.2.0"
+                }
+        }
     }
 };
 

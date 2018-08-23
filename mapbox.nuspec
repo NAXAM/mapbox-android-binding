@@ -3,26 +3,18 @@
     <metadata>
         <!-- Required elements-->
         <id>Naxam.Mapbox.Droid</id>
-        <version>5.5.2</version>
+        <version>6.4.0</version>
         <authors>NAXAM</authors>
         <owners>NAXAM COMPANY LIMITED</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <title>Naxam - Mapbox Android SDK</title>
-        <summary>Mapbox Android SDK 5.5.2</summary>
+        <summary>Mapbox Android SDK 6.4.0</summary>
         <description>Xamarin Binding Library - Mapbox Android SDK</description>
         <iconUrl>https://avatars0.githubusercontent.com/u/600935</iconUrl>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>https://github.com/NAXAM/mapbox-android-binding</projectUrl>
         <copyright>Copyright (c) 2017-present NAXAM</copyright>
         <tags>xamarin, Xamarin.Android, Mapbox</tags>
-        <dependencies>
-            <dependency id="Xamarin.Android.Support.Annotations" version="25.4.0.2" />
-            <dependency id="Xamarin.Android.Support.Fragment" version="25.4.0.2" />
-            <dependency id="Square.OkHttp3" version="3.8.1" />
-            <dependency id="Naxam.Jakewharton.Timber" version="4.5.1" />
-            <dependency id="Naxam.Mapbox.MapboxJavaGeojson" version="2.2.10" />
-            <dependency id="Naxam.Mapbox.Services.Android.Telemetry" version="2.2.10" />
-        </dependencies>
     </metadata>
     <files>
         <file src="Naxam.Mapbox.Droid/bin/Release/Naxam.Mapbox.Droid.dll" target="lib/MonoAndroid10/Naxam.Mapbox.Droid.dll" />

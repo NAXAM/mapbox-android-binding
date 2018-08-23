@@ -6,9 +6,9 @@
 	<attr
 		path="/api/package[@name='com.mapbox.mapboxsdk.style.functions.stops']/class[@name='IdentityStops']/method[@name='getTypeName']"
 		name="visibility">public</attr>
-	<attr
+	<!--<attr
 		path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='queryRenderedFeatures']"
-		name="managedReturn">System.Collections.Generic.IList&lt;Com.Mapbox.Services.Commons.Geojson.Feature&gt;</attr>
+		name="managedReturn">System.Collections.Generic.IList&lt;Com.Mapbox.Services.Commons.Geojson.Feature&gt;</attr>-->
 	<attr
 		path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='Transform']"
 		name="visibility">public</attr>
