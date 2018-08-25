@@ -22,6 +22,8 @@ Install-Package Naxam.Mapbox.Droid
 
 Plz follow the official guide [here](https://www.mapbox.com/help/first-steps-android-sdk/).
 
+NOTE: Have to build custom AAR because of Java8 & lint.jar duplication.
+
 ## License
 
 Mapbox binding library for Android is released under the MIT license.

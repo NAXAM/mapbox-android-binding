@@ -1,15 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
 	<attr
-		path="/api/package[@name='com.mapbox.mapboxsdk.style.functions.stops']/class[@name='Stops']/method[@name='getTypeName']"
-		name="visibility">public</attr>
-	<attr
-		path="/api/package[@name='com.mapbox.mapboxsdk.style.functions.stops']/class[@name='IdentityStops']/method[@name='getTypeName']"
-		name="visibility">public</attr>
-	<!--<attr
-		path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='queryRenderedFeatures']"
-		name="managedReturn">System.Collections.Generic.IList&lt;Com.Mapbox.Services.Commons.Geojson.Feature&gt;</attr>-->
-	<attr
 		path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='Transform']"
 		name="visibility">public</attr>
 	<attr
@@ -19,10 +10,6 @@
 		path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnRegisterTouchListener']" />
 	<!--<remove-node
 		path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapView.RegisterTouchListener']" />-->
-	<remove-node
-		path="/api/package[@name='com.almeros.android.multitouch.gesturedetectors']/class[@name='TwoFingerGestureDetector']/method[@name='handleInProgressEvent']" />
-	<remove-node
-		path="/api/package[@name='com.almeros.android.multitouch.gesturedetectors']/class[@name='TwoFingerGestureDetector']/method[@name='handleStartProgressEvent']" />
 	<remove-node
 		path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='PolygonOptions']/method[@name='addHole' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.mapbox.mapboxsdk.geometry.LatLng&gt;...']]" />
 	<attr
@@ -133,27 +120,7 @@
 	<attr
 		path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='BaseMarkerViewOptions']/method[@name='getMarker']"
 		name="visibility">public</attr>
-	<attr
-		path="/api/package[@name='com.almeros.android.multitouch.gesturedetectors']/class[@name='BaseGestureDetector']/field[@name='context']"
-		name="managedName">_context</attr>
-	<attr
-		path="/api/package[@name='com.almeros.android.multitouch.gesturedetectors']/class[@name='BaseGestureDetector']/field[@name='currEvent']"
-		name="managedName">_currEvent</attr>
-	<attr
-		path="/api/package[@name='com.almeros.android.multitouch.gesturedetectors']/class[@name='BaseGestureDetector']/field[@name='currPressure']"
-		name="managedName">_currPressure</attr>
-	<attr
-		path="/api/package[@name='com.almeros.android.multitouch.gesturedetectors']/class[@name='BaseGestureDetector']/field[@name='gestureInProgress']"
-		name="managedName">_gestureInProgress</attr>
-	<attr
-		path="/api/package[@name='com.almeros.android.multitouch.gesturedetectors']/class[@name='BaseGestureDetector']/field[@name='prevEvent']"
-		name="managedName">_prevEvent</attr>
-	<attr
-		path="/api/package[@name='com.almeros.android.multitouch.gesturedetectors']/class[@name='BaseGestureDetector']/field[@name='prevPressure']"
-		name="managedName">_prevPressure</attr>
-	<attr
-		path="/api/package[@name='com.almeros.android.multitouch.gesturedetectors']/class[@name='BaseGestureDetector']/field[@name='timeDelta']"
-		name="managedName">_timeDelta</attr>
+	
 	<attr
 		path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='MarkerViewOptions']/method[@name='getThis' and count(parameter)=0]"
 		name="managedName">ThisMarkerViewOptions</attr>
