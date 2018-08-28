@@ -11,7 +11,7 @@ var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
 var VERSION = "6.4.0";
-var NUGET_SUFIX = "";
+var NUGET_SUFIX = ".1";
 var GESTURES_VERSION = "0.2.0";
 
 //////////////////////////////////////////////////////////////////////
@@ -62,7 +62,11 @@ var artifacts = new [] {
                 },
                 new NuSpecDependency {
                     Id = "Naxam.Mapbox.Services.Android.Telemetry",
-                    Version = "3.1.5.2"
+                    Version = "3.1.5.3"
+                },
+                new NuSpecDependency {
+                    Id = "Xamarin.GooglePlayServices.Location",
+                    Version = "60.1142.1"
                 },
                 new NuSpecDependency {
                     Id = "Square.OkHttp3",
@@ -114,14 +118,19 @@ Task("UpdateVersion")
     }
 });
 
-Task("Pack")
-    .IsDependentOn("Downloads")
-    .IsDependentOn("UpdateVersion")
+Task("Build")
     .Does(() =>
 {
     foreach(var artifact in artifacts) {
         NuGetRestore(artifact.SolutionPath);
         MSBuild(artifact.SolutionPath, settings => settings.SetConfiguration(configuration));
+    }
+});
+
+Task("Pack")
+    .Does(() =>
+{
+    foreach(var artifact in artifacts) {
         NuGetPack(artifact.NuspecPath, new NuGetPackSettings {
             Version = artifact.Version,
             Dependencies = artifact.Dependencies,
@@ -136,6 +145,9 @@ Task("Pack")
 //////////////////////////////////////////////////////////////////////
 
 Task("Default")
+    // .IsDependentOn("Downloads")
+    // .IsDependentOn("UpdateVersion")
+    .IsDependentOn("Build")
     .IsDependentOn("Pack");
 
 //////////////////////////////////////////////////////////////////////
