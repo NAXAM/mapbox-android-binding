@@ -10,9 +10,10 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
-var VERSION = "6.4.0";
-var NUGET_SUFIX = ".1";
-var GESTURES_VERSION = "0.2.0";
+var VERSION = "8.0.0";
+var NUGET_SUFIX = ".0";
+var GESTURES_VERSION = "0.4.2";
+var ACCOUNTS_VERSION = "0.1.0";
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
@@ -26,11 +27,24 @@ var artifacts = new [] {
         {
             "Mapbox for Android Gestures - v{0}"
         },
-        SolutionPath = "./mapboxgestures-droid/Naxam.MapboxGestures.Droid.sln",
-        AssemblyInfoPath = "./mapboxgestures-droid/Naxam.MapboxGestures.Droid/Properties/AssemblyInfo.cs",
-        NuspecPath = "./mapboxgestures-droid/mapboxgestures.nuspec",
+        SolutionPath = "./mapbox-android.sln",
+        AssemblyInfoPath = "./Naxam.MapboxGestures.Droid/Properties/AssemblyInfo.cs",
+        NuspecPath = "./mapboxgestures.nuspec",
         DownloadUrl = "http://central.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-gestures/{0}/mapbox-android-gestures-{0}.aar",
-        JarPath = "./mapboxgestures-droid/Naxam.MapboxGestures.Droid/Jars/mapbox-android-gestures.aar"
+        JarPath = "./Naxam.MapboxGestures.Droid/Jars/mapbox-android-gestures.aar"
+     },
+    new Artifact {
+        Version =ACCOUNTS_VERSION,
+        NativeVersion = ACCOUNTS_VERSION,
+        ReleaseNotes = new string [] 
+        {
+            "Mapbox for Android Accounts - v{0}"
+        },
+        SolutionPath = "./mapbox-android.sln",
+        AssemblyInfoPath = ".Naxam.MapboxAccounts.Droid/Properties/AssemblyInfo.cs",
+        NuspecPath = "./mapboxaccounts.nuspec",
+        DownloadUrl = "http://central.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-gestures/{0}/mapbox-android-accounts-{0}.aar",
+        JarPath = "./Naxam.MapboxAccounts.Droid/Jars/mapbox-android-accounts.aar"
      },
     new Artifact {
         Version = VERSION + NUGET_SUFIX,
@@ -45,37 +59,21 @@ var artifacts = new [] {
         JarPath = "./Naxam.Mapbox.Droid/Jars/mapbox-android-sdk.aar",
         Dependencies = new NuSpecDependency[] {
                  new NuSpecDependency {
-                    Id = "Xamarin.Android.Support.Annotations",
-                    Version = "27.0.2.1"
+                    Id = "Naxam.MapboxAccounts.Droid",
+                    Version = ACCOUNTS_VERSION
                 },
                 new NuSpecDependency {
-                    Id = "Xamarin.Android.Support.Fragment",
-                    Version = "27.0.2.1"
-                },
-                new NuSpecDependency {
-                    Id = "Naxam.Jakewharton.Timber",
-                    Version = "4.7.1"
-                },
-                new NuSpecDependency {
-                    Id = "Naxam.MapboxSdkGeojson.Droid",
-                    Version = "3.4.0"
+                    Id = "Naxam.MapboxGestures.Droid",
+                    Version = GESTURES_VERSION
                 },
                 new NuSpecDependency {
                     Id = "Naxam.Mapbox.Services.Android.Telemetry",
-                    Version = "3.1.5.3"
+                    Version = "4.4.1"
                 },
                 new NuSpecDependency {
-                    Id = "Xamarin.GooglePlayServices.Location",
-                    Version = "60.1142.1"
+                    Id = "Naxam.MapboxSdkGeojson.Droid",
+                    Version = "4.8.0"
                 },
-                new NuSpecDependency {
-                    Id = "Square.OkHttp3",
-                    Version = "3.8.1"
-                },
-                 new NuSpecDependency {
-                    Id = "Naxam.MapboxGestures.Droid",
-                    Version = "0.2.0"
-                }
         }
     }
 };
@@ -123,7 +121,10 @@ Task("Build")
 {
     foreach(var artifact in artifacts) {
         NuGetRestore(artifact.SolutionPath);
-        MSBuild(artifact.SolutionPath, settings => settings.SetConfiguration(configuration));
+        MSBuild(artifact.SolutionPath, settings => {
+            settings.ToolVersion = MSBuildToolVersion.VS2019;
+            settings.SetConfiguration(configuration);
+        });
     }
 });
 

@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2015
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.Mapbox.Droid", "Naxam.Mapbox.Droid\Naxam.Mapbox.Droid.csproj", "{974F61D3-E549-4659-AF38-1A1A77C5F86F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{49B66872-DA9E-4B05-A208-24C0B3EF2180}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.MapboxQs", "demo\Naxam.MapboxQs\Naxam.MapboxQs.csproj", "{5B5A4F5E-DDB1-4160-973A-114D9D8A060C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.MapboxGestures.Droid", "Naxam.MapboxGestures.Droid\Naxam.MapboxGestures.Droid.csproj", "{33149EE9-BC7F-469D-B14F-A30D1B9277D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.MapboxAccounts.Droid", "Naxam.MapboxAccounts.Droid\Naxam.MapboxAccounts.Droid.csproj", "{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +48,30 @@ Global
 		{5B5A4F5E-DDB1-4160-973A-114D9D8A060C}.Release|iPhone.Build.0 = Release|Any CPU
 		{5B5A4F5E-DDB1-4160-973A-114D9D8A060C}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{5B5A4F5E-DDB1-4160-973A-114D9D8A060C}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{33149EE9-BC7F-469D-B14F-A30D1B9277D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33149EE9-BC7F-469D-B14F-A30D1B9277D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33149EE9-BC7F-469D-B14F-A30D1B9277D1}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{33149EE9-BC7F-469D-B14F-A30D1B9277D1}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{33149EE9-BC7F-469D-B14F-A30D1B9277D1}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{33149EE9-BC7F-469D-B14F-A30D1B9277D1}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{33149EE9-BC7F-469D-B14F-A30D1B9277D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33149EE9-BC7F-469D-B14F-A30D1B9277D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33149EE9-BC7F-469D-B14F-A30D1B9277D1}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{33149EE9-BC7F-469D-B14F-A30D1B9277D1}.Release|iPhone.Build.0 = Release|Any CPU
+		{33149EE9-BC7F-469D-B14F-A30D1B9277D1}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{33149EE9-BC7F-469D-B14F-A30D1B9277D1}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}.Release|iPhone.Build.0 = Release|Any CPU
+		{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
