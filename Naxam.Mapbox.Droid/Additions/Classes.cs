@@ -1,5 +1,6 @@
 ﻿using System;
 using Android.Runtime;
+using Java.Lang;
 
 namespace Com.Mapbox.Mapboxsdk.Annotations
 {
@@ -35,13 +36,13 @@ namespace Com.Mapbox.Mapboxsdk.Annotations
         }
     }
 
-    public partial class MarkerViewOptions
-    {
-        public override BaseMarkerViewOptions This
-        {
-            get { return ThisMarkerViewOptions(); }
-        }
-    }
+    //public partial class MarkerViewOptions
+    //{
+    //    public override BaseMarkerViewOptions This
+    //    {
+    //        get { return ThisMarkerViewOptions(); }
+    //    }
+    //}
 
     partial class PolygonOptions
     {
@@ -76,16 +77,39 @@ namespace Com.Mapbox.Mapboxsdk.Annotations
 
     public static class BaseOptionsExtensions
     {
-        public static T This<T>(this BaseMarkerOptions options) where T : BaseMarkerOptions
-        {
-            return (T)options.This;
-        }
+        //public static T This<T>(this BaseMarkerOptions options) where T : BaseMarkerOptions
+        //{
+        //    return (T)options.This;
+        //}
 
-        public static T This<T>(this BaseMarkerViewOptions options) where T : BaseMarkerViewOptions
-        {
-            return (T)options.This;
-        }
+        //public static T This<T>(this BaseMarkerViewOptions options) where T : BaseMarkerViewOptions
+        //{
+        //    return (T)options.This;
+        //}
 
     }
 
+}
+
+
+namespace Com.Mapbox.Mapboxsdk.Utils
+{
+    partial class FileUtils
+    {
+        partial class CheckFileReadPermissionTask
+        {
+            protected override Java.Lang.Object DoInBackground(params Java.Lang.Object[] @params)
+            {
+                return null;
+            }
+        }
+
+        partial class CheckFileWritePermissionTask
+        {
+            protected override Java.Lang.Object DoInBackground(params Java.Lang.Object[] @params)
+            {
+                return null;
+            }
+        }
+    }
 }

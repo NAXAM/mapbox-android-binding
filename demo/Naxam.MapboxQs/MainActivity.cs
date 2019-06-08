@@ -24,24 +24,15 @@ namespace Naxam.MapboxQs
 			MapboxAccountManager.GetInstance(this, Resources.GetString(Resource.String.access_token));
 
 			SetContentView(Resource.Layout.Main);
-            System.Diagnostics.Debug.WriteLine("===========" + Com.Mapbox.Mapboxsdk.BuildConfig.VersionName + "   " + Com.Mapbox.Mapboxsdk.BuildConfig.VersionCode);
+            System.Diagnostics.Debug.WriteLine("===========" + Com.Mapbox.Mapboxsdk.BuildConfig.MapboxSdkVersion + "   " + Com.Mapbox.Mapboxsdk.BuildConfig.MapboxVersionString + "   " + Com.Mapbox.Mapboxsdk.BuildConfig.MapboxSdkIdentifier);
 			mapView = FindViewById<MapView>(Resource.Id.mapView);
-			//mapView.StyleUrl = Style.MapboxStreets;
 			mapView.OnCreate(bundle);
-
 			mapView.GetMapAsync(this);
 
             //global::Xamarin.Forms.Forms.Init(this, bundle);
 
             //LoadApplication(new App());
 
-            MarkerOptions options = new MarkerOptions()
-                .SetTitle("Hello")
-				.This<MarkerOptions>();
-            
-			MarkerViewOptions viewOptions = new MarkerViewOptions()
-                .InvokeTitle("Hello")
-				.This<MarkerViewOptions>();
 		}
 
 		protected override void OnStart()
@@ -56,8 +47,8 @@ namespace Naxam.MapboxQs
 						   .Target(new LatLng(41.885, -87.679)) // Sets the new camera position
 						   .Zoom(11) // Sets the zoom
 						   .Build(); // Creates a CameraPosition from the builder
-
-			map.AnimateCamera(CameraUpdateFactory.NewCameraPosition(position));
+            map.SetStyle(Style.MapboxStreets);
+            map.AnimateCamera(CameraUpdateFactory.NewCameraPosition(position));
 
 		}
 

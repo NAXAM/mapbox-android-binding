@@ -43,7 +43,7 @@ var artifacts = new [] {
         SolutionPath = "./mapbox-android.sln",
         AssemblyInfoPath = ".Naxam.MapboxAccounts.Droid/Properties/AssemblyInfo.cs",
         NuspecPath = "./mapboxaccounts.nuspec",
-        DownloadUrl = "http://central.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-gestures/{0}/mapbox-android-accounts-{0}.aar",
+        DownloadUrl = "http://jcenter.bintray.com/com/mapbox/mapboxsdk/mapbox-android-accounts/{0}/mapbox-android-accounts-{0}.aar",
         JarPath = "./Naxam.MapboxAccounts.Droid/Jars/mapbox-android-accounts.aar"
      },
     new Artifact {
@@ -73,6 +73,22 @@ var artifacts = new [] {
                 new NuSpecDependency {
                     Id = "Naxam.MapboxSdkGeojson.Droid",
                     Version = "4.8.0"
+                },
+                new NuSpecDependency {
+                    Id = "Naxam.MapboxSdkTurf.Droid",
+                    Version = "4.8.0"
+                },
+                new NuSpecDependency {
+                    Id = "Xamarin.Android.Support.Fragment",
+                    Version = "28.0.0.1"
+                },
+                new NuSpecDependency {
+                    Id = "Xamarin.Android.Support.Annotations",
+                    Version = "28.0.0.1"
+                },
+                new NuSpecDependency {
+                    Id = "Xbindings.ReLinker.Droid",
+                    Version = "1.2.3"
                 },
         }
     }
@@ -146,8 +162,8 @@ Task("Pack")
 //////////////////////////////////////////////////////////////////////
 
 Task("Default")
-    // .IsDependentOn("Downloads")
-    // .IsDependentOn("UpdateVersion")
+    .IsDependentOn("Downloads")
+    .IsDependentOn("UpdateVersion")
     .IsDependentOn("Build")
     .IsDependentOn("Pack");
 

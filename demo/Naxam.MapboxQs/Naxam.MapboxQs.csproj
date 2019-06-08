@@ -35,9 +35,6 @@
     <AndroidSupportedAbis>armeabi-v7a;x86;x86_64;arm64-v8a</AndroidSupportedAbis>
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
     <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
-    <AotAssemblies>false</AotAssemblies>
-    <EnableLLVM>false</EnableLLVM>
-    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -87,26 +84,38 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Naxam.Mapbox.Droid\Naxam.Mapbox.Droid.csproj">
-      <Project>{974F61D3-E549-4659-AF38-1A1A77C5F86F}</Project>
-      <Name>Naxam.Mapbox.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Naxam.MapboxAccounts.Droid\Naxam.MapboxAccounts.Droid.csproj">
-      <Project>{cc0b3160-e7b8-44b4-a3ec-9d4a87989e0c}</Project>
-      <Name>Naxam.MapboxAccounts.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Naxam.MapboxGestures.Droid\Naxam.MapboxGestures.Droid.csproj">
-      <Project>{33149ee9-bc7f-469d-b14f-a30d1b9277d1}</Project>
-      <Name>Naxam.MapboxGestures.Droid</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Naxam.Mapbox.Services.Android.Telemetry">
       <Version>4.4.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat">
       <Version>28.0.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Naxam.MapboxSdkTurf.Droid">
+      <Version>4.8.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Fragment">
+      <Version>28.0.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Annotations">
+      <Version>28.0.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xbindings.ReLinker.Droid">
+      <Version>1.2.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Naxam.Mapbox.Droid\Naxam.Mapbox.Droid.csproj">
+      <Project>{974F61D3-E549-4659-AF38-1A1A77C5F86F}</Project>
+      <Name>Naxam.Mapbox.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Naxam.MapboxAccounts.Droid\Naxam.MapboxAccounts.Droid.csproj">
+      <Project>{CC0B3160-E7B8-44B4-A3EC-9D4A87989E0C}</Project>
+      <Name>Naxam.MapboxAccounts.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Naxam.MapboxGestures.Droid\Naxam.MapboxGestures.Droid.csproj">
+      <Project>{33149EE9-BC7F-469D-B14F-A30D1B9277D1}</Project>
+      <Name>Naxam.MapboxGestures.Droid</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

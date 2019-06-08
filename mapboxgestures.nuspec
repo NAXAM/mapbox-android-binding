@@ -8,7 +8,6 @@
         <owners>NAXAM COMPANY LIMITED</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <title>Naxam - Mapbox Android Gestures</title>
-        <summary>Mapbox Android Gestures 0.2.0</summary>
         <description>Xamarin Binding Library - Mapbox Android Gestures</description>
         <iconUrl>https://avatars0.githubusercontent.com/u/600935</iconUrl>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>

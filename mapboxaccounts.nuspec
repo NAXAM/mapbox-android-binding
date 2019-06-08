@@ -8,7 +8,6 @@
         <owners>NAXAM COMPANY LIMITED</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <title>Naxam - Mapbox Android Accounts</title>
-        <summary>Mapbox Android Accounts 0.2.0</summary>
         <description>Xamarin Binding Library - Mapbox Android Accounts</description>
         <iconUrl>https://avatars0.githubusercontent.com/u/600935</iconUrl>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
