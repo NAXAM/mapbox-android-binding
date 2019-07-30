@@ -72,7 +72,7 @@ var artifacts = new [] {
                 },
                 new NuSpecDependency {
                     Id = "Naxam.MapboxSdkGeojson.Droid",
-                    Version = "4.8.0"
+                    Version = "4.8.0.1"
                 },
                 new NuSpecDependency {
                     Id = "Naxam.MapboxSdkTurf.Droid",
