@@ -47,7 +47,7 @@ namespace Naxam.MapboxQs
 						   .Target(new LatLng(41.885, -87.679)) // Sets the new camera position
 						   .Zoom(11) // Sets the zoom
 						   .Build(); // Creates a CameraPosition from the builder
-            map.SetStyle(Style.MapboxStreets);
+            map.SetStyle(Style.MAPBOX_STREETS);
             map.AnimateCamera(CameraUpdateFactory.NewCameraPosition(position));
 
 		}

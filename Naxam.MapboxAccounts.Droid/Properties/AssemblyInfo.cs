@@ -7,12 +7,12 @@ using Android.App;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Naxam.MapboxAccounts.Droid")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Xamarin Binding Library - Mapbox Accounts for Android")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Naxam.MapboxAccounts.Droid")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("NAXAM COMPANY LIMITED")]
+[assembly: AssemblyProduct("X Bindings")]
+[assembly: AssemblyCopyright("Copyright (c) 2017-present NAXAM")]
+[assembly: AssemblyTrademark("NAXAM")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 

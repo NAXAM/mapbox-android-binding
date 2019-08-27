@@ -7,12 +7,12 @@ using Android.App;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Naxam.MapboxGestures.Droid")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Xamarin Binding Library - Mapbox Gestures for Android")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Naxam.MapboxGestures.Droid")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("NAXAM COMPANY LIMITED")]
+[assembly: AssemblyProduct("X Bindings")]
+[assembly: AssemblyCopyright("Copyright (c) 2017-present NAXAM")]
+[assembly: AssemblyTrademark("NAXAM")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Naxam.MapboxAnnotation.Droid</id>
+        <version>6.4.0</version>
+        <authors>NAXAM</authors>
+        <owners>NAXAM COMPANY LIMITED</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>Naxam - Mapbox Android SDK - Annotation Plugin</title>
+        <description>Xamarin Binding Library - Mapbox Android SDK - Annotation Plugin</description>
+        <iconUrl>https://avatars0.githubusercontent.com/u/600935</iconUrl>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/NAXAM/mapbox-android-binding</projectUrl>
+        <copyright>Copyright (c) 2019-present NAXAM</copyright>
+        <tags>xamarin, Xamarin.Android, Mapbox, mapbox-android-plugin-annotation-v8</tags>
+    </metadata>
+    <files>
+        <file src="Naxam.MapboxAnnotation.Droid/bin/Release/Naxam.MapboxAnnotation.Droid.dll" target="lib/MonoAndroid10/Naxam.MapboxAnnotation.Droid.dll" />
+    </files>
+</package>

@@ -13,7 +13,7 @@
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>https://github.com/NAXAM/mapbox-android-binding</projectUrl>
         <copyright>Copyright (c) 2017-present NAXAM</copyright>
-        <tags>xamarin, Xamarin.Android, Mapbox</tags>
+        <tags>xamarin, Xamarin.Android, Mapbox, mapbox-android-sdk</tags>
     </metadata>
     <files>
         <file src="Naxam.Mapbox.Droid/bin/Release/Naxam.Mapbox.Droid.dll" target="lib/MonoAndroid10/Naxam.Mapbox.Droid.dll" />
