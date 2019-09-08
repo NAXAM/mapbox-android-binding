@@ -10,48 +10,52 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
-var VERSION = "8.0.0";
-var NUGET_SUFIX = ".2";
-var GESTURES_VERSION = "0.4.2";
-var ACCOUNTS_VERSION = "0.1.0";
+var VERSION = "8.3.0";
+var NUGET_SUFIX = ".0";
+
+var GESTURES_VERSION = "0.5.1";
+var GESTURES_NUGET_SUFIX=".0";
+
+var ACCOUNTS_VERSION = "0.2.0";
+var ACCOUNTS_NUGET_SUFIX=".0";
+
 var OFFLINE_VERSION = "0.6.0";
 var OFFLINE_NUGET_SUFIX=".0";
-var ACCOUNTS_NUGET_SUFIX="";
-var GESTURES_NUGET_SUFIX="";
+
 var ANNOTATION_VERSION="0.7.0";
-var ANNOTATION_NUGET_SUFIX=".0";
+var ANNOTATION_NUGET_SUFIX=".1";
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
 //////////////////////////////////////////////////////////////////////
 
 var artifacts = new [] {
-    // new Artifact {
-    //     Version =GESTURES_VERSION,
-    //     NativeVersion = GESTURES_VERSION,
-    //     ReleaseNotes = new string [] 
-    //     {
-    //         "Mapbox for Android Gestures - v{0}"
-    //     },
-    //     SolutionPath = "./mapbox-android.sln",
-    //     AssemblyInfoPath = "./Naxam.MapboxGestures.Droid/Properties/AssemblyInfo.cs",
-    //     NuspecPath = "./mapboxgestures.nuspec",
-    //     DownloadUrl = "http://central.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-gestures/{0}/mapbox-android-gestures-{0}.aar",
-    //     JarPath = "./Naxam.MapboxGestures.Droid/Jars/mapbox-android-gestures.aar"
-    //  },
-    // new Artifact {
-    //     Version =ACCOUNTS_VERSION,
-    //     NativeVersion = ACCOUNTS_VERSION,
-    //     ReleaseNotes = new string [] 
-    //     {
-    //         "Mapbox for Android Accounts - v{0}"
-    //     },
-    //     SolutionPath = "./mapbox-android.sln",
-    //     AssemblyInfoPath = ".Naxam.MapboxAccounts.Droid/Properties/AssemblyInfo.cs",
-    //     NuspecPath = "./mapboxaccounts.nuspec",
-    //     DownloadUrl = "http://jcenter.bintray.com/com/mapbox/mapboxsdk/mapbox-android-accounts/{0}/mapbox-android-accounts-{0}.aar",
-    //     JarPath = "./Naxam.MapboxAccounts.Droid/Jars/mapbox-android-accounts.aar"
-    //  },
+    new Artifact {
+        Version =GESTURES_VERSION + GESTURES_NUGET_SUFIX,
+        NativeVersion = GESTURES_VERSION,
+        ReleaseNotes = new string [] 
+        {
+            string.Format("Mapbox for Android Gestures - v{0}", GESTURES_VERSION)
+        },
+        SolutionPath = "./mapbox-android.sln",
+        AssemblyInfoPath = "./Naxam.MapboxGestures.Droid/Properties/AssemblyInfo.cs",
+        NuspecPath = "./mapboxgestures.nuspec",
+        DownloadUrl = "http://central.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-gestures/{0}/mapbox-android-gestures-{0}.aar",
+        JarPath = "./Naxam.MapboxGestures.Droid/Jars/mapbox-android-gestures.aar"
+     },
+    new Artifact {
+        Version =ACCOUNTS_VERSION + ACCOUNTS_NUGET_SUFIX,
+        NativeVersion = ACCOUNTS_VERSION,
+        ReleaseNotes = new string [] 
+        {
+            string.Format("Mapbox for Android Accounts - v{0}", ACCOUNTS_VERSION)
+        },
+        SolutionPath = "./mapbox-android.sln",
+        AssemblyInfoPath = ".Naxam.MapboxAccounts.Droid/Properties/AssemblyInfo.cs",
+        NuspecPath = "./mapboxaccounts.nuspec",
+        DownloadUrl = "http://jcenter.bintray.com/com/mapbox/mapboxsdk/mapbox-android-accounts/{0}/mapbox-android-accounts-{0}.aar",
+        JarPath = "./Naxam.MapboxAccounts.Droid/Jars/mapbox-android-accounts.aar"
+     },
     new Artifact {
         Version = VERSION + NUGET_SUFIX,
         NativeVersion = VERSION,
@@ -66,11 +70,11 @@ var artifacts = new [] {
         Dependencies = new NuSpecDependency[] {
                 new NuSpecDependency {
                 Id = "Naxam.MapboxAccounts.Droid",
-                Version = ACCOUNTS_VERSION
+                Version = ACCOUNTS_VERSION+ACCOUNTS_NUGET_SUFIX
             },
             new NuSpecDependency {
                 Id = "Naxam.MapboxGestures.Droid",
-                Version = GESTURES_VERSION
+                Version = GESTURES_VERSION+GESTURES_NUGET_SUFIX
             },
             new NuSpecDependency {
                 Id = "Naxam.Mapbox.Services.Android.Telemetry",
@@ -93,71 +97,71 @@ var artifacts = new [] {
                 Version = "28.0.0.1"
             },
             new NuSpecDependency {
-                Id = "Xbindings.ReLinker.Droid",
-                Version = "1.2.3"
+                Id = "Naxam.SoLoader.Droid",
+                Version = "0.6.1.2"
             },
         },
     },
-    new Artifact {
-        Version = OFFLINE_VERSION + OFFLINE_NUGET_SUFIX,
-        NativeVersion = OFFLINE_VERSION,
-        ReleaseNotes = new string [] {
-            string.Format("Mapbox for Android - Offline Plugin v{0}", OFFLINE_VERSION)
-        },
-        SolutionPath = "./mapbox-android.sln",
-        AssemblyInfoPath = "./Naxam.MapboxOffline.Droid/Properties/AssemblyInfo.cs",
-        NuspecPath = "./mapbox-android-plugin-offline-v8.nuspec",
-        DownloadUrl = "https://repo1.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-plugin-offline-v8/{0}/mapbox-android-plugin-offline-v8-{0}.aar",
-        JarPath = "./Naxam.MapboxOffline.Droid/Jars/mapbox-android-plugin-offline-v8.aar",
-        Dependencies = new NuSpecDependency[] {
-                new NuSpecDependency {
-                Id = "Naxam.Mapbox.Droid",
-                Version = VERSION + NUGET_SUFIX
-            },
-            new NuSpecDependency {
-                Id = "Xamarin.Android.Support.v7.AppCompat",
-                Version = "28.0.0.1"
-            },
-            new NuSpecDependency {
-                Id = "Xamarin.Android.Support.v4",
-                Version = "28.0.0.1"
-            },
-            new NuSpecDependency {
-                Id = "Xamarin.Android.Support.Design",
-                Version = "28.0.0.1"
-            },
-            new NuSpecDependency {
-                Id = "Xamarin.Android.Support.Constraint.Layout",
-                Version = "1.1.2"
-            },
-            new NuSpecDependency {
-                Id = "Naxam.Jakewharton.Timber",
-                Version = "4.7.1"
-            },
-        }
-    },
-    new Artifact {
-        Version = ANNOTATION_VERSION + ANNOTATION_NUGET_SUFIX,
-        NativeVersion = ANNOTATION_VERSION,
-        ReleaseNotes = new string [] {
-            string.Format("Mapbox for Android - Annotation Plugin v{0}", ANNOTATION_VERSION)
-        },
-        SolutionPath = "./mapbox-android.sln",
-        AssemblyInfoPath = "./Naxam.MapboxAnnotation.Droid/Properties/AssemblyInfo.cs",
-        NuspecPath = "./mapbox-android-plugin-annotation-v8.nuspec",
-        DownloadUrl = "https://repo1.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-plugin-annotation-v8/{0}/mapbox-android-plugin-annotation-v8-{0}.aar",
-        JarPath = "./Naxam.MapboxAnnotation.Droid/Jars/mapbox-android-plugin-annotation-v8.aar",
-        Dependencies = new NuSpecDependency[] {
-                new NuSpecDependency {
-                Id = "Naxam.Mapbox.Droid",
-                Version = VERSION + NUGET_SUFIX
-            },
-            new NuSpecDependency {
-                Id = "Xamarin.Android.Support.v7.AppCompat",
-                Version = "28.0.0.1"
-            },
-        }
-    }
+    // new Artifact {
+    //     Version = OFFLINE_VERSION + OFFLINE_NUGET_SUFIX,
+    //     NativeVersion = OFFLINE_VERSION,
+    //     ReleaseNotes = new string [] {
+    //         string.Format("Mapbox for Android - Offline Plugin v{0}", OFFLINE_VERSION)
+    //     },
+    //     SolutionPath = "./mapbox-android.sln",
+    //     AssemblyInfoPath = "./Naxam.MapboxOffline.Droid/Properties/AssemblyInfo.cs",
+    //     NuspecPath = "./mapbox-android-plugin-offline-v8.nuspec",
+    //     DownloadUrl = "https://repo1.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-plugin-offline-v8/{0}/mapbox-android-plugin-offline-v8-{0}.aar",
+    //     JarPath = "./Naxam.MapboxOffline.Droid/Jars/mapbox-android-plugin-offline-v8.aar",
+    //     Dependencies = new NuSpecDependency[] {
+    //             new NuSpecDependency {
+    //             Id = "Naxam.Mapbox.Droid",
+    //             Version = VERSION + NUGET_SUFIX
+    //         },
+    //         new NuSpecDependency {
+    //             Id = "Xamarin.Android.Support.v7.AppCompat",
+    //             Version = "28.0.0.1"
+    //         },
+    //         new NuSpecDependency {
+    //             Id = "Xamarin.Android.Support.v4",
+    //             Version = "28.0.0.1"
+    //         },
+    //         new NuSpecDependency {
+    //             Id = "Xamarin.Android.Support.Design",
+    //             Version = "28.0.0.1"
+    //         },
+    //         new NuSpecDependency {
+    //             Id = "Xamarin.Android.Support.Constraint.Layout",
+    //             Version = "1.1.2"
+    //         },
+    //         new NuSpecDependency {
+    //             Id = "Naxam.Jakewharton.Timber",
+    //             Version = "4.7.1"
+    //         },
+    //     }
+    // },
+    // new Artifact {
+    //     Version = ANNOTATION_VERSION + ANNOTATION_NUGET_SUFIX,
+    //     NativeVersion = ANNOTATION_VERSION,
+    //     ReleaseNotes = new string [] {
+    //         string.Format("Mapbox for Android - Annotation Plugin v{0}", ANNOTATION_VERSION)
+    //     },
+    //     SolutionPath = "./mapbox-android.sln",
+    //     AssemblyInfoPath = "./Naxam.MapboxAnnotation.Droid/Properties/AssemblyInfo.cs",
+    //     NuspecPath = "./mapbox-android-plugin-annotation-v8.nuspec",
+    //     DownloadUrl = "https://repo1.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-plugin-annotation-v8/{0}/mapbox-android-plugin-annotation-v8-{0}.aar",
+    //     JarPath = "./Naxam.MapboxAnnotation.Droid/Jars/mapbox-android-plugin-annotation-v8.aar",
+    //     Dependencies = new NuSpecDependency[] {
+    //             new NuSpecDependency {
+    //             Id = "Naxam.Mapbox.Droid",
+    //             Version = VERSION + NUGET_SUFIX
+    //         },
+    //         new NuSpecDependency {
+    //             Id = "Xamarin.Android.Support.v7.AppCompat",
+    //             Version = "28.0.0.1"
+    //         },
+    //     }
+    // }
 };
 
 //////////////////////////////////////////////////////////////////////
@@ -206,6 +210,7 @@ Task("Build")
         MSBuild(artifact.SolutionPath, settings => {
             settings.ToolVersion = MSBuildToolVersion.VS2019;
             settings.SetConfiguration(configuration);
+            settings.WithTarget("Rebuild");
         });
     }
 });
@@ -215,7 +220,7 @@ Task("Pack")
 {
     foreach(var artifact in artifacts) {
         NuGetPack(artifact.NuspecPath, new NuGetPackSettings {
-            Version = artifact.Version,
+            Version = artifact.Version ,
             Dependencies = artifact.Dependencies,
             ReleaseNotes = artifact.ReleaseNotes,
             OutputDirectory = "./nugets"
@@ -228,10 +233,11 @@ Task("Pack")
 //////////////////////////////////////////////////////////////////////
 
 Task("Default")
-    // .IsDependentOn("Downloads")
+    .IsDependentOn("Downloads")
     .IsDependentOn("UpdateVersion")
     .IsDependentOn("Build")
-    .IsDependentOn("Pack");
+    .IsDependentOn("Pack")
+    ;
 
 //////////////////////////////////////////////////////////////////////
 // EXECUTION

@@ -24,6 +24,9 @@ Plz follow the official guide [here](https://www.mapbox.com/help/first-steps-and
 
 NOTE: Have to build custom AAR because of Java8 & lint.jar duplication.
 
+## Sponsor
+- v8.3: AppSecure
+
 ## License
 
 Mapbox binding library for Android is released under the MIT license.
