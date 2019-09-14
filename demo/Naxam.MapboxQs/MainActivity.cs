@@ -1,17 +1,18 @@
 ﻿using Android.App;
-using Android.Widget;
 using Android.OS;
 using MapboxAccountManager = Com.Mapbox.Mapboxsdk.Mapbox;
 using Com.Mapbox.Mapboxsdk.Maps;
 using Android.Support.V7.App;
 using Com.Mapbox.Mapboxsdk.Camera;
 using Com.Mapbox.Mapboxsdk.Geometry;
-using Com.Mapbox.Mapboxsdk.Annotations;
+using Com.Mapbox.Mapboxsdk.Plugins.Annotation;
+using Java.Lang;
+using Java.Interop;
 
 namespace Naxam.MapboxQs
 {
-	[Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/ic_launcher", Theme="@style/MyTheme")]
-	public class MainActivity : AppCompatActivity, IOnMapReadyCallback
+    [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/ic_launcher", Theme="@style/MyTheme")]
+	public class MainActivity : AppCompatActivity, IOnMapReadyCallback, Style.IOnStyleLoaded, IOnSymbolClickListener
 	{
 		MapView mapView;
 
@@ -24,15 +25,10 @@ namespace Naxam.MapboxQs
 			MapboxAccountManager.GetInstance(this, Resources.GetString(Resource.String.access_token));
 
 			SetContentView(Resource.Layout.Main);
-            System.Diagnostics.Debug.WriteLine("===========" + Com.Mapbox.Mapboxsdk.BuildConfig.MapboxSdkVersion + "   " + Com.Mapbox.Mapboxsdk.BuildConfig.MapboxVersionString + "   " + Com.Mapbox.Mapboxsdk.BuildConfig.MapboxSdkIdentifier);
+            System.Diagnostics.Debug.WriteLine("===========" + Com.Mapbox.Mapboxsdk.BuildConfig.MAPBOX_SDK_VERSION + "   " + Com.Mapbox.Mapboxsdk.BuildConfig.MAPBOX_VERSION_STRING + "   " + Com.Mapbox.Mapboxsdk.BuildConfig.MAPBOX_SDK_IDENTIFIER);
 			mapView = FindViewById<MapView>(Resource.Id.mapView);
 			mapView.OnCreate(bundle);
 			mapView.GetMapAsync(this);
-
-            //global::Xamarin.Forms.Forms.Init(this, bundle);
-
-            //LoadApplication(new App());
-
 		}
 
 		protected override void OnStart()
@@ -41,14 +37,19 @@ namespace Naxam.MapboxQs
 			mapView.OnStart();
 		}
 
-		public void OnMapReady(MapboxMap map)
+        MapboxMap mapboxMap;
+
+        public void OnMapReady(MapboxMap map)
 		{
-			var position = new CameraPosition.Builder()
-						   .Target(new LatLng(41.885, -87.679)) // Sets the new camera position
-						   .Zoom(11) // Sets the zoom
-						   .Build(); // Creates a CameraPosition from the builder
-            map.SetStyle(Style.MAPBOX_STREETS);
-            map.AnimateCamera(CameraUpdateFactory.NewCameraPosition(position));
+            mapboxMap = map;
+
+            //var position = new CameraPosition.Builder()
+			//			   .Target(new LatLng(41.885, -87.679)) // Sets the new camera position
+			//			   .Zoom(11) // Sets the zoom
+			//			   .Build(); // Creates a CameraPosition from the builder
+   //         map.AnimateCamera(CameraUpdateFactory.NewCameraPosition(position));
+
+            map.SetStyle(Style.MAPBOX_STREETS, this);
 
 		}
 
@@ -87,6 +88,36 @@ namespace Naxam.MapboxQs
 			base.OnLowMemory();
 			mapView.OnLowMemory();
 		}
-	} 
+
+        SymbolManager symbolManager;
+        public void OnStyleLoaded(Style p0)
+        {
+            symbolManager = new SymbolManager(mapView, mapboxMap, p0);
+
+            var point = Com.Mapbox.Geojson.Point.FromLngLat(105.505, 21.033);
+            mapboxMap.MoveCamera(CameraUpdateFactory.NewLatLngZoom(new LatLng(point.Latitude(), point.Longitude()), 15));
+
+            var options = new SymbolOptions();
+            options.WithIconImage("fire-station-11");
+            options.WithGeometry(point);
+            options.WithIconSize(new Float(4f))
+                .WithDraggable(true);
+
+            var symbol = symbolManager.Create(options);
+
+            var options2 = new SymbolOptions()
+                .WithIconImage("fire-station-11")
+                .WithGeometry(point)
+                .WithIconSize(new Float(2f));
+
+            var symbol2 = symbolManager.Create(options2);
+
+            symbolManager.AddClickListener(this);
+        }
+
+        public void OnAnnotationClick(Symbol p0)
+        {
+        }
+    } 
 }
 
