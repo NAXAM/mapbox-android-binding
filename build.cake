@@ -11,7 +11,7 @@ var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
 var VERSION = "8.3.0";
-var NUGET_SUFIX = ".1";
+var NUGET_SUFIX = ".2";
 
 var GESTURES_VERSION = "0.5.1";
 var GESTURES_NUGET_SUFIX=".1";
@@ -23,7 +23,7 @@ var OFFLINE_VERSION = "0.6.0";
 var OFFLINE_NUGET_SUFIX=".0";
 
 var ANNOTATION_VERSION="0.7.0";
-var ANNOTATION_NUGET_SUFIX=".1";
+var ANNOTATION_NUGET_SUFIX=".2";
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
@@ -73,7 +73,7 @@ var artifacts = new [] {
                 Version = ACCOUNTS_VERSION+ACCOUNTS_NUGET_SUFIX
             },
             new NuSpecDependency {
-                Id = "Mapbox.MapboxAndroidCore",
+                Id = "Naxam.Mapbox.MapboxAndroidCore",
                 Version = "1.3.0"
             },
             new NuSpecDependency {
@@ -237,9 +237,9 @@ Task("Pack")
 //////////////////////////////////////////////////////////////////////
 
 Task("Default")
-    .IsDependentOn("Downloads")
-    .IsDependentOn("UpdateVersion")
-    .IsDependentOn("Build")
+    // .IsDependentOn("Downloads")
+    // .IsDependentOn("UpdateVersion")
+    // .IsDependentOn("Build")
     .IsDependentOn("Pack")
     ;
 
