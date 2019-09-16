@@ -606,4 +606,7 @@
     <attr
         path="/api/package[@name='com.mapbox.mapboxsdk.style.expressions']/class[@name='Expression']/method[@name='formatEntry']"
         name="managedName">CreateFormatEntry</attr>
+    <attr
+        path="/api/package[@name='com.mapbox.mapboxsdk.style.expressions']/class[@name='Expression']/method[@name='stop']"
+        name="managedName">CreateStop</attr>
 </metadata>

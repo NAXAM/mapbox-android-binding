@@ -11,7 +11,7 @@ var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
 var VERSION = "8.3.0";
-var NUGET_SUFIX = ".3";
+var NUGET_SUFIX = ".4";
 
 var GESTURES_VERSION = "0.5.1";
 var GESTURES_NUGET_SUFIX=".1";
