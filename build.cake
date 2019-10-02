@@ -10,8 +10,8 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
-var VERSION = "8.3.0";
-var NUGET_SUFIX = ".4";
+var VERSION = "8.4.0";
+var NUGET_SUFIX = ".0";
 
 var GESTURES_VERSION = "0.5.1";
 var GESTURES_NUGET_SUFIX=".1";
@@ -82,15 +82,15 @@ var artifacts = new [] {
             },
             new NuSpecDependency {
                 Id = "Naxam.Mapbox.Services.Android.Telemetry",
-                Version = "4.4.1"
+                Version = "4.5.1"
             },
             new NuSpecDependency {
                 Id = "Naxam.MapboxSdkGeojson.Droid",
-                Version = "4.8.0.1"
+                Version = "4.9.0"
             },
             new NuSpecDependency {
                 Id = "Naxam.MapboxSdkTurf.Droid",
-                Version = "4.8.0"
+                Version = "4.9.0"
             },
             new NuSpecDependency {
                 Id = "Xamarin.Android.Support.Fragment",
