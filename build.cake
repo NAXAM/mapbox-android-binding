@@ -10,37 +10,37 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
-var VERSION = "8.5.1";
+var VERSION = "9.0.1";
 var NUGET_SUFIX = ".0";
 
-var GESTURES_VERSION = "0.5.1";
+var GESTURES_VERSION = "0.6.0";
 var GESTURES_NUGET_SUFIX=".1";
 
-var ACCOUNTS_VERSION = "0.2.0";
+var ACCOUNTS_VERSION = "0.7.0";
 var ACCOUNTS_NUGET_SUFIX=".0";
 
-var OFFLINE_VERSION = "0.6.0";
+var OFFLINE_VERSION = "0.7.0";
 var OFFLINE_NUGET_SUFIX=".0";
 
-var ANNOTATION_VERSION="0.7.0";
-var ANNOTATION_NUGET_SUFIX=".2";
+var ANNOTATION_VERSION="0.8.0";
+var ANNOTATION_NUGET_SUFIX=".0";
 
-var BUILDING_VERSION="0.6.0";
+var BUILDING_VERSION="0.7.0";
 var BUILDING_NUGET_SUFIX="";
 
-var LOCALIZATION_VERSION="0.11.0";
+var LOCALIZATION_VERSION="0.12.0";
 var LOCALIZATION_NUGET_SUFIX="";
 
-var MARKERVIEW_VERSION="0.3.0";
+var MARKERVIEW_VERSION="0.4.0";
 var MARKERVIEW_NUGET_SUFIX="";
 
-var PLACES_VERSION="0.9.0";
+var PLACES_VERSION="0.11.0";
 var PLACES_NUGET_SUFIX="";
 
-var SCALEBAR_VERSION="0.3.0";
+var SCALEBAR_VERSION="0.5.0";
 var SCALEBAR_NUGET_SUFIX="";
 
-var TRAFFIC_VERSION="0.9.0";
+var TRAFFIC_VERSION="0.10.0";
 var TRAFFIC_NUGET_SUFIX="";
 
 //////////////////////////////////////////////////////////////////////
@@ -111,12 +111,12 @@ var artifacts = new [] {
                 Version = "4.9.0"
             },
             new NuSpecDependency {
-                Id = "Xamarin.Android.Support.Fragment",
-                Version = "28.0.0.3"
+                Id = "Xamarin.AndroidX.Fragment",
+                Version = "1.2.3"
             },
             new NuSpecDependency {
-                Id = "Xamarin.Android.Support.Annotations",
-                Version = "28.0.0.3"
+                Id = "Xamarin.AndroidX.Annotation",
+                Version = "1.1.0"
             },
             new NuSpecDependency {
                 Id = "Naxam.SoLoader.Droid",

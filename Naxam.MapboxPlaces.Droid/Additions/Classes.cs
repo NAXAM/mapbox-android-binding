@@ -1,6 +1,6 @@
 ﻿using System;
 using Android.Runtime;
-using Android.Support.V7.Widget;
+using AndroidX.RecyclerView.Widget;
 using Android.Views;
 using Java.Interop;
 

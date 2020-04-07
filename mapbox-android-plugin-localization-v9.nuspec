@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Naxam.MapboxLocalization.Droid</id>
+        <version>0.12.0</version>
+        <authors>NAXAM</authors>
+        <owners>NAXAM COMPANY LIMITED</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>Naxam - Mapbox Android SDK - Localization Plugin</title>
+        <description>Xamarin Binding Library - Mapbox Android SDK - Localization Plugin</description>
+        <iconUrl>https://avatars0.githubusercontent.com/u/600935</iconUrl>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/NAXAM/mapbox-android-binding</projectUrl>
+        <copyright>Copyright (c) 2019-present NAXAM</copyright>
+        <tags>xamarin, Xamarin.Android, Mapbox, mapbox-android-plugin-localization-v8</tags>
+    </metadata>
+    <files>
+        <file src="Naxam.MapboxLocalization.Droid/bin/Release/Naxam.MapboxLocalization.Droid.dll" target="lib/MonoAndroid10/Naxam.MapboxLocalization.Droid.dll" />
+    </files>
+</package>

@@ -1,5 +1,6 @@
 ﻿using System;
 using Android.Runtime;
+using Com.Mapbox.Android.Core.Location;
 using Java.Lang;
 
 namespace Com.Mapbox.Mapboxsdk.Annotations
@@ -109,6 +110,42 @@ namespace Com.Mapbox.Mapboxsdk.Utils
             protected override Java.Lang.Object DoInBackground(params Java.Lang.Object[] @params)
             {
                 return null;
+            }
+        }
+    }
+}
+
+namespace Com.Mapbox.Mapboxsdk.Location
+{
+    partial class LocationComponent
+    {
+        partial class LastLocationEngineCallback : ILocationEngineCallback
+        {
+            public void OnSuccess(Java.Lang.Object p0)
+            {
+                return;
+            }
+        }
+
+        partial class CurrentLocationEngineCallback : ILocationEngineCallback
+        {
+            public void OnSuccess(Java.Lang.Object p0)
+            {
+                return;
+            }
+        }
+    }
+}
+
+namespace Com.Mapbox.Mapboxsdk.Maps.Renderer.Egl
+{
+    partial class EGLConfigChooser
+    {
+        partial class _1Config : Java.Lang.Object, Java.Lang.IComparable
+        {
+            public int CompareTo(Java.Lang.Object o)
+            {
+                return CompareTo((_1Config)o);
             }
         }
     }

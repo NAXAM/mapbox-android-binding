@@ -13,7 +13,7 @@
     <RootNamespace>Naxam.MapboxScalebar.Droid</RootNamespace>
     <AssemblyName>Naxam.MapboxScalebar.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
@@ -54,7 +54,7 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\mapbox-android-plugin-scalebar-v8.aar" />
+    <LibraryProjectZip Include="Jars\mapbox-android-plugin-scalebar-v9.aar" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Naxam.Mapbox.Droid\Naxam.Mapbox.Droid.csproj">

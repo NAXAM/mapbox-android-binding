@@ -2,7 +2,7 @@
 using Android.OS;
 using MapboxAccountManager = Com.Mapbox.Mapboxsdk.Mapbox;
 using Com.Mapbox.Mapboxsdk.Maps;
-using Android.Support.V7.App;
+using AndroidX.AppCompat.App;
 using Com.Mapbox.Mapboxsdk.Camera;
 using Com.Mapbox.Mapboxsdk.Geometry;
 using Com.Mapbox.Mapboxsdk.Plugins.Annotation;
