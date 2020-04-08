@@ -1,7 +1,7 @@
 #tool nuget:?package=NUnit.ConsoleRunner&version=3.4.0
 
 // Cake Addins
-#addin nuget:?package=Cake.FileHelpers&version=2.0.0
+#addin nuget:?package=Cake.FileHelpers&version=3.2.1
 
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
@@ -83,7 +83,7 @@ var artifacts = new [] {
         SolutionPath = "./mapbox-android.sln",
         AssemblyInfoPath = "./Naxam.Mapbox.Droid/Properties/AssemblyInfo.cs",
         NuspecPath = "./mapbox.nuspec",
-        DownloadUrl = "http://central.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-sdk/{0}/mapbox-android-sdk-{0}.aar",
+        DownloadUrl = "https://repo1.maven.org/maven2/com/mapbox/mapboxsdk/mapbox-android-sdk/{0}/mapbox-android-sdk-{0}.aar",
         JarPath = "./Naxam.Mapbox.Droid/Jars/mapbox-android-sdk.aar",
         Dependencies = new NuSpecDependency[] {
             new NuSpecDependency {
