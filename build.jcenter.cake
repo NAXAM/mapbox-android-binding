@@ -130,11 +130,13 @@ Task("tools-update")
 Task("binderate")
 	.Does(() =>
 {
-	var configFile = MakeAbsolute(new FilePath("./config.json")).FullPath;
+	var configJcenterFile = MakeAbsolute(new FilePath("./config.jcenter.json")).FullPath;
 	var basePath = MakeAbsolute(new DirectoryPath ("./")).FullPath;
+
+	Information($"- {configJcenterFile}");
 	
 	RunProcess("xamarin-android-binderator",
-		$"--config=\"{configFile}\" --basepath=\"{basePath}\"");
+		$"--config=\"{configJcenterFile}\" --basepath=\"{basePath}\"");
 	Information($"EnsureDirectoryExists");
 
 	// needed for offline builds 28.0.0.1 to 28.0.0.3
@@ -194,6 +196,7 @@ Task("binderate")
 string nuget_version_template = "3.11.0";
 string nuget_version_suffix = "";
 JArray binderator_json_array = null;
+string slnFilePath = "./generated/mapbox-android-jcenter.sln";
 
 
 Task("mergetargets")
@@ -237,13 +240,13 @@ Task("libs")
 	.IsDependentOn("nuget-restore")
 	.Does(() =>
 {
-	NuGetRestore("./generated/mapbox-android.sln", new NuGetRestoreSettings { });
+	NuGetRestore(slnFilePath, new NuGetRestoreSettings { });
 
 	Configs = new string[] { "Release" };
 
 	foreach(string config in Configs)
 	{
-		MSBuild("./generated/mapbox-android.sln", c => {
+		MSBuild(slnFilePath, c => {
 			c.Configuration = config;
 			c.MaxCpuCount = MAX_CPU_COUNT;
 			c.BinaryLogger = new MSBuildBinaryLogSettings { Enabled = true, FileName = MakeAbsolute(new FilePath("./output/libs.binlog")).FullPath };
@@ -262,8 +265,8 @@ Task("samples-directory-build-targets")
 	(
 		() =>
 		{
-			Information("samples Director.Build.targets from config.json ...");
-			using (StreamReader reader = System.IO.File.OpenText(@"./config.json"))
+			Information("samples Director.Build.targets from config.jcenter.json ...");
+			using (StreamReader reader = System.IO.File.OpenText(@"./config.jcenter.json"))
 			{
 				JsonTextReader jtr = new JsonTextReader(reader);
 				binderator_json_array = (JArray)JToken.ReadFrom(jtr);
@@ -374,13 +377,13 @@ Task("allbindingprojectrefs")
 
 	};
 
-	generateTargets("./output/Naxam.*.nupkg", "./output/MapboxPackages.targets");
+	generateTargets("./output/Naxam.*.nupkg", "./output/MapboxPackages.jcenter.targets");
 });
 
 Task("nuget-restore")
 	.Does(() =>
 {
-	NuGetRestore("./generated/mapbox-android.sln", new NuGetRestoreSettings { });
+	NuGetRestore(slnFilePath, new NuGetRestoreSettings { });
 });
 
 
@@ -390,7 +393,7 @@ Task("nuget")
 {
 	var outputPath = new DirectoryPath("./output");
 
-	MSBuild ("./generated/mapbox-android.sln", c => {
+	MSBuild (slnFilePath, c => {
 		c.Configuration = "Release";
 		c.MaxCpuCount = MAX_CPU_COUNT;
 		c.BinaryLogger = new MSBuildBinaryLogSettings { Enabled = true, FileName = MakeAbsolute(new FilePath("./output/nuget.binlog")).FullPath };
@@ -418,7 +421,7 @@ Task ("merge")
 	RunProcess("androidx-migrator",
 		$"merge" +
 		$"  --assembly " + string.Join(" --assembly ", mergeDlls) +
-		$"  --output ./output/Mapbox.Merged.dll" +
+		$"  --output ./output/Mapbox.jcenter.Merged.dll" +
 		$"  --search \"{XAMARIN_ANDROID_PATH}/{ANDROID_SDK_VERSION}\" " +
 		$"  --search \"{XAMARIN_ANDROID_PATH}/{ANDROID_SDK_BASE_VERSION}\" " +
 		$"  --inject-assemblyname");

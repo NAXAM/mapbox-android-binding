@@ -9,6 +9,7 @@ TestResults/
 .vscode/
 .vs/
 tools/
+# nugets/
 
 # globs
 Makefile.in
@@ -41,3 +42,9 @@ Thumbs.db
 
 # dotCover
 *.dotCover
+
+externals/
+generated/
+output/
+binderator
+models.json

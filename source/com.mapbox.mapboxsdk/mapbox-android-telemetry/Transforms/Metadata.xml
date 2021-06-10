@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <add-node path="/api/package[@name='com.mapbox.android.telemetry']">
+    <interface abstract="true"
+               deprecated="not deprecated"
+               final="false"
+               name="FullQueueCallback"
+               static="false"
+               visibility="public">
+      <method abstract="true"
+              deprecated="not deprecated"
+              final="false"
+              name="onFullQueue"
+              native="false"
+              return="void"
+              static="false"
+              synchronized="false"
+              visibility="public">
+        <parameter name="fullQueue"
+                   type="java.util.List&lt;com.mapbox.android.telemetry.Event&gt;">
+        </parameter>
+      </method>
+    </interface>
+  </add-node>
+
+  <attr path="/api/package[@name='com.mapbox.android.telemetry']/interface[@name='ServiceTaskCallback']"
+        name="visibility">public</attr>
+</metadata>
