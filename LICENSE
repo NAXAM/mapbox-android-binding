@@ -1,3 +1,9 @@
+Naxam is not responsible for, nor does it grant any licenses to, third-party packages. Some packages may require or install dependencies which are governed by additional licenses.
+
+This component depends on Mapbox SDK for Android, which is subject to the terms of Mapbox Software Development Kit License Agreement
+
+Xamarin.Android binding library for Mapbox SDK for Android
+
 MIT License
 
 Copyright (c) 2017 NAXAM CO., LTD
