@@ -29,7 +29,7 @@ To update all tools:
 	dotnet tool uninstall 	-g Cake.Tool
 	dotnet tool install     -g Cake.Tool	
 	dotnet tool uninstall   -g Xamarin.AndroidBinderator.Tool
-	dotnet tool install     -g Xamarin.AndroidBinderator.Tool
+	dotnet tool install     -g Xamarin.AndroidBinderator.Tool --add-source https://www.myget.org/F/naxam/api/v3/index.json
 ```
 
 The following targets can be specified:

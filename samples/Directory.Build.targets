@@ -1,5 +1,11 @@
 <Project>
   <ItemGroup>
+    <PackageReference Update="Naxam.Mapbox.Droid" Version="9.2.0" />
+    <PackageReference Update="Naxam.Mapbox.Services.Android.Telemetry" Version="5.0.1" />
+    <PackageReference Update="Naxam.Mapbox.MapboxAndroidCore" Version="2.0.1" />
+    <PackageReference Update="Naxam.MapboxSdkGeojson.Droid" Version="5.0.0" />
+    <PackageReference Update="Naxam.MapboxGestures.Droid" Version="0.7.0" />
+    <PackageReference Update="Naxam.MapboxSdkTurf.Droid" Version="5.0.0" />
     <PackageReference Update="Naxam.MapboxAccounts.Droid" Version="0.7.0" />
     <PackageReference Update="Square.OkIO" Version="1.15.0" />
     <PackageReference Update="Square.OkHttp3" Version="3.12.3" />

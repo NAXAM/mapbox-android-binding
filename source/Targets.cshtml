@@ -36,10 +36,11 @@
         var friendlyArtifactId = art.MavenArtifactId.Replace("-", "");
         var friendlyVersion = art.MavenArtifactVersion.Replace(".", "_").Replace("-", "_");
         var friendlyId = friendlyArtifactId + "_" + friendlyVersion;
-        var url = "https://repo1.maven.org/maven2/" + art.MavenGroupId.Replace(".", "/") + "/" + art.MavenArtifactId + "/" + art.MavenArtifactVersion + "/" + art.MavenArtifactId + "-" + art.MavenArtifactVersion + ".aar";
+        var ext = art.MavenArtifactId.StartsWith("mapbox-sdk-") ? ".jar" : ".aar";
+        var url = "https://repo1.maven.org/maven2/" + art.MavenGroupId.Replace(".", "/") + "/" + art.MavenArtifactId + "/" + art.MavenArtifactVersion + "/" + art.MavenArtifactId + "-" + art.MavenArtifactVersion + ext;
         var xbdKey = friendlyArtifactId + "-" + art.MavenArtifactVersion;
-        var xbdAarFile = friendlyArtifactId + "-" + art.MavenArtifactVersion + ".aar";
-        var xbdAarPath = xbdKey + "\\" + xbdKey + ".aar";
+        var xbdAarFile = friendlyArtifactId + "-" + art.MavenArtifactVersion + ext;
+        var xbdAarPath = xbdKey + "\\" + xbdKey + ext;
         var xbdSha256 = art.MavenArtifactSha256;
   <ItemGroup>
     <XamarinBuildRestoreResources Include="_XbdRestoreItems_@(friendlyId)" />
